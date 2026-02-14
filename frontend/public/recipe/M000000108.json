@@ -1,0 +1,20 @@
+{
+  "menu_id": "M000000108",
+  "menu_name": "キーマカレー",
+  "ingredients": [
+    "牛肉",
+    "豚肉"
+  ],
+  "nutrition": {
+    "energy_kcal": 272.6,
+    "protein_g": 7.8,
+    "fat_g": 9.7,
+    "carbohydrate_g": 38.9,
+    "salt_g": 1.9
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

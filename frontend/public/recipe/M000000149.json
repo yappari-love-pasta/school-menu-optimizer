@@ -1,0 +1,17 @@
+{
+  "menu_id": "M000000149",
+  "menu_name": "ミニりんごゼリー",
+  "ingredients": [],
+  "nutrition": {
+    "energy_kcal": 77,
+    "protein_g": 0.5,
+    "fat_g": 0.1,
+    "carbohydrate_g": 18.7,
+    "salt_g": 0
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

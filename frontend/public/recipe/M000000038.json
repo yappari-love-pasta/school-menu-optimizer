@@ -1,0 +1,19 @@
+{
+  "menu_id": "M000000038",
+  "menu_name": "さばのあまだれかけ",
+  "ingredients": [
+    "さば"
+  ],
+  "nutrition": {
+    "energy_kcal": 98,
+    "protein_g": 11.8,
+    "fat_g": 4.9,
+    "carbohydrate_g": 2.9,
+    "salt_g": 0.8
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

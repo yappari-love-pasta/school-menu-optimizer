@@ -1,0 +1,20 @@
+{
+  "menu_id": "M000000138",
+  "menu_name": "フェジョアーダ",
+  "ingredients": [
+    "ウィンナー",
+    "豚肉"
+  ],
+  "nutrition": {
+    "energy_kcal": 120.6,
+    "protein_g": 10.1,
+    "fat_g": 7,
+    "carbohydrate_g": 5,
+    "salt_g": 1
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

@@ -1,0 +1,21 @@
+{
+  "menu_id": "M000000148",
+  "menu_name": "マーボー豆腐",
+  "ingredients": [
+    "豚肉",
+    "豆腐",
+    "赤みそ"
+  ],
+  "nutrition": {
+    "energy_kcal": 114.1,
+    "protein_g": 9.5,
+    "fat_g": 6.7,
+    "carbohydrate_g": 4.8,
+    "salt_g": 1
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

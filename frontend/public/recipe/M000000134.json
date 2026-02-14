@@ -1,0 +1,19 @@
+{
+  "menu_id": "M000000134",
+  "menu_name": "ビーフポテト",
+  "ingredients": [
+    "牛肉"
+  ],
+  "nutrition": {
+    "energy_kcal": 131.1,
+    "protein_g": 10.9,
+    "fat_g": 7.6,
+    "carbohydrate_g": 5.5,
+    "salt_g": 1.1
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

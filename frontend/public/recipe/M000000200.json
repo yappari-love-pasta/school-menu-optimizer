@@ -1,0 +1,21 @@
+{
+  "menu_id": "M000000200",
+  "menu_name": "焼スパゲティ",
+  "ingredients": [
+    "豚肉",
+    "いか",
+    "青のり粉"
+  ],
+  "nutrition": {
+    "energy_kcal": 123.6,
+    "protein_g": 10.3,
+    "fat_g": 7.2,
+    "carbohydrate_g": 5.2,
+    "salt_g": 1
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

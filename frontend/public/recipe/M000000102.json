@@ -1,0 +1,21 @@
+{
+  "menu_id": "M000000102",
+  "menu_name": "キャベツのみそ汁",
+  "ingredients": [
+    "赤みそ",
+    "白みそ",
+    "削り節"
+  ],
+  "nutrition": {
+    "energy_kcal": 65.7,
+    "protein_g": 4.4,
+    "fat_g": 2.2,
+    "carbohydrate_g": 6.6,
+    "salt_g": 1.3
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

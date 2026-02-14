@@ -1,0 +1,20 @@
+{
+  "menu_id": "M000000142",
+  "menu_name": "ホイコウロウ",
+  "ingredients": [
+    "豚肉",
+    "赤みそ"
+  ],
+  "nutrition": {
+    "energy_kcal": 125.8,
+    "protein_g": 10.5,
+    "fat_g": 7.3,
+    "carbohydrate_g": 5.2,
+    "salt_g": 1
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

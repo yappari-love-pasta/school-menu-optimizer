@@ -1,0 +1,19 @@
+{
+  "menu_id": "M000000041",
+  "menu_name": "さばのチョリム",
+  "ingredients": [
+    "さば"
+  ],
+  "nutrition": {
+    "energy_kcal": 106.8,
+    "protein_g": 12.8,
+    "fat_g": 5.3,
+    "carbohydrate_g": 3.2,
+    "salt_g": 0.9
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

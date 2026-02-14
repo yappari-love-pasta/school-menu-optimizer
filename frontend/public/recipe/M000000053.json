@@ -1,0 +1,20 @@
+{
+  "menu_id": "M000000053",
+  "menu_name": "じゃこ豆",
+  "ingredients": [
+    "大豆",
+    "ちりめんじゃこ"
+  ],
+  "nutrition": {
+    "energy_kcal": 49.1,
+    "protein_g": 2,
+    "fat_g": 1,
+    "carbohydrate_g": 4.9,
+    "salt_g": 0.2
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

@@ -1,0 +1,20 @@
+{
+  "menu_id": "M000000081",
+  "menu_name": "もずくのかき揚げ",
+  "ingredients": [
+    "もずく",
+    "まぐろオイル漬け"
+  ],
+  "nutrition": {
+    "energy_kcal": 153.5,
+    "protein_g": 8.2,
+    "fat_g": 10.2,
+    "carbohydrate_g": 10.2,
+    "salt_g": 0.8
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

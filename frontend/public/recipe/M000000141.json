@@ -1,0 +1,17 @@
+{
+  "menu_id": "M000000141",
+  "menu_name": "ブロッコリー",
+  "ingredients": [],
+  "nutrition": {
+    "energy_kcal": 47.7,
+    "protein_g": 1.9,
+    "fat_g": 1,
+    "carbohydrate_g": 4.8,
+    "salt_g": 0.2
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

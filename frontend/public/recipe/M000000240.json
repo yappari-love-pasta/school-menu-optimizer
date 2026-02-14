@@ -1,0 +1,19 @@
+{
+  "menu_id": "M000000240",
+  "menu_name": "韓国風寄せ揚げ",
+  "ingredients": [
+    "まぐろオイル漬け"
+  ],
+  "nutrition": {
+    "energy_kcal": 164.3,
+    "protein_g": 8.8,
+    "fat_g": 11,
+    "carbohydrate_g": 11,
+    "salt_g": 0.9
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

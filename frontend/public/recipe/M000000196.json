@@ -1,0 +1,17 @@
+{
+  "menu_id": "M000000196",
+  "menu_name": "減量アップルパン",
+  "ingredients": [],
+  "nutrition": {
+    "energy_kcal": 176.2,
+    "protein_g": 5.9,
+    "fat_g": 2.9,
+    "carbohydrate_g": 31.3,
+    "salt_g": 0.8
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

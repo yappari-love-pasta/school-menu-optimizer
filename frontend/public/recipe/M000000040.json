@@ -1,0 +1,20 @@
+{
+  "menu_id": "M000000040",
+  "menu_name": "さばのソース煮",
+  "ingredients": [
+    "さば",
+    "削り節"
+  ],
+  "nutrition": {
+    "energy_kcal": 104,
+    "protein_g": 12.5,
+    "fat_g": 5.2,
+    "carbohydrate_g": 3.1,
+    "salt_g": 0.8
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

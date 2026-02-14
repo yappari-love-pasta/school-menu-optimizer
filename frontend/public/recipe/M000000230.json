@@ -1,0 +1,21 @@
+{
+  "menu_id": "M000000230",
+  "menu_name": "酢みそ和え",
+  "ingredients": [
+    "油揚げ",
+    "ちくわ",
+    "白みそ"
+  ],
+  "nutrition": {
+    "energy_kcal": 51.3,
+    "protein_g": 2.1,
+    "fat_g": 1,
+    "carbohydrate_g": 5.1,
+    "salt_g": 0.2
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

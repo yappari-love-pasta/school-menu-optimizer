@@ -1,0 +1,21 @@
+{
+  "menu_id": "M000000071",
+  "menu_name": "ひじきの炒め煮",
+  "ingredients": [
+    "ひじき",
+    "油揚げ",
+    "削り節"
+  ],
+  "nutrition": {
+    "energy_kcal": 72.3,
+    "protein_g": 4.5,
+    "fat_g": 2.7,
+    "carbohydrate_g": 7.2,
+    "salt_g": 0.8
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

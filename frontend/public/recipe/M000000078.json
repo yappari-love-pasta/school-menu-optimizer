@@ -1,0 +1,23 @@
+{
+  "menu_id": "M000000078",
+  "menu_name": "みそおでん",
+  "ingredients": [
+    "鶏肉",
+    "絹揚げ",
+    "ごぼう天",
+    "白みそ",
+    "赤みそ"
+  ],
+  "nutrition": {
+    "energy_kcal": 130,
+    "protein_g": 10.8,
+    "fat_g": 7.6,
+    "carbohydrate_g": 5.4,
+    "salt_g": 1.1
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

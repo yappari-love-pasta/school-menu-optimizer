@@ -1,0 +1,20 @@
+{
+  "menu_id": "M000000013",
+  "menu_name": "うま煮",
+  "ingredients": [
+    "鶏肉",
+    "絹揚げ"
+  ],
+  "nutrition": {
+    "energy_kcal": 115,
+    "protein_g": 9.6,
+    "fat_g": 6.7,
+    "carbohydrate_g": 4.8,
+    "salt_g": 1
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

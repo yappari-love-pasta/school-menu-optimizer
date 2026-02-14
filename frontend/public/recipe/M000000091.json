@@ -1,0 +1,19 @@
+{
+  "menu_id": "M000000091",
+  "menu_name": "ウィンナーとキャベツのソテー",
+  "ingredients": [
+    "ウィンナー"
+  ],
+  "nutrition": {
+    "energy_kcal": 46.3,
+    "protein_g": 1.9,
+    "fat_g": 0.9,
+    "carbohydrate_g": 4.6,
+    "salt_g": 0.2
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

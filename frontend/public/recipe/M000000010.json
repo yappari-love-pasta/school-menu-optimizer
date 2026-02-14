@@ -1,0 +1,19 @@
+{
+  "menu_id": "M000000010",
+  "menu_name": "いわしのカリカリフライ",
+  "ingredients": [
+    "いわしフライ"
+  ],
+  "nutrition": {
+    "energy_kcal": 92,
+    "protein_g": 11,
+    "fat_g": 4.6,
+    "carbohydrate_g": 2.8,
+    "salt_g": 0.7
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

@@ -1,0 +1,17 @@
+{
+  "menu_id": "M000000193",
+  "menu_name": "梅ごはん",
+  "ingredients": [],
+  "nutrition": {
+    "energy_kcal": 270.1,
+    "protein_g": 4.3,
+    "fat_g": 0.5,
+    "carbohydrate_g": 59.4,
+    "salt_g": 0
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

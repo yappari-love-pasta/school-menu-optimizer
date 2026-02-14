@@ -1,0 +1,19 @@
+{
+  "menu_id": "M000000044",
+  "menu_name": "さんまのから揚げ薬味だれがけ",
+  "ingredients": [
+    "さんま"
+  ],
+  "nutrition": {
+    "energy_kcal": 90.9,
+    "protein_g": 10.9,
+    "fat_g": 4.5,
+    "carbohydrate_g": 2.7,
+    "salt_g": 0.7
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

@@ -1,0 +1,21 @@
+{
+  "menu_id": "M000000028",
+  "menu_name": "けんちん汁",
+  "ingredients": [
+    "豆腐",
+    "だし昆布",
+    "削り節"
+  ],
+  "nutrition": {
+    "energy_kcal": 55.3,
+    "protein_g": 3.7,
+    "fat_g": 1.8,
+    "carbohydrate_g": 5.5,
+    "salt_g": 1.1
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

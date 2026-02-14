@@ -1,0 +1,17 @@
+{
+  "menu_id": "M000000252",
+  "menu_name": "黒糖パン",
+  "ingredients": [],
+  "nutrition": {
+    "energy_kcal": 184.4,
+    "protein_g": 6.1,
+    "fat_g": 3.1,
+    "carbohydrate_g": 32.8,
+    "salt_g": 0.8
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

@@ -1,0 +1,21 @@
+{
+  "menu_id": "M000000110",
+  "menu_name": "クリームスパゲティ",
+  "ingredients": [
+    "ベーコン",
+    "調理用牛乳",
+    "生クリーム"
+  ],
+  "nutrition": {
+    "energy_kcal": 129.8,
+    "protein_g": 6.6,
+    "fat_g": 7.6,
+    "carbohydrate_g": 9.6,
+    "salt_g": 0.2
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

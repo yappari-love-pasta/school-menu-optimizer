@@ -1,0 +1,20 @@
+{
+  "menu_id": "M000000169",
+  "menu_name": "厚揚げのチャンプルー",
+  "ingredients": [
+    "絹揚げ",
+    "豚肉"
+  ],
+  "nutrition": {
+    "energy_kcal": 121.2,
+    "protein_g": 10.1,
+    "fat_g": 7.1,
+    "carbohydrate_g": 5.1,
+    "salt_g": 1
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

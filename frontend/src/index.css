@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', 'Noto Sans JP', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* カレンダーのカスタムスタイル */
+.menu-calendar {
+  @apply border-collapse w-full;
+  table-layout: fixed;
+}
+
+.menu-calendar th {
+  @apply bg-slate-200 border border-slate-300 px-2 py-2 text-center font-semibold text-sm text-slate-600;
+}
+
+.menu-calendar td {
+  @apply border border-slate-300 align-top h-24 p-1 text-xs;
+}
+
+.menu-calendar .day-number {
+  @apply text-right text-xs text-slate-500 px-1 py-1 font-semibold;
+}
+
+.menu-calendar .day-sunday {
+  @apply bg-red-50;
+}
+
+.menu-calendar .day-saturday {
+  @apply bg-blue-50;
+}
+
+.menu-calendar .day-today {
+  @apply outline outline-2 outline-blue-500 outline-offset-[-2px];
+}
+
+.menu-calendar .out-of-month {
+  @apply bg-gray-300 opacity-50;
+}
+
+/* 献立アイテム */
+.menu-item {
+  @apply px-2 py-0.5 rounded text-xs mb-0.5 overflow-hidden text-ellipsis whitespace-nowrap;
+}
+
+.menu-item.main {
+  @apply bg-red-100;
+}
+
+.menu-item.side {
+  @apply bg-blue-100;
+}
+
+.menu-item.salad {
+  @apply bg-yellow-100;
+}
+
+.menu-item.soup {
+  @apply bg-green-100;
+}
+
+.menu-item.dessert {
+  @apply bg-purple-100;
+}
+
+.menu-item.milk {
+  @apply bg-white border border-slate-200;
+}
+
+/* ローディングアニメーション */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* フェードインアニメーション */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}

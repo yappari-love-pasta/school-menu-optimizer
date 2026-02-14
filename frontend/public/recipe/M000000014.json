@@ -1,0 +1,20 @@
+{
+  "menu_id": "M000000014",
+  "menu_name": "えのきとチンゲンサイのスープ",
+  "ingredients": [
+    "鶏肉",
+    "削り節"
+  ],
+  "nutrition": {
+    "energy_kcal": 127.3,
+    "protein_g": 10.6,
+    "fat_g": 7.4,
+    "carbohydrate_g": 5.3,
+    "salt_g": 1.1
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

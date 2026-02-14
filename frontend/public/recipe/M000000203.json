@@ -1,0 +1,17 @@
+{
+  "menu_id": "M000000203",
+  "menu_name": "玄米ごはん",
+  "ingredients": [],
+  "nutrition": {
+    "energy_kcal": 265.7,
+    "protein_g": 4.3,
+    "fat_g": 0.5,
+    "carbohydrate_g": 58.5,
+    "salt_g": 0
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

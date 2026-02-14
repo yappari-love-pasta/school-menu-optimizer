@@ -1,0 +1,20 @@
+{
+  "menu_id": "M000000069",
+  "menu_name": "ひじきとキャベツのサラダ",
+  "ingredients": [
+    "ひじき",
+    "粉かつお"
+  ],
+  "nutrition": {
+    "energy_kcal": 42.2,
+    "protein_g": 1.9,
+    "fat_g": 1.9,
+    "carbohydrate_g": 4.7,
+    "salt_g": 0.5
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

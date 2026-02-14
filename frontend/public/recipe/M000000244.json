@@ -1,0 +1,20 @@
+{
+  "menu_id": "M000000244",
+  "menu_name": "鶏すき煮",
+  "ingredients": [
+    "鶏肉",
+    "絹揚げ"
+  ],
+  "nutrition": {
+    "energy_kcal": 128.2,
+    "protein_g": 10.7,
+    "fat_g": 7.5,
+    "carbohydrate_g": 5.3,
+    "salt_g": 1.1
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

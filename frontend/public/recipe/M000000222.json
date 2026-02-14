@@ -1,0 +1,19 @@
+{
+  "menu_id": "M000000222",
+  "menu_name": "豚キムチごはん",
+  "ingredients": [
+    "豚肉"
+  ],
+  "nutrition": {
+    "energy_kcal": 228.1,
+    "protein_g": 3.6,
+    "fat_g": 0.5,
+    "carbohydrate_g": 50.2,
+    "salt_g": 0
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

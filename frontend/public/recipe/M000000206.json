@@ -1,0 +1,22 @@
+{
+  "menu_id": "M000000206",
+  "menu_name": "田舎汁",
+  "ingredients": [
+    "豚肉",
+    "油揚げ",
+    "赤みそ",
+    "削り節"
+  ],
+  "nutrition": {
+    "energy_kcal": 112.8,
+    "protein_g": 9.4,
+    "fat_g": 6.6,
+    "carbohydrate_g": 4.7,
+    "salt_g": 0.9
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

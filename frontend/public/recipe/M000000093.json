@@ -1,0 +1,19 @@
+{
+  "menu_id": "M000000093",
+  "menu_name": "ウィンナーのケチャップ煮",
+  "ingredients": [
+    "ウィンナー"
+  ],
+  "nutrition": {
+    "energy_kcal": 80.4,
+    "protein_g": 5,
+    "fat_g": 3,
+    "carbohydrate_g": 8,
+    "salt_g": 0.9
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

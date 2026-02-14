@@ -1,0 +1,19 @@
+{
+  "menu_id": "M000000120",
+  "menu_name": "スクエアチーズ",
+  "ingredients": [
+    "チーズ"
+  ],
+  "nutrition": {
+    "energy_kcal": 57.7,
+    "protein_g": 3.8,
+    "fat_g": 4.8,
+    "carbohydrate_g": 0.5,
+    "salt_g": 0.5
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

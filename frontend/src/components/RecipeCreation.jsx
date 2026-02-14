@@ -1,0 +1,200 @@
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { generateMenu } from '../services/api';
+
+const RecipeCreation = ({ onMenuGenerated }) => {
+  const navigate = useNavigate();
+  const [targetWeek, setTargetWeek] = useState('');
+  const [weekOptions, setWeekOptions] = useState([]);
+  const [targetCost, setTargetCost] = useState(1500); // 目標費用を状態管理
+  const [isGenerating, setIsGenerating] = useState(false);
+  const [progressMessage, setProgressMessage] = useState('');
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    // 今週から16週分の選択肢を生成
+    const generateWeekOptions = () => {
+      const options = [];
+      const now = new Date();
+
+      for (let i = 0; i < 16; i++) {
+        // 今週の月曜日を基準に計算
+        const monday = new Date(now);
+        monday.setDate(now.getDate() - now.getDay() + 1 + (i * 7));
+
+        const friday = new Date(monday);
+        friday.setDate(monday.getDate() + 4);
+
+        const year = monday.getFullYear();
+        const month = monday.getMonth() + 1;
+        const day = monday.getDate();
+
+        options.push({
+          value: `${year}-${month}-${day}`,
+          label: `${year}年${month}月${day}日週 (${month}/${day} - ${friday.getMonth() + 1}/${friday.getDate()})`,
+          startDate: monday,
+        });
+      }
+
+      setWeekOptions(options);
+      if (options.length > 0) {
+        setTargetWeek(options[0].value);
+      }
+    };
+
+    generateWeekOptions();
+  }, []);
+
+  const handleGenerate = async () => {
+    setIsGenerating(true);
+    setError(null);
+    setProgressMessage('サーバーに送信中...');
+
+    try {
+      // 進捗メッセージを段階的に更新
+      const messages = [
+        { delay: 1200, text: 'アニーリング計算を開始しました...' },
+        { delay: 2400, text: '最適化処理中...' },
+        { delay: 3600, text: '栄養バランスを検証中...' },
+        { delay: 4800, text: '献立を確定しています...' },
+      ];
+
+      messages.forEach(({ delay, text }) => {
+        setTimeout(() => {
+          if (isGenerating) {
+            setProgressMessage(text);
+          }
+        }, delay);
+      });
+
+      // 1. 履歴データを構築（ここでは空の行列を送信しない）
+      const history = {};
+
+      // 2. 対象週の平日5日分固定
+      const [year, month, day] = targetWeek.split('-').map(Number);
+      const weekDays = 5; // 平日5日分固定
+
+      // 3. バックエンドAPIを呼び出し（レシピデータはバックエンド側で構築）
+      console.log('Calling backend API with:', { days: weekDays, cost: targetCost });
+
+      const result = await generateMenu({
+        days: weekDays,
+        cost: targetCost,
+        history: history,
+      });
+
+      console.log('API Response:', result);
+
+      // 7. 結果を保存してカレンダーページに遷移
+      onMenuGenerated(result.menu, { year, month: month - 1, startDay: day });
+
+      setIsGenerating(false);
+      navigate('/menu-calendar');
+
+    } catch (err) {
+      console.error('Menu generation failed:', err);
+      setError(err.message || '献立の生成に失敗しました');
+      setIsGenerating(false);
+      setProgressMessage('');
+    }
+  };
+
+  return (
+    <div className="max-w-4xl space-y-6">
+      <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+        <h3 className="text-sm font-bold text-slate-500 mb-4 uppercase tracking-wider">
+          基本パラメータ
+        </h3>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+          <div>
+            <label className="block text-sm font-medium text-slate-700 mb-1">
+              対象週（月曜日〜金曜日の5日分）
+            </label>
+            <select
+              value={targetWeek}
+              onChange={(e) => setTargetWeek(e.target.value)}
+              className="w-full border-slate-200 rounded-lg text-sm px-3 py-2 border focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              disabled={isGenerating}
+            >
+              {weekOptions.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-slate-700 mb-1">
+              目標費用 (C)
+            </label>
+            <div className="flex items-center gap-2">
+              <input
+                type="number"
+                value={targetCost}
+                onChange={(e) => setTargetCost(Number(e.target.value))}
+                className="flex-1 border-slate-200 rounded-lg text-sm px-3 py-2 border focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                disabled={isGenerating}
+                min="0"
+                step="100"
+              />
+              <span className="text-sm text-slate-500">円/週</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* エラー表示 */}
+      {error && (
+        <div className="bg-red-50 border border-red-200 rounded-xl p-4">
+          <div className="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-red-600" viewBox="0 0 20 20" fill="currentColor">
+              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+            </svg>
+            <p className="text-sm text-red-800 font-medium">{error}</p>
+          </div>
+        </div>
+      )}
+
+      {/* 生成ボタン */}
+      <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
+        <button
+          onClick={handleGenerate}
+          disabled={isGenerating}
+          className={`font-bold py-4 px-12 rounded-full shadow-lg transition-all flex items-center gap-3 mx-auto ${
+            isGenerating
+              ? 'bg-slate-400 cursor-not-allowed'
+              : 'bg-blue-600 hover:bg-blue-700 text-white'
+          }`}
+        >
+          {isGenerating && (
+            <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
+              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none"></circle>
+              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+            </svg>
+          )}
+          {isGenerating ? progressMessage : '献立を生成する'}
+        </button>
+
+        {isGenerating && (
+          <p className="mt-4 text-sm text-slate-500">
+            アニーリング計算中です。しばらくお待ちください...
+          </p>
+        )}
+      </div>
+
+      {/* 説明 */}
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
+        <h4 className="text-sm font-bold text-blue-900 mb-2">📘 最適化について</h4>
+        <p className="text-sm text-blue-800">
+          Fixstars Amplify AE（アニーリングマシン）を使用して、
+          栄養価・費用・ジャンルの統一・多様性などの制約を満たす最適な献立を生成します。
+          計算には数秒〜数十秒かかる場合があります。
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default RecipeCreation;

@@ -1,0 +1,17 @@
+{
+  "menu_id": "M000000104",
+  "menu_name": "キャベツのソテー",
+  "ingredients": [],
+  "nutrition": {
+    "energy_kcal": 45.2,
+    "protein_g": 1.8,
+    "fat_g": 0.9,
+    "carbohydrate_g": 4.5,
+    "salt_g": 0.2
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

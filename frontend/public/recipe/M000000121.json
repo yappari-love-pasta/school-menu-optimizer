@@ -1,0 +1,19 @@
+{
+  "menu_id": "M000000121",
+  "menu_name": "スタミナ丼の具",
+  "ingredients": [
+    "豚肉"
+  ],
+  "nutrition": {
+    "energy_kcal": 291.2,
+    "protein_g": 10.9,
+    "fat_g": 7.3,
+    "carbohydrate_g": 43.7,
+    "salt_g": 1.4
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

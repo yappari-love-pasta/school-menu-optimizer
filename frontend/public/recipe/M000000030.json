@@ -1,0 +1,17 @@
+{
+  "menu_id": "M000000030",
+  "menu_name": "ごはん",
+  "ingredients": [],
+  "nutrition": {
+    "energy_kcal": 226.5,
+    "protein_g": 3.6,
+    "fat_g": 0.5,
+    "carbohydrate_g": 49.8,
+    "salt_g": 0
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

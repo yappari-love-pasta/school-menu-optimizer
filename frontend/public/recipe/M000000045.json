@@ -1,0 +1,19 @@
+{
+  "menu_id": "M000000045",
+  "menu_name": "さんまの甘露煮",
+  "ingredients": [
+    "さんま"
+  ],
+  "nutrition": {
+    "energy_kcal": 97.5,
+    "protein_g": 11.7,
+    "fat_g": 4.9,
+    "carbohydrate_g": 2.9,
+    "salt_g": 0.8
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

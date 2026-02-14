@@ -1,0 +1,19 @@
+{
+  "menu_id": "M000000074",
+  "menu_name": "ほきのチリソースあえ",
+  "ingredients": [
+    "ホキ"
+  ],
+  "nutrition": {
+    "energy_kcal": 49.5,
+    "protein_g": 2.2,
+    "fat_g": 2.2,
+    "carbohydrate_g": 5.5,
+    "salt_g": 0.5
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

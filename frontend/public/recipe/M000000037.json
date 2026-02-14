@@ -1,0 +1,21 @@
+{
+  "menu_id": "M000000037",
+  "menu_name": "さつま芋のクリームシチュー",
+  "ingredients": [
+    "鶏肉",
+    "ベーコン",
+    "調理用牛乳"
+  ],
+  "nutrition": {
+    "energy_kcal": 126.5,
+    "protein_g": 6.4,
+    "fat_g": 7.4,
+    "carbohydrate_g": 9.3,
+    "salt_g": 0.2
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

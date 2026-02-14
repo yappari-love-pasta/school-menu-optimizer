@@ -1,0 +1,20 @@
+{
+  "menu_id": "M000000107",
+  "menu_name": "キャロットピラフ",
+  "ingredients": [
+    "鶏肉",
+    "ベーコン"
+  ],
+  "nutrition": {
+    "energy_kcal": 122.6,
+    "protein_g": 10.2,
+    "fat_g": 7.2,
+    "carbohydrate_g": 5.1,
+    "salt_g": 1
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

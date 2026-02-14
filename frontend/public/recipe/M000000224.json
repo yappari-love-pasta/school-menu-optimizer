@@ -1,0 +1,22 @@
+{
+  "menu_id": "M000000224",
+  "menu_name": "豚玉丼",
+  "ingredients": [
+    "豚肉",
+    "たまご",
+    "高野豆腐",
+    "削り節"
+  ],
+  "nutrition": {
+    "energy_kcal": 295.2,
+    "protein_g": 11.1,
+    "fat_g": 7.4,
+    "carbohydrate_g": 44.3,
+    "salt_g": 1.4
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

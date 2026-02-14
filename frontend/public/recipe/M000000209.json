@@ -1,0 +1,22 @@
+{
+  "menu_id": "M000000209",
+  "menu_name": "白菜のみそ汁",
+  "ingredients": [
+    "豆腐",
+    "赤みそ",
+    "白みそ",
+    "削り節"
+  ],
+  "nutrition": {
+    "energy_kcal": 62,
+    "protein_g": 4.1,
+    "fat_g": 2.1,
+    "carbohydrate_g": 6.2,
+    "salt_g": 1.2
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

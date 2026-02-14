@@ -1,0 +1,19 @@
+{
+  "menu_id": "M000000009",
+  "menu_name": "いもなんば",
+  "ingredients": [
+    "油揚げ"
+  ],
+  "nutrition": {
+    "energy_kcal": 47,
+    "protein_g": 1.9,
+    "fat_g": 0.9,
+    "carbohydrate_g": 4.7,
+    "salt_g": 0.2
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

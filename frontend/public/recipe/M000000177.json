@@ -1,0 +1,19 @@
+{
+  "menu_id": "M000000177",
+  "menu_name": "大根サラダ",
+  "ingredients": [
+    "まぐろオイル漬け"
+  ],
+  "nutrition": {
+    "energy_kcal": 48.7,
+    "protein_g": 2.2,
+    "fat_g": 2.2,
+    "carbohydrate_g": 5.4,
+    "salt_g": 0.5
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

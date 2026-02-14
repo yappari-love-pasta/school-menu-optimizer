@@ -1,0 +1,17 @@
+{
+  "menu_id": "M000000076",
+  "menu_name": "みかん",
+  "ingredients": [],
+  "nutrition": {
+    "energy_kcal": 39,
+    "protein_g": 0.3,
+    "fat_g": 0.1,
+    "carbohydrate_g": 9.8,
+    "salt_g": 0
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

@@ -1,0 +1,17 @@
+{
+  "menu_id": "M000000100",
+  "menu_name": "キャベツとたくあんの和え物",
+  "ingredients": [],
+  "nutrition": {
+    "energy_kcal": 40.8,
+    "protein_g": 1.8,
+    "fat_g": 1.8,
+    "carbohydrate_g": 4.5,
+    "salt_g": 0.5
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

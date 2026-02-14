@@ -1,0 +1,22 @@
+{
+  "menu_id": "M000000048",
+  "menu_name": "じゃが芋のみそ汁",
+  "ingredients": [
+    "油揚げ",
+    "赤みそ",
+    "白みそ",
+    "削り節"
+  ],
+  "nutrition": {
+    "energy_kcal": 54.2,
+    "protein_g": 3.6,
+    "fat_g": 1.8,
+    "carbohydrate_g": 5.4,
+    "salt_g": 1.1
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

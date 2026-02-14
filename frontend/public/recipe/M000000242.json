@@ -1,0 +1,20 @@
+{
+  "menu_id": "M000000242",
+  "menu_name": "高野豆腐の中華煮",
+  "ingredients": [
+    "高野豆腐",
+    "豚肉"
+  ],
+  "nutrition": {
+    "energy_kcal": 130.2,
+    "protein_g": 10.8,
+    "fat_g": 7.6,
+    "carbohydrate_g": 5.4,
+    "salt_g": 1.1
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

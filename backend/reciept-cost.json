@@ -1,0 +1,3181 @@
+[
+    {
+        "uid": "yokosuka",
+        "cost": 1.3,
+        "updated_at": null,
+        "id": 1,
+        "food_id": 168,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "あじ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 168
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.5,
+        "updated_at": null,
+        "id": 2,
+        "food_id": 121,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "いわし",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 121
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 3.0,
+        "updated_at": null,
+        "id": 3,
+        "food_id": 174,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "うずら卵水煮",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 174
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.5,
+        "updated_at": null,
+        "id": 4,
+        "food_id": 150,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "えのき",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 150
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 4.0,
+        "updated_at": null,
+        "id": 5,
+        "food_id": 184,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "かじき",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:31",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 184
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 4.0,
+        "updated_at": null,
+        "id": 6,
+        "food_id": 35,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "かつお節",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 35
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.5,
+        "updated_at": null,
+        "id": 7,
+        "food_id": 16,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "かぼちゃ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 16
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 3.0,
+        "updated_at": null,
+        "id": 8,
+        "food_id": 60,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "からし粉",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 60
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.0,
+        "updated_at": null,
+        "id": 9,
+        "food_id": 56,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "かんづめの汁",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 56
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 5.0,
+        "updated_at": null,
+        "id": 10,
+        "food_id": 182,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "かんぴょう",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:31",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 182
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.4,
+        "updated_at": null,
+        "id": 11,
+        "food_id": 84,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "きゅうり",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 84
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.9,
+        "updated_at": null,
+        "id": 12,
+        "food_id": 138,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "きよみ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 138
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 3.0,
+        "updated_at": null,
+        "id": 13,
+        "food_id": 132,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "こしょう",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 132
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.6,
+        "updated_at": null,
+        "id": 14,
+        "food_id": 41,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "こんにゃく",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 41
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.6,
+        "updated_at": null,
+        "id": 15,
+        "food_id": 170,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "ごぼう",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 170
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 2.0,
+        "updated_at": null,
+        "id": 16,
+        "food_id": 78,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "ごま油",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 78
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 2.0,
+        "updated_at": null,
+        "id": 17,
+        "food_id": 40,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "さけ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 40
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.5,
+        "updated_at": null,
+        "id": 18,
+        "food_id": 44,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "さつまいも",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 44
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 19,
+        "food_id": 124,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "さつま揚げ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 124
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.3,
+        "updated_at": null,
+        "id": 20,
+        "food_id": 81,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "さとう",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 81
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.5,
+        "updated_at": null,
+        "id": 21,
+        "food_id": 48,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "さば",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 48
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.2,
+        "updated_at": null,
+        "id": 22,
+        "food_id": 57,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "さわら",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 57
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 4.0,
+        "updated_at": null,
+        "id": 23,
+        "food_id": 109,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "しいら",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 109
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 24,
+        "food_id": 72,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "しめじ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 72
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 2.0,
+        "updated_at": null,
+        "id": 25,
+        "food_id": 164,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "しょうが",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 164
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.4,
+        "updated_at": null,
+        "id": 26,
+        "food_id": 1,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "しょうゆ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 1
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.4,
+        "updated_at": null,
+        "id": 27,
+        "food_id": 15,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "しらたき",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 15
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.4,
+        "updated_at": null,
+        "id": 28,
+        "food_id": 141,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "じゃがいも",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 141
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.8,
+        "updated_at": null,
+        "id": 29,
+        "food_id": 91,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "すだちゼリー",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 91
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.5,
+        "updated_at": null,
+        "id": 30,
+        "food_id": 148,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "せんべい",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 148
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.7,
+        "updated_at": null,
+        "id": 31,
+        "food_id": 17,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "そうめん",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 17
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.55,
+        "updated_at": null,
+        "id": 32,
+        "food_id": 29,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "たけのこ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 29
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 33,
+        "food_id": 171,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "ちくわ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 171
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.4,
+        "updated_at": null,
+        "id": 34,
+        "food_id": 163,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "つきこんにゃく",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 163
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.85,
+        "updated_at": null,
+        "id": 35,
+        "food_id": 33,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "とろけるチーズ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 33
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.8,
+        "updated_at": null,
+        "id": 36,
+        "food_id": 118,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "なす",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 118
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 2.0,
+        "updated_at": null,
+        "id": 37,
+        "food_id": 95,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "にら",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 95
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 2.0,
+        "updated_at": null,
+        "id": 38,
+        "food_id": 154,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "にんにく",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 154
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 39,
+        "food_id": 111,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "のり",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 111
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 2.0,
+        "updated_at": null,
+        "id": 40,
+        "food_id": 139,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "ひじき",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 139
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 2.0,
+        "updated_at": null,
+        "id": 41,
+        "food_id": 9,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "ひじきつくだ煮",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 9
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 2.7,
+        "updated_at": null,
+        "id": 42,
+        "food_id": 54,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "ひなあられ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 54
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.5,
+        "updated_at": null,
+        "id": 43,
+        "food_id": 22,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "ひよこ豆（ボイル）",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 22
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.3,
+        "updated_at": null,
+        "id": 44,
+        "food_id": 146,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "ぶどうダイスゼリー",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 146
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.978,
+        "updated_at": null,
+        "id": 45,
+        "food_id": 115,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "ぶどうパン",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 115
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.5,
+        "updated_at": null,
+        "id": 46,
+        "food_id": 180,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "ほうれん草",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:31",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 180
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.8,
+        "updated_at": null,
+        "id": 47,
+        "food_id": 126,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "まいたけ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 126
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.2,
+        "updated_at": null,
+        "id": 48,
+        "food_id": 158,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "みかんダイスゼリー",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 158
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 2.0,
+        "updated_at": null,
+        "id": 49,
+        "food_id": 188,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "みかん缶",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:31",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 188
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.35,
+        "updated_at": null,
+        "id": 50,
+        "food_id": 30,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "みりん",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 30
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.3,
+        "updated_at": null,
+        "id": 51,
+        "food_id": 42,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "もち米",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 42
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.1,
+        "updated_at": null,
+        "id": 52,
+        "food_id": 10,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "もやし",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 10
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.6,
+        "updated_at": null,
+        "id": 53,
+        "food_id": 128,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "ゆず果汁",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 128
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 3.0,
+        "updated_at": null,
+        "id": 54,
+        "food_id": 28,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "りんごのタルト",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 28
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 2.9,
+        "updated_at": null,
+        "id": 55,
+        "food_id": 167,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "りんごジャム",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 167
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.6,
+        "updated_at": null,
+        "id": 56,
+        "food_id": 98,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "りんごゼリー（食物繊維）",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 98
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 2.0,
+        "updated_at": null,
+        "id": 57,
+        "food_id": 157,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "りんご缶",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 157
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 2.0,
+        "updated_at": null,
+        "id": 58,
+        "food_id": 169,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "わかめ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 169
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 3.0,
+        "updated_at": null,
+        "id": 59,
+        "food_id": 89,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "わかめごはんの素",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 89
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 60,
+        "food_id": 134,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "アルファベットマカロニ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 134
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 61,
+        "food_id": 83,
+        "created_at": "2024-01-25T19:27:17",
+        "food": {
+            "name": "ウインナーソーセージ（鉄）",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 83
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 62,
+        "food_id": 76,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "ウェーブワンタン",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 76
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.26,
+        "updated_at": null,
+        "id": 63,
+        "food_id": 155,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "ウスターソース",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 155
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 64,
+        "food_id": 176,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "エリンギ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 176
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.36,
+        "updated_at": null,
+        "id": 65,
+        "food_id": 45,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "オイスターソース",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 45
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.1,
+        "updated_at": null,
+        "id": 66,
+        "food_id": 114,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "オリーブ油",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 114
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 2.3,
+        "updated_at": null,
+        "id": 67,
+        "food_id": 122,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "カレー粉",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 122
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.2,
+        "updated_at": null,
+        "id": 68,
+        "food_id": 13,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "キャベツ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 13
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.86,
+        "updated_at": null,
+        "id": 69,
+        "food_id": 178,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "ギョウザ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:31",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 178
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.6,
+        "updated_at": null,
+        "id": 70,
+        "food_id": 5,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "クミン",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 5
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.56,
+        "updated_at": null,
+        "id": 71,
+        "food_id": 82,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "クリームコーン",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 82
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.6,
+        "updated_at": null,
+        "id": 72,
+        "food_id": 43,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "グリンピース",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 43
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.15,
+        "updated_at": null,
+        "id": 73,
+        "food_id": 130,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "コチジャン",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 130
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.796,
+        "updated_at": null,
+        "id": 74,
+        "food_id": 143,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "コッペパン",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 143
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.4,
+        "updated_at": null,
+        "id": 75,
+        "food_id": 51,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "サラダ油",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 51
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.5,
+        "updated_at": null,
+        "id": 76,
+        "food_id": 70,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "シェルマカロニ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 70
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.36,
+        "updated_at": null,
+        "id": 77,
+        "food_id": 14,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "スパゲッティ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 14
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.36,
+        "updated_at": null,
+        "id": 78,
+        "food_id": 123,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "スパゲッティー",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 123
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.1,
+        "updated_at": null,
+        "id": 79,
+        "food_id": 177,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "セロリ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 177
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.92,
+        "updated_at": null,
+        "id": 80,
+        "food_id": 94,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "ソフトフランス",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 94
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.1,
+        "updated_at": null,
+        "id": 81,
+        "food_id": 153,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "ターメリック",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 153
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.5,
+        "updated_at": null,
+        "id": 82,
+        "food_id": 136,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "ダイストマト",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 136
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.3,
+        "updated_at": null,
+        "id": 83,
+        "food_id": 99,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "チリパウダー",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 99
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.056,
+        "updated_at": null,
+        "id": 84,
+        "food_id": 183,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "チーズパンB",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:31",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 183
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 2.0,
+        "updated_at": null,
+        "id": 85,
+        "food_id": 187,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "ツナ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:31",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 187
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.8,
+        "updated_at": null,
+        "id": 86,
+        "food_id": 50,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "デミグラスソース",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 50
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.6,
+        "updated_at": null,
+        "id": 87,
+        "food_id": 80,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "トック",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 80
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.47,
+        "updated_at": null,
+        "id": 88,
+        "food_id": 73,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "トマト",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 73
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.4,
+        "updated_at": null,
+        "id": 89,
+        "food_id": 7,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "トマトケチャップ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 7
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.48,
+        "updated_at": null,
+        "id": 90,
+        "food_id": 110,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "トマトピューレ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 110
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 2.7,
+        "updated_at": null,
+        "id": 91,
+        "food_id": 8,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "ナツメグ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 8
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.8,
+        "updated_at": null,
+        "id": 92,
+        "food_id": 144,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "ハム",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 144
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.5,
+        "updated_at": null,
+        "id": 93,
+        "food_id": 127,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "バター",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 127
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 94,
+        "food_id": 63,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "パイン缶",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 63
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 95,
+        "food_id": 100,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "パプリカ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 100
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.7,
+        "updated_at": null,
+        "id": 96,
+        "food_id": 159,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "パン粉",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 159
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 97,
+        "food_id": 58,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "ビーフン",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 58
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 98,
+        "food_id": 77,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "ピーマン",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 77
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.25,
+        "updated_at": null,
+        "id": 99,
+        "food_id": 3,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "プルーン発酵乳",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 3
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.8,
+        "updated_at": null,
+        "id": 100,
+        "food_id": 113,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "プレーンヨーグルト",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 113
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 10.0,
+        "updated_at": null,
+        "id": 101,
+        "food_id": 88,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "ベイリーフ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 88
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 2.5,
+        "updated_at": null,
+        "id": 102,
+        "food_id": 172,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "ベビーチーズ（鉄）",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 172
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.4,
+        "updated_at": null,
+        "id": 103,
+        "food_id": 59,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "ベーコン",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 59
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 2.3,
+        "updated_at": null,
+        "id": 104,
+        "food_id": 24,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "ホキ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 24
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.8,
+        "updated_at": null,
+        "id": 105,
+        "food_id": 61,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "ホールコーン",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 61
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.6,
+        "updated_at": null,
+        "id": 106,
+        "food_id": 67,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "マカロニ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 67
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.8,
+        "updated_at": null,
+        "id": 107,
+        "food_id": 90,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "マッシュルーム",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 90
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 108,
+        "food_id": 140,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "ヨーグルト（鉄）",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 140
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 4.0,
+        "updated_at": null,
+        "id": 109,
+        "food_id": 71,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "ローリエ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 71
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.4,
+        "updated_at": null,
+        "id": 110,
+        "food_id": 179,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "一味とうがらし",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:31",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 179
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.4,
+        "updated_at": null,
+        "id": 111,
+        "food_id": 173,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "三温糖",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 173
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.36,
+        "updated_at": null,
+        "id": 112,
+        "food_id": 46,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "中濃ソース",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 46
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.8,
+        "updated_at": null,
+        "id": 113,
+        "food_id": 2,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "中華麺",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 2
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.7,
+        "updated_at": null,
+        "id": 114,
+        "food_id": 47,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "乾燥バジル",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 47
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 4.0,
+        "updated_at": null,
+        "id": 115,
+        "food_id": 112,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "乾燥パセリ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 112
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.2,
+        "updated_at": null,
+        "id": 116,
+        "food_id": 64,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "人参",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 64
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 117,
+        "food_id": 186,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "冷凍油揚げ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:31",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 186
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 118,
+        "food_id": 149,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "冷凍生揚げ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 149
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.5,
+        "updated_at": null,
+        "id": 119,
+        "food_id": 53,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "冷凍豆腐",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 53
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 6.1,
+        "updated_at": null,
+        "id": 120,
+        "food_id": 68,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "凍り豆腐",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 68
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.95,
+        "updated_at": null,
+        "id": 121,
+        "food_id": 116,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "切り干し大根",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 116
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.75,
+        "updated_at": null,
+        "id": 122,
+        "food_id": 39,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "卵",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 39
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.9,
+        "updated_at": null,
+        "id": 123,
+        "food_id": 96,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "卵ぬきマヨネーズ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 96
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 11.0,
+        "updated_at": null,
+        "id": 124,
+        "food_id": 32,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "味のり",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 32
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 125,
+        "food_id": 175,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "味付けおかか",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 175
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.2,
+        "updated_at": null,
+        "id": 126,
+        "food_id": 6,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "塩",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 6
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.9,
+        "updated_at": null,
+        "id": 127,
+        "food_id": 161,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "塩こうじ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 161
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.2,
+        "updated_at": null,
+        "id": 128,
+        "food_id": 131,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "大根",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 131
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.5,
+        "updated_at": null,
+        "id": 129,
+        "food_id": 189,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "大豆",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:31",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 189
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.5,
+        "updated_at": null,
+        "id": 130,
+        "food_id": 108,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "大豆フレーク",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 108
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.2,
+        "updated_at": null,
+        "id": 131,
+        "food_id": 117,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "大豆ミート",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 117
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.9,
+        "updated_at": null,
+        "id": 132,
+        "food_id": 107,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "大豆（ボイル）",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 107
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.1,
+        "updated_at": null,
+        "id": 133,
+        "food_id": 87,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "小松菜",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 87
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 134,
+        "food_id": 156,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "小豆",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 156
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.26,
+        "updated_at": null,
+        "id": 135,
+        "food_id": 181,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "小麦粉",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:31",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 181
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.1,
+        "updated_at": null,
+        "id": 136,
+        "food_id": 162,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "干しうどん",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 162
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 3.4,
+        "updated_at": null,
+        "id": 137,
+        "food_id": 23,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "干し椎茸",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 23
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 3.4,
+        "updated_at": null,
+        "id": 138,
+        "food_id": 55,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "昆布",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 55
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 139,
+        "food_id": 104,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "枝豆",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 104
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.0,
+        "updated_at": null,
+        "id": 140,
+        "food_id": 101,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "水",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 101
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.5,
+        "updated_at": null,
+        "id": 141,
+        "food_id": 135,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "油",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 135
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 142,
+        "food_id": 37,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "濃縮スープ（チキン）",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 37
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 143,
+        "food_id": 21,
+        "created_at": "2024-01-25T19:27:18",
+        "food": {
+            "name": "濃縮スープ（ポーク）",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 21
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 144,
+        "food_id": 65,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "炒め玉ねぎ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 65
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.4,
+        "updated_at": null,
+        "id": 145,
+        "food_id": 145,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "片栗粉",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 145
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.6,
+        "updated_at": null,
+        "id": 146,
+        "food_id": 20,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "牛肉",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 20
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.2,
+        "updated_at": null,
+        "id": 147,
+        "food_id": 26,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "玉ねぎ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 26
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.2,
+        "updated_at": null,
+        "id": 148,
+        "food_id": 120,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "甜面醤",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 120
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 2.0,
+        "updated_at": null,
+        "id": 149,
+        "food_id": 86,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "生クリーム",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 86
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 150,
+        "food_id": 151,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "発酵乳",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 151
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.9,
+        "updated_at": null,
+        "id": 151,
+        "food_id": 166,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "白ごま",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 166
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.5,
+        "updated_at": null,
+        "id": 152,
+        "food_id": 74,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "白みそ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 74
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.7,
+        "updated_at": null,
+        "id": 153,
+        "food_id": 18,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "白ワイン",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 18
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.5,
+        "updated_at": null,
+        "id": 154,
+        "food_id": 12,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "白玉もち",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 12
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.25,
+        "updated_at": null,
+        "id": 155,
+        "food_id": 103,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "白菜",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 103
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 156,
+        "food_id": 147,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "白菜キムチ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 147
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.25,
+        "updated_at": null,
+        "id": 157,
+        "food_id": 92,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "福神漬",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 92
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.2,
+        "updated_at": null,
+        "id": 158,
+        "food_id": 133,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "福豆",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 133
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.42,
+        "updated_at": null,
+        "id": 159,
+        "food_id": 185,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "米",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:31",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 185
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 160,
+        "food_id": 34,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "米粉",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 34
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.7,
+        "updated_at": null,
+        "id": 161,
+        "food_id": 4,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "米粉マカロニ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 4
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.42,
+        "updated_at": null,
+        "id": 162,
+        "food_id": 27,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "米（委託炊飯）",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 27
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 3.0,
+        "updated_at": null,
+        "id": 163,
+        "food_id": 125,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "粉チーズ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 125
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 164,
+        "food_id": 69,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "緑豆春雨",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 69
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.6,
+        "updated_at": null,
+        "id": 165,
+        "food_id": 31,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "肉団子",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 31
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 166,
+        "food_id": 93,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "脱脂粉乳",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 93
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.6,
+        "updated_at": null,
+        "id": 167,
+        "food_id": 38,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "蒸し麺",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 38
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.7,
+        "updated_at": null,
+        "id": 168,
+        "food_id": 165,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "調理用牛乳",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 165
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.2,
+        "updated_at": null,
+        "id": 169,
+        "food_id": 11,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "豆板醤",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 11
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 170,
+        "food_id": 142,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "豚ひき肉",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 142
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 2.7,
+        "updated_at": null,
+        "id": 171,
+        "food_id": 137,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "豚肉",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 137
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.35,
+        "updated_at": null,
+        "id": 172,
+        "food_id": 160,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "赤みそ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 160
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 173,
+        "food_id": 79,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "赤ワイン",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 79
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.25,
+        "updated_at": null,
+        "id": 174,
+        "food_id": 105,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "酒",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 105
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.2,
+        "updated_at": null,
+        "id": 175,
+        "food_id": 119,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "酢",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 119
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 176,
+        "food_id": 66,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "金時豆（ボイル）",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 66
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 2.5,
+        "updated_at": null,
+        "id": 177,
+        "food_id": 25,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "銀ひらす",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 25
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 178,
+        "food_id": 106,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "長ねぎ",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 106
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 3.0,
+        "updated_at": null,
+        "id": 179,
+        "food_id": 62,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "青のり",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 62
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.796,
+        "updated_at": null,
+        "id": 180,
+        "food_id": 49,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "食パン",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 49
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 2.0,
+        "updated_at": null,
+        "id": 181,
+        "food_id": 36,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "鶏ひき肉",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 36
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 182,
+        "food_id": 85,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "鶏肉",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 85
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.44,
+        "updated_at": null,
+        "id": 183,
+        "food_id": 102,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "麦",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 102
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 1.0,
+        "updated_at": null,
+        "id": 184,
+        "food_id": 152,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "黒ごま",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 152
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.8,
+        "updated_at": null,
+        "id": 185,
+        "food_id": 97,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "黒ざとう",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:30",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 97
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 0.91,
+        "updated_at": null,
+        "id": 186,
+        "food_id": 19,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "黒パン",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 19
+        }
+    },
+    {
+        "uid": "yokosuka",
+        "cost": 2.2,
+        "updated_at": null,
+        "id": 187,
+        "food_id": 75,
+        "created_at": "2024-01-25T19:27:19",
+        "food": {
+            "name": "いか",
+            "active": 1,
+            "created_at": "2024-01-25T19:24:29",
+            "uid": "yokosuka",
+            "nutrients": {},
+            "updated_at": null,
+            "id": 75
+        }
+    }
+]

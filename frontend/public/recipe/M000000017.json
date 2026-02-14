@@ -1,0 +1,17 @@
+{
+  "menu_id": "M000000017",
+  "menu_name": "えんどうごはん",
+  "ingredients": [],
+  "nutrition": {
+    "energy_kcal": 248,
+    "protein_g": 4,
+    "fat_g": 0.5,
+    "carbohydrate_g": 54.6,
+    "salt_g": 0
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}

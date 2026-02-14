@@ -1,0 +1,19 @@
+{
+  "menu_id": "M000000039",
+  "menu_name": "さばのカレー煮",
+  "ingredients": [
+    "さば"
+  ],
+  "nutrition": {
+    "energy_kcal": 260.1,
+    "protein_g": 7.4,
+    "fat_g": 9.3,
+    "carbohydrate_g": 37.2,
+    "salt_g": 1.9
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は別途定義してください。"
+  ],
+  "notes": "本データは生成AIが作成した仮データです。"
+}
