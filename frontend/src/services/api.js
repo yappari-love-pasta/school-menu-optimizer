@@ -153,8 +153,43 @@ export const loadJSON = async (filename) => {
  */
 export const loadRecipe = async (menuId) => {
   try {
-    const response = await axios.get(`/recipe/${menuId}.json`);
-    return response.data;
+    // menuId から数値IDを抽出 (M000000001 -> 1)
+    const recipeId = parseInt(menuId.replace('M', ''), 10);
+
+    // reciept.json から全レシピを取得
+    const recipes = await loadJSON('reciept.json');
+
+    // 該当するレシピを検索
+    const recipe = recipes.find(r => r.id === recipeId);
+
+    if (!recipe) {
+      throw new Error(`Recipe with ID ${menuId} not found`);
+    }
+
+    // カテゴリマッピング
+    const categoryMap = {
+      1: '主食',
+      2: '主菜',
+      3: '副菜',
+      4: '汁物',
+      5: 'デザート'
+    };
+
+    // フロントエンドが期待する形式に変換
+    return {
+      menu_id: menuId,
+      menu_name: recipe.title,
+      category: categoryMap[recipe.category] || '未分類',
+      nutrition: {
+        energy_kcal: recipe.nutritions?.['エネルギー'] || 0,
+        protein_g: recipe.nutritions?.['たんぱく質'] || 0,
+        fat_g: recipe.nutritions?.['脂質'] || 0,
+        carbohydrate_g: 0, // reciept.jsonには炭水化物情報がない
+        salt_g: recipe.nutritions?.['ナトリウム'] ? (recipe.nutritions['ナトリウム'] / 400).toFixed(1) : 0 // ナトリウム(mg)を食塩相当量(g)に変換
+      },
+      ingredients: recipe.ingredients ? recipe.ingredients.map(ing => `${ing.name} ${ing.amount}g`) : [],
+      notes: recipe.note || ''
+    };
   } catch (error) {
     console.error(`Failed to load recipe ${menuId}:`, error);
     throw new Error(`レシピ ${menuId} の読み込みに失敗しました`);
@@ -167,32 +202,29 @@ export const loadRecipe = async (menuId) => {
  */
 export const getRecipes = async () => {
   try {
-    // 新しいバックエンドにレシピ取得エンドポイントがない場合は、
-    // ローカルのJSONファイルから読み込む
-    const response = await loadJSON('school_lunch_menu_neyagawa.json');
+    // backend/reciept.json からレシピを読み込む
+    const response = await loadJSON('reciept.json');
 
     // JSONからレシピ一覧を抽出
     const recipes = [];
-    if (response.months && Array.isArray(response.months)) {
-      response.months.forEach(month => {
-        if (month.days && Array.isArray(month.days)) {
-          month.days.forEach(day => {
-            if (day.menus && Array.isArray(day.menus)) {
-              day.menus.forEach(menu => {
-                // 重複を避けるためmenu_idでチェック
-                if (!recipes.find(r => r.menu_id === menu.menu_id)) {
-                  recipes.push({
-                    menu_id: menu.menu_id,
-                    name: menu.menu_name,
-                    category: '未分類', // カテゴリ情報がない場合
-                    ingredients: menu.ingredients || [],
-                    nutrition: menu.nutrition || {}
-                  });
-                }
-              });
-            }
-          });
-        }
+    if (Array.isArray(response)) {
+      response.forEach(recipe => {
+        // カテゴリマッピング
+        const categoryMap = {
+          1: '主食',
+          2: '主菜',
+          3: '副菜',
+          4: '汁物',
+          5: 'デザート'
+        };
+
+        recipes.push({
+          menu_id: `M${String(recipe.id).padStart(9, '0')}`, // id を M000000001 形式に変換
+          name: recipe.title,
+          category: categoryMap[recipe.category] || '未分類',
+          ingredients: recipe.ingredients || [],
+          nutrition: recipe.nutritions || {}
+        });
       });
     }
 
