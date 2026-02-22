@@ -13,7 +13,7 @@ const apiClient = axios.create({
   headers: {
     'Content-Type': 'application/json',
   },
-  timeout: 300000, // 300秒のタイムアウト（量子アニーリング計算は時間がかかる）
+  timeout: 70000, // 70秒のタイムアウト（量子アニーリング計算は時間がかかる）
 });
 
 /**
@@ -21,6 +21,8 @@ const apiClient = axios.create({
  * @param {Object} params - リクエストパラメータ
  * @param {number} params.days - 献立を作成する日数（通常は5）
  * @param {number} params.cost - M日間の合計コスト目標値（円）
+ * @param {string} [params.school_id] - 小学校ID（オプション、デフォルト: "default_school"）
+ * @param {string} [params.target_year_month] - 対象年月（YYYY-MM-DD形式、オプション）
  * @param {Object} params.history - 履歴データ（現在は未使用）
  * @returns {Promise} APIレスポンス
  */
@@ -61,7 +63,11 @@ export const generateMenu = async (params) => {
     // 新しいバックエンドAPIのリクエスト形式に変換
     const apiParams = {
       M: params.days || 5,  // 献立日数
-      cost: params.cost || 1500.0  // M日間の合計コスト目標値
+      cost: params.cost || 1500.0,  // M日間の合計コスト目標値
+      save_to_db: true,  // データベースに保存
+      school_id: params.school_id || 9999,  // 小学校ID
+      target_year_month: params.target_year_month || null,  // 対象年月（YYYY-MM-DD形式）
+      target_week: params.target_week || null  // 対象週（1〜5、NULLも可）
     };
 
     console.log('📤 Request to /optimize:', apiParams);
@@ -235,9 +241,40 @@ export const getRecipes = async () => {
   }
 };
 
+/**
+ * 保存された献立を取得する
+ * @param {Object} params - リクエストパラメータ
+ * @param {number} [params.school_id=1] - 小学校ID
+ * @param {string} [params.target_year_month] - 対象年月（YYYY-MM-DD形式）
+ * @param {number} [params.target_week] - 対象週（1〜5、省略時は月全体のすべての週を取得）
+ * @returns {Promise} APIレスポンス（target_week指定時は単一オブジェクト、未指定時は{menus: []}）
+ */
+export const getSavedMenu = async (params = {}) => {
+  try {
+    const { school_id = 1, target_year_month, target_week } = params;
+
+    const response = await apiClient.post('/get_menu', {
+      school_id,
+      target_year_month,
+      target_week,
+    });
+
+    console.log('✅ Saved menu retrieved successfully:', response.data);
+    return response.data;
+  } catch (error) {
+    if (error.response && error.response.status === 404) {
+      console.log('ℹ️ No saved menu found for the specified parameters');
+      return null;
+    }
+    console.error('Failed to get saved menu:', error);
+    throw error;
+  }
+};
+
 export default {
   generateMenu,
   loadJSON,
   loadRecipe,
   getRecipes,
+  getSavedMenu,
 };

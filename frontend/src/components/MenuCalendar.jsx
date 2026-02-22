@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { getSavedMenu } from '../services/api';
 
 const MenuCalendar = ({ generatedMenu, selectedMonth }) => {
   // selectedMonthが渡されている場合はそれを初期値として使用
@@ -48,6 +49,168 @@ const MenuCalendar = ({ generatedMenu, selectedMonth }) => {
       setCurrentMonth(selectedMonth.month);
     }
   }, [selectedMonth]);
+
+  // データベースから保存済み献立を読み込む
+  useEffect(() => {
+    const loadSavedMenu = async () => {
+      try {
+        // 対象年月を計算（YYYY-MM-01形式）
+        const targetYearMonth = `${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-01`;
+
+        console.log('[MenuCalendar] Loading saved menu for:', targetYearMonth);
+
+        const savedData = await getSavedMenu({
+          school_id: 1, // 固定値（将来的にはログイン情報から取得）
+          target_year_month: targetYearMonth
+        });
+
+        // 複数週のデータを処理
+        if (savedData && savedData.menus && Array.isArray(savedData.menus) && savedData.menus.length > 0) {
+          console.log('[MenuCalendar] Saved menus found:', savedData.menus);
+
+          const data = {};
+
+          // 各週のデータを処理
+          savedData.menus.forEach((weekData) => {
+            if (!weekData.menu_data || !weekData.menu_data.plan) {
+              return;
+            }
+
+            const plan = weekData.menu_data.plan;
+            const targetWeek = weekData.target_week;
+
+            // plan.days配列から献立データを抽出
+            // target_year_monthから開始日を計算
+            const targetDate = new Date(weekData.target_year_month);
+            const targetYear = targetDate.getFullYear();
+            const targetMonth = targetDate.getMonth();
+
+            // 週番号に基づいて開始日を計算（1週目 = 月の最初の平日、2週目 = その5営業日後、など）
+            let firstWeekday = new Date(targetYear, targetMonth, 1);
+            while (firstWeekday.getDay() === 0 || firstWeekday.getDay() === 6) {
+              firstWeekday.setDate(firstWeekday.getDate() + 1);
+            }
+
+            // targetWeekに基づいて開始日を調整（week 1 = 0営業日後、week 2 = 5営業日後、week 3 = 10営業日後、...）
+            if (targetWeek && targetWeek > 1) {
+              let businessDaysToAdd = (targetWeek - 1) * 5;
+              let currentDate = new Date(firstWeekday);
+              let addedDays = 0;
+
+              while (addedDays < businessDaysToAdd) {
+                currentDate.setDate(currentDate.getDate() + 1);
+                if (currentDate.getDay() !== 0 && currentDate.getDay() !== 6) {
+                  addedDays++;
+                }
+              }
+              firstWeekday = currentDate;
+            }
+
+            if (plan.days && Array.isArray(plan.days)) {
+              plan.days.forEach((dayData, index) => {
+                // 最初の平日からindex営業日後の日付を計算
+                let daysAdded = 0;
+                let currentDate = new Date(firstWeekday);
+
+                while (daysAdded < index) {
+                  currentDate.setDate(currentDate.getDate() + 1);
+                  // 平日のみカウント（土日はスキップ）
+                  if (currentDate.getDay() !== 0 && currentDate.getDay() !== 6) {
+                    daysAdded++;
+                  }
+                }
+
+                const day = currentDate.getDate();
+                const month = currentDate.getMonth();
+                const year = currentDate.getFullYear();
+                const key = `${year}-${month + 1}-${day}`;
+
+                // メニューをカテゴリ付きオブジェクトに変換
+                const menus = Array.isArray(dayData.recipes) ? dayData.recipes : [];
+                let mainAssigned = false;
+
+                const categorizedMenus = menus.map(menuItem => {
+                  const displayName = menuItem.title || menuItem.name || menuItem;
+                  const menuId = menuItem.id || menuItem.menu_id || null;
+                  const categoryName = menuItem.category_name || null;
+
+                  // バックエンドからカテゴリが提供されている場合（category_name）
+                  if (categoryName) {
+                    const categoryMap = {
+                      '主食': 'main',
+                      '主菜': 'side',
+                      '副菜': 'salad',
+                      '汁物': 'soup',
+                      'デザート': 'dessert'
+                    };
+                    const mappedCategory = categoryMap[categoryName] || 'side';
+
+                    if (displayName.includes('牛乳') || displayName.includes('ミルク')) {
+                      return { name: displayName, category: 'drink', menu_id: menuId, backendCategory: categoryName };
+                    }
+
+                    return { name: displayName, category: mappedCategory, menu_id: menuId, backendCategory: categoryName };
+                  }
+
+                  // カテゴリが提供されていない場合
+                  const cat = classifyMenu(displayName);
+                  if (cat) {
+                    return { name: displayName, category: cat, menu_id: menuId };
+                  }
+
+                  if (!mainAssigned) {
+                    mainAssigned = true;
+                    return { name: displayName, category: 'main', menu_id: menuId };
+                  }
+                  return { name: displayName, category: 'side', menu_id: menuId };
+                });
+
+                // カテゴリ順にソート
+                const categoryOrder = {
+                  'main': 1,
+                  'side': 2,
+                  'salad': 3,
+                  'soup': 4,
+                  'dessert': 5,
+                  'drink': 6
+                };
+
+                const sortedMenus = categorizedMenus.sort((a, b) => {
+                  const orderA = categoryOrder[a.category] || 999;
+                  const orderB = categoryOrder[b.category] || 999;
+                  return orderA - orderB;
+                });
+
+                // daily_totalsを取得（plan.daily_totalsから対応する日のデータを探す）
+                let daily_totals = {};
+                if (plan.daily_totals && Array.isArray(plan.daily_totals)) {
+                  // dayData.dayフィールド（1, 2, 3, ...）とdaily_totalsのdayフィールドを照合
+                  const dailyTotalData = plan.daily_totals.find(dt => dt.day === dayData.day);
+                  if (dailyTotalData && dailyTotalData.totals) {
+                    daily_totals = dailyTotalData.totals;
+                  }
+                }
+
+                data[key] = {
+                  menus: sortedMenus,
+                  daily_totals: daily_totals
+                };
+              });
+            }
+          });
+
+          console.log('[MenuCalendar] Loaded menu data from DB:', data);
+          setMenuData(data);
+        } else {
+          console.log('[MenuCalendar] No saved menu found for this month');
+        }
+      } catch (error) {
+        console.error('[MenuCalendar] Failed to load saved menu:', error);
+      }
+    };
+
+    loadSavedMenu();
+  }, [currentYear, currentMonth]);
 
   useEffect(() => {
     if (generatedMenu && selectedMonth) {

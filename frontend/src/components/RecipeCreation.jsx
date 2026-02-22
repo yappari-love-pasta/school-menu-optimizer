@@ -12,11 +12,12 @@ const RecipeCreation = ({ onMenuGenerated }) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // 今週から16週分の選択肢を生成
+    // 今週から16週分の選択肢を生成 + 月単位の選択肢（3月・4月）を追加
     const generateWeekOptions = () => {
       const options = [];
       const now = new Date();
 
+      // 週単位の選択肢
       for (let i = 0; i < 16; i++) {
         // 今週の月曜日を基準に計算
         const monday = new Date(now);
@@ -33,8 +34,31 @@ const RecipeCreation = ({ onMenuGenerated }) => {
           value: `${year}-${month}-${day}`,
           label: `${year}年${month}月${day}日週 (${month}/${day} - ${friday.getMonth() + 1}/${friday.getDate()})`,
           startDate: monday,
+          days: 5,
+          type: 'week'
         });
       }
+
+      // 月単位の選択肢を追加（3月・4月固定）
+      const currentYear = now.getFullYear();
+
+      // 3月 (31日)
+      options.push({
+        value: `${currentYear}-3-1-month`,
+        label: `${currentYear}年3月 (1ヶ月分・31日間)`,
+        startDate: new Date(currentYear, 2, 1),
+        days: 31,
+        type: 'month'
+      });
+
+      // 4月 (30日)
+      options.push({
+        value: `${currentYear}-4-1-month`,
+        label: `${currentYear}年4月 (1ヶ月分・30日間)`,
+        startDate: new Date(currentYear, 3, 1),
+        days: 30,
+        type: 'month'
+      });
 
       setWeekOptions(options);
       if (options.length > 0) {
@@ -70,16 +94,64 @@ const RecipeCreation = ({ onMenuGenerated }) => {
       // 1. 履歴データを構築（ここでは空の行列を送信しない）
       const history = {};
 
-      // 2. 対象週の平日5日分固定
-      const [year, month, day] = targetWeek.split('-').map(Number);
-      const weekDays = 5; // 平日5日分固定
+      // 2. 選択された期間の情報を取得
+      const selectedOption = weekOptions.find(opt => opt.value === targetWeek);
+
+      let year, month, day, days;
+
+      if (selectedOption && selectedOption.type === 'month') {
+        // 月単位の場合
+        const parts = targetWeek.split('-');
+        year = Number(parts[0]);
+        month = Number(parts[1]);
+        day = 1;
+        days = selectedOption.days;
+      } else {
+        // 週単位の場合
+        const parts = targetWeek.split('-').map(Number);
+        year = parts[0];
+        month = parts[1];
+        day = parts[2];
+        days = 5; // 平日5日分固定
+      }
 
       // 3. バックエンドAPIを呼び出し（レシピデータはバックエンド側で構築）
-      console.log('Calling backend API with:', { days: weekDays, cost: targetCost });
+      // target_year_monthを YYYY-MM-DD 形式で作成
+      const targetYearMonth = `${year}-${String(month).padStart(2, '0')}-01`;
+
+      // 週番号を計算（日曜日始まり、1〜5）
+      let targetWeekNumber = null;
+      if (selectedOption && selectedOption.type === 'week') {
+        // その月の1日が何曜日か取得
+        const firstDayOfMonth = new Date(year, month - 1, 1);
+        const firstWeekday = firstDayOfMonth.getDay(); // 0=日曜日, 6=土曜日
+
+        // 週番号を計算（日曜日始まり）
+        // 日数 + 月初の曜日オフセット - 1 を7で割って切り上げ
+        targetWeekNumber = Math.floor((day + firstWeekday - 1) / 7) + 1;
+
+        // 週番号は1〜5の範囲に収める
+        if (targetWeekNumber < 1) {
+          targetWeekNumber = 1;
+        } else if (targetWeekNumber > 5) {
+          targetWeekNumber = 5;
+        }
+      }
+
+      console.log('Calling backend API with:', {
+        days,
+        cost: targetCost,
+        target_year_month: targetYearMonth,
+        target_week: targetWeekNumber,
+        type: selectedOption?.type
+      });
 
       const result = await generateMenu({
-        days: weekDays,
+        days: days,
         cost: targetCost,
+        target_year_month: targetYearMonth,
+        target_week: targetWeekNumber,
+        school_id: 'default_school',  // TODO: ログイン機能実装時に実際の school_id を使用
         history: history,
       });
 
@@ -109,7 +181,7 @@ const RecipeCreation = ({ onMenuGenerated }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
           <div>
             <label className="block text-sm font-medium text-slate-700 mb-1">
-              対象週（月曜日〜金曜日の5日分）
+              対象期間（週または月）
             </label>
             <select
               value={targetWeek}
@@ -139,7 +211,7 @@ const RecipeCreation = ({ onMenuGenerated }) => {
                 min="0"
                 step="100"
               />
-              <span className="text-sm text-slate-500">円/週</span>
+              <span className="text-sm text-slate-500">円</span>
             </div>
           </div>
         </div>

@@ -29,8 +29,11 @@ Content-Type: application/json
 **Body:**
 ```json
 {
-  "M": 5,           // 必須: 献立を生成する日数（1-30）
-  "cost": 1500.0    // 必須: M日間の合計コスト目標値（円）
+  "M": 5,                          // 必須: 献立を生成する日数（1-30）
+  "cost": 1500.0,                  // 必須: M日間の合計コスト目標値（円）
+  "save_to_db": true,              // オプション: データベースに保存するか
+  "school_id": "school_001",       // オプション: 小学校ID（save_to_db=trueの場合）
+  "target_year_month": "2026-03-01" // オプション: 対象年月（save_to_db=trueの場合）
 }
 ```
 
@@ -40,6 +43,9 @@ Content-Type: application/json
 |----------|-----|------|-----------|------|
 | `M` | integer | ✓ | 5 | 献立を生成する日数（1-30の範囲） |
 | `cost` | number | ✓ | 1500.0 | M日間の合計コスト目標値（円） |
+| `save_to_db` | boolean | - | false | 献立データをデータベースに保存するか |
+| `school_id` | string | - | "default_school" | 小学校ID（save_to_db=trueの場合に使用） |
+| `target_year_month` | string (DATE) | - | 現在月 | 対象年月（YYYY-MM-DD形式、月初日を指定） |
 
 #### レスポンス
 
@@ -204,6 +210,12 @@ Content-Type: application/json
 | フィールド | 型 | 説明 |
 |----------|-----|------|
 | `per_day_category_counts` | array | 日別カテゴリ出現数 |
+
+**saved_menu_id (データベース保存時のみ)**
+
+| フィールド | 型 | 説明 |
+|----------|-----|------|
+| `saved_menu_id` | integer | データベースに保存された献立のID（save_to_db=trueの場合のみ返却） |
 
 ### OPTIONS /optimize
 

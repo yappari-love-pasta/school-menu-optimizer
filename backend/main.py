@@ -26,11 +26,24 @@ import os
 import json
 from pathlib import Path
 from collections import defaultdict
+from datetime import datetime
 
 import numpy as np
 from flask import Flask, request, jsonify, make_response
 app = Flask(__name__)
 from amplify import VariableGenerator, sum, solve, AmplifyAEClient
+
+# PostgreSQL接続用
+import psycopg2
+from psycopg2.extras import Json
+
+# Cloud SQL Proxy 用（オプション）
+try:
+    from google.cloud.sql.connector import Connector
+    CLOUD_SQL_AVAILABLE = True
+except ImportError:
+    CLOUD_SQL_AVAILABLE = False
+    Connector = None
 
 
 # ============
@@ -40,6 +53,101 @@ from amplify import VariableGenerator, sum, solve, AmplifyAEClient
 # ============
 RECIPE_JSON_PATH = "reciept.json"
 COST_JSON_PATH   = "reciept-cost.json"
+
+
+# ============
+# データベース接続関数
+# ============
+def get_db_connection():
+    """PostgreSQLデータベースへの接続を取得"""
+
+    # Cloud SQL接続名が設定されている場合は Cloud SQL Proxy を使用
+    cloud_sql_connection_name = os.getenv("CLOUD_SQL_CONNECTION_NAME")
+
+    if cloud_sql_connection_name and CLOUD_SQL_AVAILABLE:
+        # Cloud SQL Proxy 経由で接続（VPC Connector 不要）
+        print(f"[INFO] Connecting to Cloud SQL via Proxy: {cloud_sql_connection_name}")
+        connector = Connector()
+
+        conn = connector.connect(
+            cloud_sql_connection_name,
+            "pg8000",
+            user=os.getenv("DB_USER", "postgres"),
+            password=os.getenv("DB_PASSWORD", ""),
+            db=os.getenv("DB_NAME", "school_menu_db")
+        )
+        return conn
+    else:
+        # 従来の TCP/IP 接続（ローカル開発環境 or VPC Connector 経由）
+        print(f"[INFO] Connecting to PostgreSQL via TCP/IP: {os.getenv('DB_HOST', 'localhost')}")
+        conn = psycopg2.connect(
+            host=os.getenv("DB_HOST", "localhost"),
+            port=os.getenv("DB_PORT", "5432"),
+            database=os.getenv("DB_NAME", "school_menu_db"),
+            user=os.getenv("DB_USER", "postgres"),
+            password=os.getenv("DB_PASSWORD", "")
+        )
+        return conn
+
+
+def save_menu_to_db(school_id, target_year_month, target_week, menu_data, total_cost, total_nutrition_avg):
+    """
+    献立データをschool_menusテーブルに保存
+
+    Args:
+        school_id: 小学校ID
+        target_year_month: 対象年月（VARCHAR(7)、YYYY-MM形式、例: "2026-03"）
+        target_week: 対象週（1〜5、NULLも可）
+        menu_data: 献立データ（JSONB）
+        total_cost: 合計コスト（円）
+        total_nutrition_avg: 平均栄養価（JSONB）
+
+    Returns:
+        menu_id: 保存された献立ID
+    """
+    conn = None
+    try:
+        conn = get_db_connection()
+        cur = conn.cursor()
+
+        # JSONデータを文字列に変換（ダブルクォートで正しくシリアライズ）
+        import json
+        menu_data_json = json.dumps(menu_data, ensure_ascii=False)
+        total_nutrition_avg_json = json.dumps(total_nutrition_avg, ensure_ascii=False)
+
+        # school_menusテーブルに挿入
+        cur.execute("""
+            INSERT INTO school_menus
+                (school_id, target_year_month, target_week, menu_data, total_cost, total_nutrition_avg, created_at)
+            VALUES
+                (%s, %s, %s, %s::jsonb, %s, %s::jsonb, CURRENT_TIMESTAMP)
+            RETURNING school_menu_id
+        """, (
+            school_id,
+            target_year_month,
+            target_week,
+            menu_data_json,
+            total_cost,
+            total_nutrition_avg_json
+        ))
+
+        result = cur.fetchone()
+        if result is None:
+            raise Exception("Failed to insert menu data")
+
+        menu_id = result[0]
+        conn.commit()
+        cur.close()
+
+        return menu_id
+
+    except Exception as e:
+        if conn:
+            conn.rollback()
+        raise e
+    finally:
+        if conn:
+            conn.close()
 
  
  
@@ -281,6 +389,7 @@ def solve_menu(
     # solve
     client = AmplifyAEClient()
     client.token = amplify_token
+    # client.parameters.timeout = 10000
     result = solve(H, client)
     best = result.best
     vals = best.values
@@ -388,7 +497,10 @@ def optimize_kondate():
     # --- request body例 ---
     # {
     #   "M": 5,
-    #   "cost": 1500.0
+    #   "cost": 1500.0,
+    #   "school_id": "school_001",
+    #   "target_year_month": "2026-03-01",
+    #   "save_to_db": true
     # }
     body = request.get_json(silent=True) or {}
 
@@ -431,12 +543,249 @@ def optimize_kondate():
             H5_MODE=h5_mode,
         )
 
+        # データベースに保存（オプション）
+        save_to_db = body.get("save_to_db", False)
+        print(f"[DEBUG] save_to_db: {save_to_db}")  # デバッグログ
+
+        if save_to_db:
+            print("[DEBUG] Starting database save...")  # デバッグログ
+            school_id = 1  # 固定値（横須賀市小学校）
+            target_year_month = body.get("target_year_month")
+            target_week = body.get("target_week")  # フロントエンドから受け取る（1〜5、NULLも可）
+
+            if not target_year_month:
+                # target_year_monthが指定されていない場合は現在の年月を使用
+                now = datetime.now()
+                target_year_month = f"{now.year}-{now.month:02d}"
+            else:
+                # YYYY-MM-DD形式の場合はYYYY-MMに変換
+                if len(target_year_month) == 10:  # YYYY-MM-DD
+                    target_year_month = target_year_month[:7]  # YYYY-MM
+
+            print(f"[DEBUG] school_id: {school_id}, target_year_month: {target_year_month}, target_week: {target_week}")  # デバッグログ
+
+            # 平均栄養価を計算
+            total_nutrition_avg = {}
+            if "plan" in result and "daily_totals" in result["plan"]:
+                daily_totals = result["plan"]["daily_totals"]
+                if len(daily_totals) > 0:
+                    # 各栄養素の平均を計算
+                    nutrition_keys = ["エネルギー", "たんぱく質", "脂質", "ナトリウム"]
+                    for key in nutrition_keys:
+                        total = sum(day["totals"].get(key, 0) for day in daily_totals if "totals" in day)
+                        total_nutrition_avg[key] = round(float(total) / len(daily_totals), 2)
+
+            print(f"[DEBUG] total_nutrition_avg: {total_nutrition_avg}")  # デバッグログ
+
+            # データベースに保存
+            try:
+                # total_costを整数に変換（データベースのINT型に合わせる）
+                total_cost_value = result.get("plan", {}).get("total_cost", 0)
+                total_cost_int = int(round(float(total_cost_value)))
+
+                menu_id = save_menu_to_db(
+                    school_id=school_id,
+                    target_year_month=target_year_month,
+                    target_week=target_week,
+                    menu_data=result,
+                    total_cost=total_cost_int,
+                    total_nutrition_avg=total_nutrition_avg
+                )
+                print(f"[DEBUG] Successfully saved to database. menu_id: {menu_id}")  # デバッグログ
+
+                # レスポンスにmenu_idを追加
+                result["saved_menu_id"] = menu_id
+            except Exception as db_error:
+                print(f"[ERROR] Database save failed: {str(db_error)}")  # エラーログ
+                import traceback
+                traceback.print_exc()  # 詳細なスタックトレースを出力
+                # エラーが発生してもレスポンスは返す（保存失敗を通知）
+                result["save_error"] = str(db_error)
+
         resp = jsonify(result)
         return _add_cors_headers(resp), 200
 
     except Exception as e:
         resp = jsonify({"error": str(e)})
         return _add_cors_headers(resp), 500
+
+
+@app.route("/get_menu", methods=["GET", "POST", "OPTIONS"])
+def get_menu():
+    """
+    保存された献立を取得するAPI
+
+    Parameters:
+        school_id (int): 小学校ID（デフォルト: 1）
+        target_year_month (str): 対象年月（YYYY-MM形式、例: "2026-03"、デフォルト: 当月）
+        target_week (int): 対象週（1〜5、省略可）
+
+    Returns:
+        JSON: 献立データ
+    """
+    if request.method == "OPTIONS":
+        return _add_cors_headers(jsonify({})), 200
+
+    try:
+        # リクエストパラメータを取得
+        if request.method == "POST":
+            body = request.get_json() or {}
+        else:  # GET
+            body = request.args.to_dict()
+
+        # school_idを取得（デフォルト: 1）
+        school_id = int(body.get("school_id", 1))
+
+        # target_year_monthを取得（デフォルト: 当月）
+        target_year_month = body.get("target_year_month")
+        if not target_year_month:
+            from datetime import datetime
+            now = datetime.now()
+            target_year_month = f"{now.year}-{now.month:02d}"
+        else:
+            # YYYY-MM-DD形式の場合はYYYY-MMに変換
+            if len(target_year_month) == 10:  # YYYY-MM-DD
+                target_year_month = target_year_month[:7]  # YYYY-MM
+
+        # target_weekを取得（オプション）
+        target_week = body.get("target_week")
+        if target_week is not None:
+            target_week = int(target_week)
+
+        print(f"[DEBUG] Getting menu for school_id={school_id}, target_year_month={target_year_month}, target_week={target_week}")
+
+        # データベースから献立を取得
+        conn = None
+        try:
+            conn = get_db_connection()
+            cur = conn.cursor()
+
+            # target_weekが指定されている場合は週単位で検索、なければ月全体のすべての週を検索
+            if target_week is not None:
+                # 指定された週の献立を取得（1件のみ）
+                cur.execute("""
+                    SELECT school_menu_id, menu_data, total_cost, total_nutrition_avg, target_week, created_at
+                    FROM school_menus
+                    WHERE school_id = %s AND target_year_month = %s AND target_week = %s
+                    ORDER BY created_at DESC
+                    LIMIT 1
+                """, (school_id, target_year_month, target_week))
+
+                result = cur.fetchone()
+                cur.close()
+
+                if result:
+                    menu_id, menu_data, total_cost, total_nutrition_avg, result_target_week, created_at = result
+
+                    # JSON文字列をパース（pg8000の場合は既にdictになっている可能性あり）
+                    if isinstance(menu_data, str):
+                        import json
+                        menu_data = json.loads(menu_data)
+                    if isinstance(total_nutrition_avg, str):
+                        import json
+                        total_nutrition_avg = json.loads(total_nutrition_avg)
+
+                    response_data = {
+                        "menu_id": menu_id,
+                        "school_id": school_id,
+                        "target_year_month": target_year_month,
+                        "target_week": result_target_week,
+                        "menu_data": menu_data,
+                        "total_cost": total_cost,
+                        "total_nutrition_avg": total_nutrition_avg,
+                        "created_at": created_at.isoformat() if created_at else None
+                    }
+
+                    # デバッグ: 返却するデータの日数を確認
+                    days_count = 0
+                    if menu_data and isinstance(menu_data, dict):
+                        plan = menu_data.get("plan", {})
+                        if isinstance(plan, dict):
+                            days = plan.get("days", [])
+                            if isinstance(days, list):
+                                days_count = len(days)
+
+                    print(f"[DEBUG] Found menu_id={menu_id}, target_week={result_target_week}, returning {days_count} days of menu data")
+                    resp = jsonify(response_data)
+                    return _add_cors_headers(resp), 200
+                else:
+                    print(f"[DEBUG] No menu found for specific week")
+                    resp = jsonify({
+                        "menu_id": None,
+                        "school_id": school_id,
+                        "target_year_month": target_year_month,
+                        "target_week": target_week,
+                        "menu_data": None,
+                        "total_cost": None,
+                        "total_nutrition_avg": None,
+                        "created_at": None
+                    })
+                    return _add_cors_headers(resp), 200
+            else:
+                # 月全体のすべての週の献立を取得（複数レコード）
+                cur.execute("""
+                    SELECT school_menu_id, menu_data, total_cost, total_nutrition_avg, target_week, created_at
+                    FROM school_menus
+                    WHERE school_id = %s AND target_year_month = %s
+                    ORDER BY
+                        CASE WHEN target_week IS NULL THEN 0 ELSE target_week END ASC,
+                        created_at DESC
+                """, (school_id, target_year_month))
+
+                results = cur.fetchall()
+                cur.close()
+
+                if results:
+                    # 複数レコードを配列で返す
+                    menus = []
+                    for result in results:
+                        menu_id, menu_data, total_cost, total_nutrition_avg, result_target_week, created_at = result
+
+                        # JSON文字列をパース（pg8000の場合は既にdictになっている可能性あり）
+                        if isinstance(menu_data, str):
+                            import json
+                            menu_data = json.loads(menu_data)
+                        if isinstance(total_nutrition_avg, str):
+                            import json
+                            total_nutrition_avg = json.loads(total_nutrition_avg)
+
+                        menu_item = {
+                            "menu_id": menu_id,
+                            "school_id": school_id,
+                            "target_year_month": target_year_month,
+                            "target_week": result_target_week,
+                            "menu_data": menu_data,
+                            "total_cost": total_cost,
+                            "total_nutrition_avg": total_nutrition_avg,
+                            "created_at": created_at.isoformat() if created_at else None
+                        }
+                        menus.append(menu_item)
+
+                    print(f"[DEBUG] Found {len(menus)} menu(s) for {target_year_month}")
+                    resp = jsonify({"menus": menus})
+                    return _add_cors_headers(resp), 200
+                else:
+                    print(f"[DEBUG] No menu found for the month")
+                    resp = jsonify({"menus": []})
+                    return _add_cors_headers(resp), 200
+
+        except Exception as db_error:
+            print(f"[ERROR] Database query failed: {str(db_error)}")
+            import traceback
+            traceback.print_exc()
+            resp = jsonify({"error": f"Database error: {str(db_error)}"})
+            return _add_cors_headers(resp), 500
+        finally:
+            if conn:
+                conn.close()
+
+    except Exception as e:
+        print(f"[ERROR] get_menu failed: {str(e)}")
+        import traceback
+        traceback.print_exc()
+        resp = jsonify({"error": str(e)})
+        return _add_cors_headers(resp), 500
+
 
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))

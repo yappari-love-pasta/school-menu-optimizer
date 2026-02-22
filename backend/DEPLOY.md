@@ -35,43 +35,107 @@ gcloud run deploy school-menu-optimizer-backend \
   --region asia-northeast1 \
   --allow-unauthenticated \
   --memory 2Gi \
-  --cpu 2 \
+  --cpu 1 \
   --timeout 300 \
-  --max-instances 2
+  --max-instances 1
 
 # 更新時は同じコマンドを実行
 ```
 
 #### 3. 環境変数の設定（必須）
 
-アプリケーションは `AMPLIFY_TOKEN` 環境変数を必要とします。以下のいずれかの方法で設定してください。
+アプリケーションは以下の環境変数を必要とします。
 
-##### 方法A: 環境変数として設定（開発・テスト環境向け）
+**必須の環境変数:**
+- `AMPLIFY_TOKEN`: Amplify AEのAPIトークン
+- **Cloud SQL接続の場合（推奨）:**
+  - `CLOUD_SQL_CONNECTION_NAME`: Cloud SQL接続名（例: `q-quest-project:asia-northeast1:kyushoku-db`）
+  - `DB_USER`: データベースユーザー名（デフォルト: postgres）
+  - `DB_PASSWORD`: データベースパスワード
+  - `DB_NAME`: データベース名（デフォルト: school_menu_db）
+- **TCP/IP接続の場合（VPC Connector必要）:**
+  - `DB_HOST`: PostgreSQLのホスト名（デフォルト: localhost）
+  - `DB_PORT`: PostgreSQLのポート番号（デフォルト: 5432）
+  - `DB_NAME`: データベース名（デフォルト: school_menu_db）
+  - `DB_USER`: データベースユーザー名（デフォルト: postgres）
+  - `DB_PASSWORD`: データベースパスワード
+
+##### 方法A: Cloud SQL Proxy を使用（推奨・VPC Connector不要・無料）
+
+**メリット:**
+- ✅ VPC Connector 不要（月額$18-20節約）
+- ✅ 自動的に暗号化された接続
+- ✅ IAM認証をサポート
+
+**手順:**
+
+1. Cloud SQL の接続名を確認:
+```bash
+# Cloud SQL インスタンス一覧を取得
+gcloud sql instances list
+
+# 接続名の形式: PROJECT_ID:REGION:INSTANCE_NAME
+# 例: q-quest-project:asia-northeast1:kyushoku-db
+```
+
+2. 環境変数を設定:
 ```bash
 gcloud run services update school-menu-optimizer-backend \
   --region asia-northeast1 \
-  --set-env-vars AMPLIFY_TOKEN=YOUR_TOKEN_HERE
+  --set-env-vars AMPLIFY_TOKEN=YOUR_TOKEN_HERE,\
+CLOUD_SQL_CONNECTION_NAME=q-quest-project:asia-northeast1:kyushoku-db,\
+DB_NAME=school_menu_db,\
+DB_USER=postgres,\
+DB_PASSWORD=YOUR_DB_PASSWORD
 ```
 
-##### 方法B: Secret Manager を使用（本番環境推奨）
-Secret Managerを使用すると、トークンを安全に管理できます。
+##### 方法B: TCP/IP接続（VPC Connector必要・月額約$18-20）
+
+**VPC Connector が必要です。**
+
+```bash
+gcloud run services update school-menu-optimizer-backend \
+  --region asia-northeast1 \
+  --set-env-vars AMPLIFY_TOKEN=YOUR_TOKEN_HERE,\
+DB_HOST=34.55.21.215,\
+DB_PORT=5432,\
+DB_NAME=school_menu_db,\
+DB_USER=postgres,\
+DB_PASSWORD=YOUR_DB_PASSWORD
+```
+
+##### 方法C: Secret Manager を使用（本番環境推奨）
+
+Secret Managerを使用すると、パスワードを安全に管理できます。
 
 ```bash
 # 1. Secret Manager APIを有効化
 gcloud services enable secretmanager.googleapis.com
 
-# 2. シークレットを作成
+# 2. シークレットを作成（各変数ごとに実行）
 echo -n "YOUR_AMPLIFY_TOKEN" | gcloud secrets create amplify-token --data-file=-
+echo -n "YOUR_DB_PASSWORD" | gcloud secrets create db-password --data-file=-
 
-# 3. Cloud RunサービスアカウントにSecret Managerへのアクセス権を付与
+# 3. プロジェクト番号を取得
+PROJECT_NUMBER=$(gcloud projects describe q-quest-project --format="value(projectNumber)")
+echo "Project Number: $PROJECT_NUMBER"
+
+# 4. Cloud RunサービスアカウントにSecret Managerへのアクセス権を付与
 gcloud secrets add-iam-policy-binding amplify-token \
-  --member="serviceAccount:PROJECT_NUMBER-compute@developer.gserviceaccount.com" \
+  --member="serviceAccount:${PROJECT_NUMBER}-compute@developer.gserviceaccount.com" \
   --role="roles/secretmanager.secretAccessor"
 
-# 4. Cloud Runにシークレットを環境変数として設定
+gcloud secrets add-iam-policy-binding db-password \
+  --member="serviceAccount:${PROJECT_NUMBER}-compute@developer.gserviceaccount.com" \
+  --role="roles/secretmanager.secretAccessor"
+
+# 5. Cloud Runにシークレットと環境変数を設定（Cloud SQL Proxy使用）
 gcloud run services update school-menu-optimizer-backend \
   --region asia-northeast1 \
-  --update-secrets AMPLIFY_TOKEN=amplify-token:latest
+  --set-env-vars CLOUD_SQL_CONNECTION_NAME=q-quest-project:asia-northeast1:kyushoku-db,\
+DB_NAME=school_menu_db,\
+DB_USER=postgres \
+  --update-secrets AMPLIFY_TOKEN=amplify-token:latest,DB_PASSWORD=db-password:latest
 ```
 
 ##### ローカル開発環境での設定
@@ -79,18 +143,33 @@ gcloud run services update school-menu-optimizer-backend \
 Windowsの場合:
 ```bash
 set AMPLIFY_TOKEN=YOUR_TOKEN_HERE
+set DB_HOST=localhost
+set DB_PORT=5432
+set DB_NAME=school_menu_db
+set DB_USER=postgres
+set DB_PASSWORD=YOUR_PASSWORD
 python main.py
 ```
 
 Linux/Macの場合:
 ```bash
 export AMPLIFY_TOKEN=YOUR_TOKEN_HERE
+export DB_HOST=localhost
+export DB_PORT=5432
+export DB_NAME=school_menu_db
+export DB_USER=postgres
+export DB_PASSWORD=YOUR_PASSWORD
 python main.py
 ```
 
-または、`.env` ファイルを作成（backend3ディレクトリ内）:
+または、`.env` ファイルを作成（backendディレクトリ内）:
 ```
 AMPLIFY_TOKEN=YOUR_TOKEN_HERE
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=school_menu_db
+DB_USER=postgres
+DB_PASSWORD=YOUR_PASSWORD
 ```
 
 #### 4. URLの確認
