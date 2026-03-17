@@ -8,6 +8,7 @@ const TARGETS = {
   protein: 20,      // g
   fat: 18,          // g
   sodium: 1000,     // mg
+  salt: 2.5,        // g（食塩相当量 = ナトリウム1000mg × 2.54 / 1000）
 };
 
 const MenuCalendar = ({ generatedMenu, selectedMonth, schoolId, calendarView, onCalendarViewChange }) => {
@@ -41,6 +42,7 @@ const MenuCalendar = ({ generatedMenu, selectedMonth, schoolId, calendarView, on
     const avgEnergy = days.reduce((sum, d) => sum + (d.daily_totals['エネルギー'] || 0), 0) / days.length;
     const avgProtein = days.reduce((sum, d) => sum + (d.daily_totals['たんぱく質'] || 0), 0) / days.length;
     const avgFat = days.reduce((sum, d) => sum + (d.daily_totals['脂質'] || 0), 0) / days.length;
+    const avgSodium = days.reduce((sum, d) => sum + (d.daily_totals['ナトリウム'] || 0), 0) / days.length;
 
     const numDays = days.length;
     const targetTotalCost = numDays * TARGETS.costPerDay;
@@ -48,17 +50,20 @@ const MenuCalendar = ({ generatedMenu, selectedMonth, schoolId, calendarView, on
     const roundedEnergy = Math.round(avgEnergy);
     const roundedProtein = Math.round(avgProtein * 10) / 10;
     const roundedFat = Math.round(avgFat * 10) / 10;
+    const roundedSalt = Math.round(avgSodium * 2.54 / 1000 * 10) / 10;
 
     return {
       totalCost: roundedCost,
       avgEnergy: roundedEnergy,
       avgProtein: roundedProtein,
       avgFat: roundedFat,
+      avgSalt: roundedSalt,
       targetTotalCost,
       diffCost: roundedCost - targetTotalCost,
       diffEnergy: roundedEnergy - TARGETS.energy,
       diffProtein: Math.round((roundedProtein - TARGETS.protein) * 10) / 10,
       diffFat: Math.round((roundedFat - TARGETS.fat) * 10) / 10,
+      diffSalt: Math.round((roundedSalt - TARGETS.salt) * 10) / 10,
     };
   }, [menuData, currentYear, currentMonth]);
 
@@ -624,7 +629,7 @@ const MenuCalendar = ({ generatedMenu, selectedMonth, schoolId, calendarView, on
           </div>
         </div>
 
-        <div className="mb-6 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="mb-6 grid grid-cols-2 md:grid-cols-5 gap-4">
           <div className="bg-white border border-slate-200 rounded-lg p-4">
             <p className="text-xs text-slate-500 font-medium mb-1">費用の合計</p>
             <p className="text-2xl font-bold text-slate-800">
@@ -680,6 +685,21 @@ const MenuCalendar = ({ generatedMenu, selectedMonth, schoolId, calendarView, on
                 <span className="text-slate-400">目標 {TARGETS.fat}g</span>
                 <span className={Math.abs(monthStats.diffFat) <= TARGETS.fat * 0.1 ? 'text-green-600 font-medium' : 'text-orange-500 font-medium'}>
                   {monthStats.diffFat > 0 ? '+' : ''}{monthStats.diffFat}g
+                </span>
+              </div>
+            )}
+          </div>
+
+          <div className="bg-white border border-slate-200 rounded-lg p-4">
+            <p className="text-xs text-slate-500 font-medium mb-1">平均食塩相当量</p>
+            <p className="text-2xl font-bold text-slate-800">
+              {monthStats ? monthStats.avgSalt : 0} <span className="text-sm font-normal text-slate-400">g</span>
+            </p>
+            {monthStats && (
+              <div className="mt-1 flex items-center gap-2 text-xs">
+                <span className="text-slate-400">目標 {TARGETS.salt}g</span>
+                <span className={monthStats.diffSalt <= 0 ? 'text-green-600 font-medium' : 'text-red-500 font-medium'}>
+                  {monthStats.diffSalt > 0 ? '+' : ''}{monthStats.diffSalt}g
                 </span>
               </div>
             )}
@@ -743,7 +763,7 @@ const MenuCalendar = ({ generatedMenu, selectedMonth, schoolId, calendarView, on
                   { label: 'エネルギー', unit: 'kcal', target: TARGETS.energy, actual: Math.round(t['エネルギー'] || 0), lowerBetter: false, fixed: 0 },
                   { label: 'たんぱく質', unit: 'g', target: TARGETS.protein, actual: +(t['たんぱく質'] || 0).toFixed(1), lowerBetter: false, fixed: 1 },
                   { label: '脂質', unit: 'g', target: TARGETS.fat, actual: +(t['脂質'] || 0).toFixed(1), lowerBetter: false, fixed: 1 },
-                  { label: 'ナトリウム', unit: 'mg', target: TARGETS.sodium, actual: Math.round(t['ナトリウム'] || 0), lowerBetter: false, fixed: 0 },
+                  { label: '食塩相当量', unit: 'g', target: TARGETS.salt, actual: +((t['ナトリウム'] || 0) * 2.54 / 1000).toFixed(1), lowerBetter: true, fixed: 1 },
                 ];
                 const fmt = (v, fixed) => fixed > 0 ? v.toFixed(fixed) : Math.round(v).toLocaleString();
                 return (
