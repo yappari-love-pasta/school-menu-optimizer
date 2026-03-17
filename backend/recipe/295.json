@@ -1,0 +1,90 @@
+{
+  "id": "295",
+  "menu_name": "ホキのフライ",
+  "ingredients": [
+    {
+      "id": 24,
+      "name": "ホキ",
+      "lipid": 0.8,
+      "amount": 60,
+      "energy": 47,
+      "sodium": 96,
+      "protein": 10.2
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.1,
+      "energy": 0,
+      "sodium": 39,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.05,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 18,
+      "name": "白ワイン",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 181,
+      "name": "小麦粉",
+      "lipid": 0.1,
+      "amount": 4,
+      "energy": 14,
+      "sodium": 0,
+      "protein": 0.3
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 14,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 159,
+      "name": "パン粉",
+      "lipid": 1,
+      "amount": 15,
+      "energy": 55,
+      "sodium": 69,
+      "protein": 2.2
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 6,
+      "amount": 35,
+      "energy": 53,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 170,
+    "protein_g": 12.7,
+    "fat_g": 7.9,
+    "carbohydrate_g": 0,
+    "salt_g": 0.52
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

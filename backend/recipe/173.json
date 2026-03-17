@@ -1,0 +1,117 @@
+{
+  "id": "173",
+  "menu_name": "ビーフンスープ",
+  "ingredients": [
+    {
+      "id": 58,
+      "name": "ビーフン",
+      "lipid": 0.2,
+      "amount": 10,
+      "energy": 36,
+      "sodium": 0,
+      "protein": 0.7
+    },
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 2.5,
+      "amount": 25,
+      "energy": 41,
+      "sodium": 13,
+      "protein": 4.8
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 3,
+      "sodium": 3,
+      "protein": 0.1
+    },
+    {
+      "id": 10,
+      "name": "もやし",
+      "lipid": 0,
+      "amount": 25,
+      "energy": 4,
+      "sodium": 0,
+      "protein": 0.4
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 6,
+      "sodium": 0,
+      "protein": 0.2
+    },
+    {
+      "id": 87,
+      "name": "小松菜",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 2,
+      "sodium": 2,
+      "protein": 0.2
+    },
+    {
+      "id": 37,
+      "name": "濃縮スープ（チキン）",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 1,
+      "sodium": 4,
+      "protein": 0.2
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 0,
+      "sodium": 390,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.03,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 130,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 78,
+      "name": "ごま油",
+      "lipid": 0.2,
+      "amount": 0.2,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 95,
+    "protein_g": 6.6,
+    "fat_g": 2.9,
+    "carbohydrate_g": 0,
+    "salt_g": 1.05
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

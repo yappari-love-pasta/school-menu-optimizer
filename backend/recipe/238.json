@@ -1,0 +1,117 @@
+{
+  "id": "238",
+  "menu_name": "タイ風焼きそば",
+  "ingredients": [
+    {
+      "id": 38,
+      "name": "蒸し麺",
+      "lipid": 1.5,
+      "amount": 45,
+      "energy": 167,
+      "sodium": 147,
+      "protein": 5.1
+    },
+    {
+      "id": 137,
+      "name": "豚肉",
+      "lipid": 3.5,
+      "amount": 30,
+      "energy": 55,
+      "sodium": 15,
+      "protein": 6
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 1,
+      "sodium": 2,
+      "protein": 0
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 25,
+      "energy": 8,
+      "sodium": 0,
+      "protein": 0.2
+    },
+    {
+      "id": 10,
+      "name": "もやし",
+      "lipid": 0,
+      "amount": 50,
+      "energy": 7,
+      "sodium": 1,
+      "protein": 0.8
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 2,
+      "amount": 2,
+      "energy": 18,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 95,
+      "name": "にら",
+      "lipid": 0,
+      "amount": 3,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 5.5,
+      "energy": 4,
+      "sodium": 314,
+      "protein": 0.4
+    },
+    {
+      "id": 7,
+      "name": "トマトケチャップ",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 5,
+      "sodium": 60,
+      "protein": 0.1
+    },
+    {
+      "id": 45,
+      "name": "オイスターソース",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 2,
+      "sodium": 90,
+      "protein": 0.2
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 8,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 276,
+    "protein_g": 12.8,
+    "fat_g": 7,
+    "carbohydrate_g": 0,
+    "salt_g": 1.6
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

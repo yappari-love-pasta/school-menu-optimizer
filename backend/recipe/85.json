@@ -1,0 +1,27 @@
+{
+  "id": "85",
+  "menu_name": "ひなあられ",
+  "ingredients": [
+    {
+      "id": 54,
+      "name": "ひなあられ",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 20,
+      "sodium": 11,
+      "protein": 0.3
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 20,
+    "protein_g": 0.3,
+    "fat_g": 0,
+    "carbohydrate_g": 0,
+    "salt_g": 0.03
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

@@ -1,0 +1,81 @@
+{
+  "id": "289",
+  "menu_name": "セサミライス",
+  "ingredients": [
+    {
+      "id": 185,
+      "name": "米",
+      "lipid": 0.6,
+      "amount": 70,
+      "energy": 239,
+      "sodium": 1,
+      "protein": 4.3
+    },
+    {
+      "id": 102,
+      "name": "麦",
+      "lipid": 0.2,
+      "amount": 10,
+      "energy": 33,
+      "sodium": 0,
+      "protein": 0.7
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.3,
+      "energy": 0,
+      "sodium": 117,
+      "protein": 0
+    },
+    {
+      "id": 114,
+      "name": "オリーブ油",
+      "lipid": 0.5,
+      "amount": 0.5,
+      "energy": 4,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 0,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 166,
+      "name": "白ごま",
+      "lipid": 1.1,
+      "amount": 2,
+      "energy": 12,
+      "sodium": 0,
+      "protein": 0.4
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 289,
+    "protein_g": 5.4,
+    "fat_g": 2.4,
+    "carbohydrate_g": 0,
+    "salt_g": 0.3
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

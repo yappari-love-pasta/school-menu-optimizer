@@ -1,0 +1,27 @@
+{
+  "id": "82",
+  "menu_name": "ゼリー",
+  "ingredients": [
+    {
+      "id": 91,
+      "name": "すだちゼリー",
+      "lipid": 0,
+      "amount": 40,
+      "energy": 34,
+      "sodium": 23,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 34,
+    "protein_g": 0,
+    "fat_g": 0,
+    "carbohydrate_g": 0,
+    "salt_g": 0.06
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

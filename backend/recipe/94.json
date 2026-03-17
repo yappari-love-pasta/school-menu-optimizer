@@ -1,0 +1,90 @@
+{
+  "id": "94",
+  "menu_name": "グリーンサラダ",
+  "ingredients": [
+    {
+      "id": 13,
+      "name": "キャベツ",
+      "lipid": 0.1,
+      "amount": 45,
+      "energy": 8,
+      "sodium": 2,
+      "protein": 0.5
+    },
+    {
+      "id": 84,
+      "name": "きゅうり",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 87,
+      "name": "小松菜",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 1,
+      "sodium": 2,
+      "protein": 0.2
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.3,
+      "energy": 0,
+      "sodium": 117,
+      "protein": 0
+    },
+    {
+      "id": 119,
+      "name": "酢",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 60,
+      "name": "からし粉",
+      "lipid": 0,
+      "amount": 0.05,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 51,
+      "name": "サラダ油",
+      "lipid": 2.7,
+      "amount": 2.7,
+      "energy": 24,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 35,
+    "protein_g": 0.7,
+    "fat_g": 2.8,
+    "carbohydrate_g": 0,
+    "salt_g": 0.31
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

@@ -1,0 +1,99 @@
+{
+  "id": "267",
+  "menu_name": "コロコロチキンソテー",
+  "ingredients": [
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 7.1,
+      "amount": 70,
+      "energy": 113,
+      "sodium": 36,
+      "protein": 13.3
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.6,
+      "energy": 0,
+      "sodium": 234,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 8,
+      "name": "ナツメグ",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 154,
+      "name": "にんにく",
+      "lipid": 0,
+      "amount": 0.03,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 99,
+      "name": "チリパウダー",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 122,
+      "name": "カレー粉",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 112,
+      "name": "乾燥パセリ",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 18,
+      "name": "白ワイン",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 114,
+    "protein_g": 13.3,
+    "fat_g": 7.1,
+    "carbohydrate_g": 0,
+    "salt_g": 0.69
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

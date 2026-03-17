@@ -1,0 +1,99 @@
+{
+  "id": "198",
+  "menu_name": "ペイザンヌスープ",
+  "ingredients": [
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 8,
+      "energy": 2,
+      "sodium": 2,
+      "protein": 0.1
+    },
+    {
+      "id": 141,
+      "name": "じゃがいも",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 11,
+      "sodium": 0,
+      "protein": 0.3
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 6,
+      "sodium": 0,
+      "protein": 0.2
+    },
+    {
+      "id": 131,
+      "name": "大根",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 2,
+      "sodium": 2,
+      "protein": 0.1
+    },
+    {
+      "id": 21,
+      "name": "濃縮スープ（ポーク）",
+      "lipid": 0.2,
+      "amount": 6,
+      "energy": 3,
+      "sodium": 5,
+      "protein": 0.2
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.8,
+      "energy": 0,
+      "sodium": 312,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.02,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 1.2,
+      "energy": 1,
+      "sodium": 68,
+      "protein": 0.1
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 125,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 25,
+    "protein_g": 1.0,
+    "fat_g": 0.2,
+    "carbohydrate_g": 0,
+    "salt_g": 0.99
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

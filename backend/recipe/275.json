@@ -1,0 +1,180 @@
+{
+  "id": "275",
+  "menu_name": "プルコギ丼",
+  "ingredients": [
+    {
+      "id": 185,
+      "name": "米",
+      "lipid": 0.6,
+      "amount": 70,
+      "energy": 239,
+      "sodium": 1,
+      "protein": 4.3
+    },
+    {
+      "id": 102,
+      "name": "麦",
+      "lipid": 0.2,
+      "amount": 10,
+      "energy": 33,
+      "sodium": 0,
+      "protein": 0.7
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 0.3,
+      "amount": 0.3,
+      "energy": 3,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 0,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 137,
+      "name": "豚肉",
+      "lipid": 7,
+      "amount": 60,
+      "energy": 109,
+      "sodium": 29,
+      "protein": 12
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 4,
+      "energy": 3,
+      "sodium": 228,
+      "protein": 0.3
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 8,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 30,
+      "name": "みりん",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 160,
+      "name": "赤みそ",
+      "lipid": 0.1,
+      "amount": 1.5,
+      "energy": 3,
+      "sodium": 77,
+      "protein": 0.2
+    },
+    {
+      "id": 154,
+      "name": "にんにく",
+      "lipid": 0,
+      "amount": 0.2,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 164,
+      "name": "しょうが",
+      "lipid": 0,
+      "amount": 0.3,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 3,
+      "sodium": 3,
+      "protein": 0.1
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 6,
+      "sodium": 0,
+      "protein": 0.2
+    },
+    {
+      "id": 10,
+      "name": "もやし",
+      "lipid": 0,
+      "amount": 30,
+      "energy": 4,
+      "sodium": 1,
+      "protein": 0.5
+    },
+    {
+      "id": 95,
+      "name": "にら",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0.1
+    },
+    {
+      "id": 78,
+      "name": "ごま油",
+      "lipid": 0.3,
+      "amount": 0.3,
+      "energy": 3,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 145,
+      "name": "片栗粉",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 3,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 421,
+    "protein_g": 18.4,
+    "fat_g": 8.5,
+    "carbohydrate_g": 0,
+    "salt_g": 0.86
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

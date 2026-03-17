@@ -1,0 +1,546 @@
+[
+  {
+    "title": "Amplify SDK の特長",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/features.html"
+  },
+  {
+    "title": "クイックスタート",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/quickstart.html"
+  },
+  {
+    "title": "1. Amplify SDK の全体像",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/overview.html"
+  },
+  {
+    "title": "2. 決定変数の作り方",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/variables.html"
+  },
+  {
+    "title": "3. 多項式と目的関数",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/objective.html"
+  },
+  {
+    "title": "4. 制約条件の構築",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/constraint.html"
+  },
+  {
+    "title": "5. モデルの定式化",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/model.html"
+  },
+  {
+    "title": "6. ソルバークライアント",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/clients.html"
+  },
+  {
+    "title": "7. 組合せ最適化問題の求解",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/solve.html"
+  },
+  {
+    "title": "モデルの変換",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/conversion.html"
+  },
+  {
+    "title": "変数変換と次数下げ",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/intermediate.html"
+  },
+  {
+    "title": "制約条件とペナルティ関数",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/penalty.html"
+  },
+  {
+    "title": "グラフ埋め込み",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/graph.html"
+  },
+  {
+    "title": "実行結果の評価",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/evaluation.html"
+  },
+  {
+    "title": "実行時間情報の取得",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/timing.html"
+  },
+  {
+    "title": "クライアントの詳細",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/solvers.html"
+  },
+  {
+    "title": "Fixstars Amplify",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/clients/fixstars.html"
+  },
+  {
+    "title": "D-Wave Systems",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/clients/dwave.html"
+  },
+  {
+    "title": "東芝",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/clients/toshiba.html"
+  },
+  {
+    "title": "富士通",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/clients/fujitsu.html"
+  },
+  {
+    "title": "NEC",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/clients/nec.html"
+  },
+  {
+    "title": "日立",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/clients/hitachi.html"
+  },
+  {
+    "title": "Gurobi",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/clients/gurobi.html"
+  },
+  {
+    "title": "ソルバーの直列実行",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/serial.html"
+  },
+  {
+    "title": "ソルバーの並列実行",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/parallel.html"
+  },
+  {
+    "title": "係数行列による目的関数の作成",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/matrix.html"
+  },
+  {
+    "title": "定式化の高速化",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/optimization.html"
+  },
+  {
+    "title": "モデルのファイル入出力",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/file_io.html"
+  },
+  {
+    "title": "部分和問題",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/subset_sum.html"
+  },
+  {
+    "title": "巡回セールスマン問題",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/tsp.html"
+  },
+  {
+    "title": "二次割当問題",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/qap.html"
+  },
+  {
+    "title": "型ヒントサポート",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/type_hint.html"
+  },
+  {
+    "title": "プロキシサーバの設定",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/proxy.html"
+  },
+  {
+    "title": "数式の整形表示",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/pprint.html"
+  },
+  {
+    "title": "旧バージョンからの移行",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/migration.html"
+  },
+  {
+    "title": "定式化ベンチマーク",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/benchmark.html"
+  },
+  {
+    "title": "Fixstars Amplify AE",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/amplify_ae.html"
+  },
+  {
+    "title": "最新バージョンの紹介",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/amplify_ae/summary.html"
+  },
+  {
+    "title": "求解のアルゴリズム",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/amplify_ae/algorithm.html"
+  },
+  {
+    "title": "高度な利用方法",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/amplify_ae/advanced.html"
+  },
+  {
+    "title": "Amplify AE の性能評価",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/amplify_ae/benchmark.html"
+  },
+  {
+    "title": "Changelog",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/amplify_ae/changelog.html"
+  },
+  {
+    "title": "API Reference",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/amplify_ae/api_reference.html"
+  },
+  {
+    "title": "Changelog",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/changelog.html"
+  },
+  {
+    "title": "API Reference",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/index.html"
+  },
+  {
+    "title": "Algebra",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/algebra.html"
+  },
+  {
+    "title": "Poly",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.Poly.html"
+  },
+  {
+    "title": "PolyArray",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.PolyArray.html"
+  },
+  {
+    "title": "Matrix",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.Matrix.html"
+  },
+  {
+    "title": "Variable",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.Variable.html"
+  },
+  {
+    "title": "VariableGenerator",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.VariableGenerator.html"
+  },
+  {
+    "title": "sum",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.sum.html"
+  },
+  {
+    "title": "einsum",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.einsum.html"
+  },
+  {
+    "title": "dot",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.dot.html"
+  },
+  {
+    "title": "matmul",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.matmul.html"
+  },
+  {
+    "title": "newaxis",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.newaxis.html"
+  },
+  {
+    "title": "VariableType",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.VariableType.html"
+  },
+  {
+    "title": "Dim",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.Dim.html"
+  },
+  {
+    "title": "Dim0",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.Dim0.html"
+  },
+  {
+    "title": "Dim1",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.Dim1.html"
+  },
+  {
+    "title": "Dim2",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.Dim2.html"
+  },
+  {
+    "title": "Dim3",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.Dim3.html"
+  },
+  {
+    "title": "Dim4",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.Dim4.html"
+  },
+  {
+    "title": "Constraint",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/constraint.html"
+  },
+  {
+    "title": "Constraint",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.Constraint.html"
+  },
+  {
+    "title": "ConstraintList",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.ConstraintList.html"
+  },
+  {
+    "title": "equal_to",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.equal_to.html"
+  },
+  {
+    "title": "one_hot",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.one_hot.html"
+  },
+  {
+    "title": "less_equal",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.less_equal.html"
+  },
+  {
+    "title": "greater_equal",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.greater_equal.html"
+  },
+  {
+    "title": "clamp",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.clamp.html"
+  },
+  {
+    "title": "domain_wall",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.domain_wall.html"
+  },
+  {
+    "title": "PenaltyFormulation",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.PenaltyFormulation.html"
+  },
+  {
+    "title": "Model",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/model.html"
+  },
+  {
+    "title": "Model",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.Model.html"
+  },
+  {
+    "title": "IntegerEncodingMethod",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.IntegerEncodingMethod.html"
+  },
+  {
+    "title": "RealEncodingMethod",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.RealEncodingMethod.html"
+  },
+  {
+    "title": "QuadratizationMethod",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.QuadratizationMethod.html"
+  },
+  {
+    "title": "Graph Embedding",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/graph.html"
+  },
+  {
+    "title": "Graph",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.Graph.html"
+  },
+  {
+    "title": "embed",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.embed.html"
+  },
+  {
+    "title": "to_edges",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.to_edges.html"
+  },
+  {
+    "title": "EmbeddingMethod",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.EmbeddingMethod.html"
+  },
+  {
+    "title": "Client",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/client.html"
+  },
+  {
+    "title": "BaseClient",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.BaseClient.html"
+  },
+  {
+    "title": "AmplifyAEClient",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.AmplifyAEClient.html"
+  },
+  {
+    "title": "FixstarsClient",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.FixstarsClient.html"
+  },
+  {
+    "title": "DWaveSamplerClient",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.DWaveSamplerClient.html"
+  },
+  {
+    "title": "DWaveClientParameters",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.DWaveClientParameters.html"
+  },
+  {
+    "title": "LeapHybridSamplerClient",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.LeapHybridSamplerClient.html"
+  },
+  {
+    "title": "LeapHybridCQMSamplerClient",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.LeapHybridCQMSamplerClient.html"
+  },
+  {
+    "title": "FujitsuDA4Client",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.FujitsuDA4Client.html"
+  },
+  {
+    "title": "FujitsuDA3cClient",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.FujitsuDA3cClient.html"
+  },
+  {
+    "title": "ToshibaSQBM2Client",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.ToshibaSQBM2Client.html"
+  },
+  {
+    "title": "GurobiClient",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.GurobiClient.html"
+  },
+  {
+    "title": "NECVA2Client",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.NECVA2Client.html"
+  },
+  {
+    "title": "HitachiClient",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.HitachiClient.html"
+  },
+  {
+    "title": "AcceptableDegrees",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.AcceptableDegrees.html"
+  },
+  {
+    "title": "Degree",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.Degree.html"
+  },
+  {
+    "title": "Solve",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/solve.html"
+  },
+  {
+    "title": "Result",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.Result.html"
+  },
+  {
+    "title": "Values",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.Values.html"
+  },
+  {
+    "title": "solve",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.solve.html"
+  },
+  {
+    "title": "parallel_solve",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.parallel_solve.html"
+  },
+  {
+    "title": "Misc.",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/misc.html"
+  },
+  {
+    "title": "set_num_threads",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.set_num_threads.html"
+  },
+  {
+    "title": "load_lp",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.load_lp.html"
+  },
+  {
+    "title": "save_lp",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.save_lp.html"
+  },
+  {
+    "title": "load_qplib",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.load_qplib.html"
+  },
+  {
+    "title": "save_qplib",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.save_qplib.html"
+  },
+  {
+    "title": "set_seed",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.set_seed.html"
+  },
+  {
+    "title": "__version__",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.__version__.html"
+  },
+  {
+    "title": "Deprecated",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/deprecated.html"
+  },
+  {
+    "title": "BinaryPoly",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.BinaryPoly.html"
+  },
+  {
+    "title": "IsingPoly",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.IsingPoly.html"
+  },
+  {
+    "title": "BinaryPolyArray",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.BinaryPolyArray.html"
+  },
+  {
+    "title": "IsingPolyArray",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.IsingPolyArray.html"
+  },
+  {
+    "title": "BinarySymbolGenerator",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.BinarySymbolGenerator.html"
+  },
+  {
+    "title": "IsingSymbolGenerator",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.IsingSymbolGenerator.html"
+  },
+  {
+    "title": "BinaryMatrix",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.BinaryMatrix.html"
+  },
+  {
+    "title": "IsingMatrix",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.IsingMatrix.html"
+  },
+  {
+    "title": "QuadraticModel",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.QuadraticModel.html"
+  },
+  {
+    "title": "BinaryQuadraticModel",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.BinaryQuadraticModel.html"
+  },
+  {
+    "title": "IsingQuadraticModel",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.IsingQuadraticModel.html"
+  },
+  {
+    "title": "Solver",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.Solver.html"
+  },
+  {
+    "title": "SolverResult",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.SolverResult.html"
+  },
+  {
+    "title": "SolverSolution",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.SolverSolution.html"
+  },
+  {
+    "title": "SymbolGenerator",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.SymbolGenerator.html"
+  },
+  {
+    "title": "sum_poly",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.sum_poly.html"
+  },
+  {
+    "title": "decode_solution",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.decode_solution.html"
+  },
+  {
+    "title": "penalty",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.constraint.penalty.html"
+  },
+  {
+    "title": "InequalityFormulation",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/reference/generated/amplify.InequalityFormulation.html"
+  },
+  {
+    "title": "索引",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/genindex.html"
+  },
+  {
+    "title": "Download BibTeX",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/_downloads/eed8f336eaf8b121a975320d27df34f2/citation_sdk.bib"
+  },
+  {
+    "title": "Download BibTeX",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/_downloads/fa40222046f6d5b3cc720832fc4384a9/citation_ae.bib"
+  },
+  {
+    "title": "Download BibTeX",
+    "url": "https://amplify.fixstars.com/ja/docs/amplify/v1/_downloads/586ec087abf5502e07c22b264faf8aeb/citation_amplify.bib"
+  }
+]

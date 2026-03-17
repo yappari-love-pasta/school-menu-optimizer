@@ -1,0 +1,63 @@
+{
+  "id": "272",
+  "menu_name": "キャラメルポテト",
+  "ingredients": [
+    {
+      "id": 44,
+      "name": "さつまいも",
+      "lipid": 0.1,
+      "amount": 80,
+      "energy": 92,
+      "sodium": 8,
+      "protein": 0.9
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 2.4,
+      "amount": 35,
+      "energy": 21,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 173,
+      "name": "三温糖",
+      "lipid": 0,
+      "amount": 6,
+      "energy": 23,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 0,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 127,
+      "name": "バター",
+      "lipid": 1.6,
+      "amount": 2,
+      "energy": 14,
+      "sodium": 15,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 150,
+    "protein_g": 0.9,
+    "fat_g": 4.1,
+    "carbohydrate_g": 0,
+    "salt_g": 0.06
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

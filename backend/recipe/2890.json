@@ -1,0 +1,72 @@
+{
+  "id": "2890",
+  "menu_name": "ゴーヤーチャンプルー",
+  "ingredients": [
+    {
+      "id": 16761,
+      "name": "島豆腐",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 137,
+      "name": "豚肉",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 51,
+      "name": "サラダ油",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 16762,
+      "name": "ゴーヤー",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 16739,
+      "name": "にんじん",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 10,
+      "name": "もやし",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 0,
+    "protein_g": 0,
+    "fat_g": 0,
+    "carbohydrate_g": 0,
+    "salt_g": 0.0
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

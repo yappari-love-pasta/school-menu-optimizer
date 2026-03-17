@@ -1,0 +1,27 @@
+{
+  "id": "55",
+  "menu_name": "タルト",
+  "ingredients": [
+    {
+      "id": 28,
+      "name": "りんごのタルト",
+      "lipid": 4.2,
+      "amount": 35,
+      "energy": 105,
+      "sodium": 19,
+      "protein": 1.1
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 105,
+    "protein_g": 1.1,
+    "fat_g": 4.2,
+    "carbohydrate_g": 0,
+    "salt_g": 0.05
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

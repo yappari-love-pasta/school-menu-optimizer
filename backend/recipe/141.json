@@ -1,0 +1,180 @@
+{
+  "id": "141",
+  "menu_name": "さつまいもときのこのシチュー",
+  "ingredients": [
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 4.5,
+      "amount": 45,
+      "energy": 73,
+      "sodium": 23,
+      "protein": 8.6
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.2,
+      "energy": 0,
+      "sodium": 78,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.02,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 18,
+      "name": "白ワイン",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 6,
+      "sodium": 0,
+      "protein": 0.2
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 4,
+      "sodium": 5,
+      "protein": 0.1
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 0.7,
+      "amount": 0.7,
+      "energy": 6,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 44,
+      "name": "さつまいも",
+      "lipid": 0.1,
+      "amount": 50,
+      "energy": 57,
+      "sodium": 5,
+      "protein": 0.5
+    },
+    {
+      "id": 72,
+      "name": "しめじ",
+      "lipid": 0,
+      "amount": 7,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0.2
+    },
+    {
+      "id": 150,
+      "name": "えのき",
+      "lipid": 0,
+      "amount": 8,
+      "energy": 3,
+      "sodium": 0,
+      "protein": 0.2
+    },
+    {
+      "id": 90,
+      "name": "マッシュルーム",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 1,
+      "sodium": 18,
+      "protein": 0.2
+    },
+    {
+      "id": 127,
+      "name": "バター",
+      "lipid": 1.2,
+      "amount": 1.5,
+      "energy": 11,
+      "sodium": 11,
+      "protein": 0
+    },
+    {
+      "id": 181,
+      "name": "小麦粉",
+      "lipid": 0.1,
+      "amount": 4,
+      "energy": 14,
+      "sodium": 0,
+      "protein": 0.3
+    },
+    {
+      "id": 88,
+      "name": "ベイリーフ",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 165,
+      "name": "調理用牛乳",
+      "lipid": 1,
+      "amount": 25,
+      "energy": 15,
+      "sodium": 10,
+      "protein": 0.8
+    },
+    {
+      "id": 93,
+      "name": "脱脂粉乳",
+      "lipid": 0.1,
+      "amount": 12,
+      "energy": 42,
+      "sodium": 68,
+      "protein": 4.1
+    },
+    {
+      "id": 37,
+      "name": "濃縮スープ（チキン）",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 1,
+      "sodium": 4,
+      "protein": 0.2
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 65,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 236,
+    "protein_g": 15.4,
+    "fat_g": 7.7,
+    "carbohydrate_g": 0,
+    "salt_g": 0.56
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

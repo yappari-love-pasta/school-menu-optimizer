@@ -1,0 +1,11 @@
+DROP TABLE public.school_menus;
+DROP TABLE public.users;
+DROP TABLE public.recommendation_logs;
+DROP TABLE public.past_pairings;
+DROP TABLE public.bad_pairings;
+DROP TABLE recipe_workload;
+DROP TABLE public.food_costs;
+DROP TABLE public.recipe_ingredients;
+DROP TABLE public.recipes;
+DROP TABLE public.schools;
+DROP TABLE public.amplify_calculation_history;

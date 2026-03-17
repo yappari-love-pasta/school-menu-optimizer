@@ -1,0 +1,108 @@
+{
+  "id": "2901",
+  "menu_name": "もずく丼",
+  "ingredients": [
+    {
+      "id": 16740,
+      "name": "とり肉",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 16768,
+      "name": "ぶた肉",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 16751,
+      "name": "もずく",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 185,
+      "name": "米",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 51,
+      "name": "サラダ油",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 173,
+      "name": "三温糖",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 16739,
+      "name": "にんじん",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 16765,
+      "name": "コーン",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 95,
+      "name": "にら",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 721,
+    "protein_g": 24.6,
+    "fat_g": 19.8,
+    "carbohydrate_g": 0,
+    "salt_g": 0.0
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

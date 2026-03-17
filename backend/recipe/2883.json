@@ -1,0 +1,63 @@
+{
+  "id": "2883",
+  "menu_name": "ほたてときのこのたきこみごはん",
+  "ingredients": [
+    {
+      "id": 16747,
+      "name": "北海道産ほたて",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 16748,
+      "name": "油揚げ",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 16749,
+      "name": "石垣島産米",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 16739,
+      "name": "にんじん",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 16750,
+      "name": "干ししいたけ",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 719,
+    "protein_g": 28.1,
+    "fat_g": 25.8,
+    "carbohydrate_g": 0,
+    "salt_g": 0.0
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

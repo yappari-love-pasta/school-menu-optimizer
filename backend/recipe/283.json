@@ -1,0 +1,99 @@
+{
+  "id": "283",
+  "menu_name": "さばのごまみそがけ",
+  "ingredients": [
+    {
+      "id": 48,
+      "name": "さば",
+      "lipid": 10.1,
+      "amount": 60,
+      "energy": 127,
+      "sodium": 66,
+      "protein": 12.4
+    },
+    {
+      "id": 145,
+      "name": "片栗粉",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 34,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 4.2,
+      "amount": 35,
+      "energy": 37,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 160,
+      "name": "赤みそ",
+      "lipid": 0.2,
+      "amount": 3.3,
+      "energy": 6,
+      "sodium": 168,
+      "protein": 0.4
+    },
+    {
+      "id": 74,
+      "name": "白みそ",
+      "lipid": 0.2,
+      "amount": 3.3,
+      "energy": 6,
+      "sodium": 162,
+      "protein": 0.4
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 2.4,
+      "energy": 9,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 30,
+      "name": "みりん",
+      "lipid": 0,
+      "amount": 1.8,
+      "energy": 4,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 166,
+      "name": "白ごま",
+      "lipid": 0.3,
+      "amount": 0.6,
+      "energy": 4,
+      "sodium": 0,
+      "protein": 0.1
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 7.2,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 227,
+    "protein_g": 13.3,
+    "fat_g": 15,
+    "carbohydrate_g": 0,
+    "salt_g": 1.01
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

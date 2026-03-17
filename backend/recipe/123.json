@@ -1,0 +1,63 @@
+{
+  "id": "123",
+  "menu_name": "からしあえ",
+  "ingredients": [
+    {
+      "id": 13,
+      "name": "キャベツ",
+      "lipid": 0,
+      "amount": 25,
+      "energy": 4,
+      "sodium": 1,
+      "protein": 0.3
+    },
+    {
+      "id": 10,
+      "name": "もやし",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 3,
+      "sodium": 0,
+      "protein": 0.3
+    },
+    {
+      "id": 180,
+      "name": "ほうれん草",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 3,
+      "sodium": 17,
+      "protein": 0.4
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 2.6,
+      "energy": 2,
+      "sodium": 148,
+      "protein": 0.2
+    },
+    {
+      "id": 60,
+      "name": "からし粉",
+      "lipid": 0,
+      "amount": 0.1,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 12,
+    "protein_g": 1.2,
+    "fat_g": 0,
+    "carbohydrate_g": 0,
+    "salt_g": 0.42
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

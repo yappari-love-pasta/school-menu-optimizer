@@ -1,0 +1,108 @@
+{
+  "id": "280",
+  "menu_name": "とり肉とじゃがいものマヨネーズあえ",
+  "ingredients": [
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 5.1,
+      "amount": 50,
+      "energy": 81,
+      "sodium": 26,
+      "protein": 9.5
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.1,
+      "energy": 0,
+      "sodium": 39,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.03,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 145,
+      "name": "片栗粉",
+      "lipid": 0,
+      "amount": 7,
+      "energy": 24,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 141,
+      "name": "じゃがいも",
+      "lipid": 0.1,
+      "amount": 65,
+      "energy": 35,
+      "sodium": 1,
+      "protein": 1.1
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 3.8,
+      "amount": 35,
+      "energy": 33,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 30,
+      "energy": 9,
+      "sodium": 1,
+      "protein": 0.3
+    },
+    {
+      "id": 96,
+      "name": "卵ぬきマヨネーズ",
+      "lipid": 6.5,
+      "amount": 10,
+      "energy": 61,
+      "sodium": 74,
+      "protein": 0
+    },
+    {
+      "id": 7,
+      "name": "トマトケチャップ",
+      "lipid": 0,
+      "amount": 1.5,
+      "energy": 2,
+      "sodium": 18,
+      "protein": 0
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 8,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 253,
+    "protein_g": 10.9,
+    "fat_g": 15.5,
+    "carbohydrate_g": 0,
+    "salt_g": 0.4
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

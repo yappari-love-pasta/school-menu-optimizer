@@ -1,0 +1,144 @@
+{
+  "id": "254",
+  "menu_name": "ツナピラフ",
+  "ingredients": [
+    {
+      "id": 185,
+      "name": "米",
+      "lipid": 0.6,
+      "amount": 62,
+      "energy": 212,
+      "sodium": 1,
+      "protein": 3.8
+    },
+    {
+      "id": 102,
+      "name": "麦",
+      "lipid": 0.2,
+      "amount": 8,
+      "energy": 27,
+      "sodium": 0,
+      "protein": 0.6
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0,
+      "amount": 0.8,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 0,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 187,
+      "name": "ツナ",
+      "lipid": 3.3,
+      "amount": 15,
+      "energy": 40,
+      "sodium": 51,
+      "protein": 2.7
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 3,
+      "sodium": 3,
+      "protein": 0.1
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 6,
+      "sodium": 0,
+      "protein": 0.2
+    },
+    {
+      "id": 61,
+      "name": "ホールコーン",
+      "lipid": 0,
+      "amount": 6,
+      "energy": 5,
+      "sodium": 13,
+      "protein": 0.1
+    },
+    {
+      "id": 164,
+      "name": "しょうが",
+      "lipid": 0,
+      "amount": 0.1,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 0.5,
+      "amount": 0.5,
+      "energy": 4,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 37,
+      "name": "濃縮スープ（チキン）",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 0,
+      "sodium": 2,
+      "protein": 0.1
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.8,
+      "energy": 0,
+      "sodium": 312,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.02,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 43,
+      "name": "グリンピース",
+      "lipid": 0,
+      "amount": 3,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0.2
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 300,
+    "protein_g": 7.8,
+    "fat_g": 4.6,
+    "carbohydrate_g": 0,
+    "salt_g": 0.97
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

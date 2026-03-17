@@ -1,0 +1,27 @@
+{
+  "id": "27",
+  "menu_name": "りんごゼリー",
+  "ingredients": [
+    {
+      "id": 98,
+      "name": "りんごゼリー（食物繊維）",
+      "lipid": 0.1,
+      "amount": 40,
+      "energy": 34,
+      "sodium": 11,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 34,
+    "protein_g": 0,
+    "fat_g": 0.1,
+    "carbohydrate_g": 0,
+    "salt_g": 0.03
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

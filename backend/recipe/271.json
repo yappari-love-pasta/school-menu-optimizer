@@ -1,0 +1,171 @@
+{
+  "id": "271",
+  "menu_name": "とり肉のごまみそ炒め",
+  "ingredients": [
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 6.1,
+      "amount": 60,
+      "energy": 97,
+      "sodium": 31,
+      "protein": 11.4
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 3,
+      "sodium": 3,
+      "protein": 0.1
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 6,
+      "sodium": 0,
+      "protein": 0.2
+    },
+    {
+      "id": 13,
+      "name": "キャベツ",
+      "lipid": 0.1,
+      "amount": 30,
+      "energy": 5,
+      "sodium": 1,
+      "protein": 0.3
+    },
+    {
+      "id": 87,
+      "name": "小松菜",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 1,
+      "sodium": 2,
+      "protein": 0.2
+    },
+    {
+      "id": 164,
+      "name": "しょうが",
+      "lipid": 0,
+      "amount": 0.5,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 154,
+      "name": "にんにく",
+      "lipid": 0,
+      "amount": 0.1,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 1,
+      "amount": 1,
+      "energy": 9,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 80,
+      "name": "トック",
+      "lipid": 0.1,
+      "amount": 15,
+      "energy": 33,
+      "sodium": 18,
+      "protein": 0.6
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0,
+      "amount": 1.2,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 6,
+      "energy": 23,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 160,
+      "name": "赤みそ",
+      "lipid": 0.2,
+      "amount": 4,
+      "energy": 7,
+      "sodium": 204,
+      "protein": 0.5
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 2,
+      "sodium": 114,
+      "protein": 0.2
+    },
+    {
+      "id": 166,
+      "name": "白ごま",
+      "lipid": 0.7,
+      "amount": 1.2,
+      "energy": 8,
+      "sodium": 0,
+      "protein": 0.2
+    },
+    {
+      "id": 11,
+      "name": "豆板醤",
+      "lipid": 0,
+      "amount": 0.12,
+      "energy": 0,
+      "sodium": 8,
+      "protein": 0
+    },
+    {
+      "id": 145,
+      "name": "片栗粉",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 3,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 3,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 198,
+    "protein_g": 13.7,
+    "fat_g": 8.2,
+    "carbohydrate_g": 0,
+    "salt_g": 0.97
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

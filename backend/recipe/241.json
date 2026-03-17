@@ -1,0 +1,36 @@
+{
+  "id": "241",
+  "menu_name": "ボイルキャベツ",
+  "ingredients": [
+    {
+      "id": 13,
+      "name": "キャベツ",
+      "lipid": 0.1,
+      "amount": 40,
+      "energy": 7,
+      "sodium": 2,
+      "protein": 0.4
+    },
+    {
+      "id": 46,
+      "name": "中濃ソース",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 13,
+      "sodium": 230,
+      "protein": 0.1
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 20,
+    "protein_g": 0.5,
+    "fat_g": 0.1,
+    "carbohydrate_g": 0,
+    "salt_g": 0.59
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

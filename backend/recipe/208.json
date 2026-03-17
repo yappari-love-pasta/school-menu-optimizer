@@ -1,0 +1,180 @@
+{
+  "id": "208",
+  "menu_name": "ポークビーンズ",
+  "ingredients": [
+    {
+      "id": 142,
+      "name": "豚ひき肉",
+      "lipid": 2.3,
+      "amount": 20,
+      "energy": 36,
+      "sodium": 10,
+      "protein": 4
+    },
+    {
+      "id": 189,
+      "name": "大豆",
+      "lipid": 3.3,
+      "amount": 17,
+      "energy": 63,
+      "sodium": 0,
+      "protein": 5.7
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 4,
+      "sodium": 5,
+      "protein": 0.1
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 50,
+      "energy": 16,
+      "sodium": 1,
+      "protein": 0.5
+    },
+    {
+      "id": 154,
+      "name": "にんにく",
+      "lipid": 0,
+      "amount": 0.1,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 0.7,
+      "amount": 0.7,
+      "energy": 6,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 136,
+      "name": "ダイストマト",
+      "lipid": 0.1,
+      "amount": 35,
+      "energy": 7,
+      "sodium": 1,
+      "protein": 0.3
+    },
+    {
+      "id": 70,
+      "name": "シェルマカロニ",
+      "lipid": 0.2,
+      "amount": 10,
+      "energy": 35,
+      "sodium": 0,
+      "protein": 1.3
+    },
+    {
+      "id": 181,
+      "name": "小麦粉",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 7,
+      "sodium": 0,
+      "protein": 0.2
+    },
+    {
+      "id": 7,
+      "name": "トマトケチャップ",
+      "lipid": 0,
+      "amount": 3,
+      "energy": 3,
+      "sodium": 36,
+      "protein": 0
+    },
+    {
+      "id": 46,
+      "name": "中濃ソース",
+      "lipid": 0,
+      "amount": 2.5,
+      "energy": 3,
+      "sodium": 58,
+      "protein": 0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 1,
+      "sodium": 57,
+      "protein": 0.1
+    },
+    {
+      "id": 79,
+      "name": "赤ワイン",
+      "lipid": 0,
+      "amount": 1.5,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.5,
+      "energy": 0,
+      "sodium": 195,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.02,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 99,
+      "name": "チリパウダー",
+      "lipid": 0,
+      "amount": 0.25,
+      "energy": 1,
+      "sodium": 6,
+      "protein": 0
+    },
+    {
+      "id": 112,
+      "name": "乾燥パセリ",
+      "lipid": 0,
+      "amount": 0.03,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 183,
+    "protein_g": 12.2,
+    "fat_g": 6.6,
+    "carbohydrate_g": 0,
+    "salt_g": 0.94
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

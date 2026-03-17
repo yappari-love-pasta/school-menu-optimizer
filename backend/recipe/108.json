@@ -1,0 +1,108 @@
+{
+  "id": "108",
+  "menu_name": "ポトフ",
+  "ingredients": [
+    {
+      "id": 83,
+      "name": "ウインナーソーセージ（鉄）",
+      "lipid": 8.4,
+      "amount": 30,
+      "energy": 100,
+      "sodium": 177,
+      "protein": 4.6
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 4,
+      "sodium": 5,
+      "protein": 0.1
+    },
+    {
+      "id": 141,
+      "name": "じゃがいも",
+      "lipid": 0,
+      "amount": 50,
+      "energy": 27,
+      "sodium": 0,
+      "protein": 0.8
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 40,
+      "energy": 12,
+      "sodium": 1,
+      "protein": 0.4
+    },
+    {
+      "id": 13,
+      "name": "キャベツ",
+      "lipid": 0.1,
+      "amount": 40,
+      "energy": 7,
+      "sodium": 2,
+      "protein": 0.4
+    },
+    {
+      "id": 21,
+      "name": "濃縮スープ（ポーク）",
+      "lipid": 0.2,
+      "amount": 5,
+      "energy": 3,
+      "sodium": 4,
+      "protein": 0.2
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.5,
+      "energy": 0,
+      "sodium": 195,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 88,
+      "name": "ベイリーフ",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 60,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 153,
+    "protein_g": 6.5,
+    "fat_g": 8.7,
+    "carbohydrate_g": 0,
+    "salt_g": 0.98
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

@@ -1,0 +1,117 @@
+{
+  "id": "42",
+  "menu_name": "ハンバーグ",
+  "ingredients": [
+    {
+      "id": 142,
+      "name": "豚ひき肉",
+      "lipid": 7,
+      "amount": 60,
+      "energy": 109,
+      "sodium": 29,
+      "protein": 12
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 5,
+      "sodium": 0,
+      "protein": 0.1
+    },
+    {
+      "id": 39,
+      "name": "卵",
+      "lipid": 0.7,
+      "amount": 8,
+      "energy": 10,
+      "sodium": 10,
+      "protein": 0.8
+    },
+    {
+      "id": 159,
+      "name": "パン粉",
+      "lipid": 0.4,
+      "amount": 6,
+      "energy": 22,
+      "sodium": 28,
+      "protein": 0.9
+    },
+    {
+      "id": 165,
+      "name": "調理用牛乳",
+      "lipid": 0.4,
+      "amount": 10,
+      "energy": 6,
+      "sodium": 4,
+      "protein": 0.3
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.4,
+      "energy": 0,
+      "sodium": 156,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.03,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 8,
+      "name": "ナツメグ",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 7,
+      "name": "トマトケチャップ",
+      "lipid": 0,
+      "amount": 4,
+      "energy": 4,
+      "sodium": 48,
+      "protein": 0.1
+    },
+    {
+      "id": 46,
+      "name": "中濃ソース",
+      "lipid": 0,
+      "amount": 2.5,
+      "energy": 3,
+      "sodium": 58,
+      "protein": 0
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 0.5,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 161,
+    "protein_g": 14.2,
+    "fat_g": 8.5,
+    "carbohydrate_g": 0,
+    "salt_g": 0.85
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

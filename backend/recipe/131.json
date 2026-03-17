@@ -1,0 +1,81 @@
+{
+  "id": "131",
+  "menu_name": "ゆずポン酢あえ",
+  "ingredients": [
+    {
+      "id": 13,
+      "name": "キャベツ",
+      "lipid": 0.1,
+      "amount": 50,
+      "energy": 9,
+      "sodium": 2,
+      "protein": 0.6
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 3,
+      "sodium": 3,
+      "protein": 0.1
+    },
+    {
+      "id": 180,
+      "name": "ほうれん草",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 2,
+      "sodium": 11,
+      "protein": 0.3
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 2.8,
+      "energy": 2,
+      "sodium": 160,
+      "protein": 0.2
+    },
+    {
+      "id": 119,
+      "name": "酢",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 0.7,
+      "energy": 3,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 128,
+      "name": "ゆず果汁",
+      "lipid": 0,
+      "amount": 0.5,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 20,
+    "protein_g": 1.2,
+    "fat_g": 0.1,
+    "carbohydrate_g": 0,
+    "salt_g": 0.45
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

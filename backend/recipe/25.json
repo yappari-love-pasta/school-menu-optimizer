@@ -1,0 +1,27 @@
+{
+  "id": "25",
+  "menu_name": "チーズパン",
+  "ingredients": [
+    {
+      "id": 183,
+      "name": "チーズパンB",
+      "lipid": 6.6,
+      "amount": 50,
+      "energy": 250,
+      "sodium": 422,
+      "protein": 9.2
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 250,
+    "protein_g": 9.2,
+    "fat_g": 6.6,
+    "carbohydrate_g": 0,
+    "salt_g": 1.07
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

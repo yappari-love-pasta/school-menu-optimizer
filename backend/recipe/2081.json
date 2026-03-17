@@ -1,0 +1,99 @@
+{
+  "id": "2081",
+  "menu_name": "ビーフンサラダ",
+  "ingredients": [
+    {
+      "id": 58,
+      "name": "ビーフン",
+      "lipid": 0.1,
+      "amount": 5.0,
+      "energy": 18.0,
+      "sodium": 0.2,
+      "protein": 0.4
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0.0,
+      "amount": 5.0,
+      "energy": 1.2,
+      "sodium": 1.5,
+      "protein": 0.0
+    },
+    {
+      "id": 13,
+      "name": "キャベツ",
+      "lipid": 0.1,
+      "amount": 30.0,
+      "energy": 5.5,
+      "sodium": 1.5,
+      "protein": 0.3
+    },
+    {
+      "id": 87,
+      "name": "小松菜",
+      "lipid": 0.0,
+      "amount": 10.0,
+      "energy": 1.5,
+      "sodium": 1.5,
+      "protein": 0.1
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0.0,
+      "amount": 0.5,
+      "energy": 1.9,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0.0,
+      "amount": 2.5,
+      "energy": 1.9,
+      "sodium": 142.5,
+      "protein": 0.2
+    },
+    {
+      "id": 119,
+      "name": "酢",
+      "lipid": 0.0,
+      "amount": 3.0,
+      "energy": 2.0,
+      "sodium": 0.5,
+      "protein": 0.0
+    },
+    {
+      "id": 78,
+      "name": "ごま油",
+      "lipid": 0.5,
+      "amount": 0.5,
+      "energy": 4.3,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 51,
+      "name": "サラダ油",
+      "lipid": 2.0,
+      "amount": 2.0,
+      "energy": 17.5,
+      "sodium": 0.0,
+      "protein": 0.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 54,
+    "protein_g": 1.0,
+    "fat_g": 2.7,
+    "carbohydrate_g": 0,
+    "salt_g": 0.38
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

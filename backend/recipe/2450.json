@@ -1,0 +1,144 @@
+{
+  "id": "2450",
+  "menu_name": "とり肉とマカロニのトマト煮",
+  "ingredients": [
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 5.6,
+      "amount": 55.0,
+      "energy": 89.5,
+      "sodium": 28.6,
+      "protein": 10.5
+    },
+    {
+      "id": 67,
+      "name": "マカロニ",
+      "lipid": 0.3,
+      "amount": 15.0,
+      "energy": 52.2,
+      "sodium": 0.0,
+      "protein": 1.9
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0.0,
+      "amount": 0.4,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0.0,
+      "amount": 40.0,
+      "energy": 12.8,
+      "sodium": 0.8,
+      "protein": 0.4
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0.0,
+      "amount": 10.0,
+      "energy": 2.5,
+      "sodium": 3.0,
+      "protein": 0.1
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 0.2,
+      "amount": 2.0,
+      "energy": 1.4,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 136,
+      "name": "ダイストマト",
+      "lipid": 0.0,
+      "amount": 10.0,
+      "energy": 2.0,
+      "sodium": 0.5,
+      "protein": 0.1
+    },
+    {
+      "id": 7,
+      "name": "トマトケチャップ",
+      "lipid": 0.0,
+      "amount": 8.0,
+      "energy": 8.5,
+      "sodium": 96.0,
+      "protein": 0.1
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0.0,
+      "amount": 0.4,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0.0,
+      "amount": 0.02,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0.0,
+      "amount": 0.3,
+      "energy": 1.2,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 155,
+      "name": "ウスターソース",
+      "lipid": 0.0,
+      "amount": 0.5,
+      "energy": 0.6,
+      "sodium": 16.5,
+      "protein": 0.0
+    },
+    {
+      "id": 181,
+      "name": "小麦粉",
+      "lipid": 0.0,
+      "amount": 1.4,
+      "energy": 4.9,
+      "sodium": 0.0,
+      "protein": 0.1
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0.0,
+      "amount": 10.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 176,
+    "protein_g": 13.2,
+    "fat_g": 6.1,
+    "carbohydrate_g": 0,
+    "salt_g": 0.37
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

@@ -1,0 +1,27 @@
+{
+  "id": "14",
+  "menu_name": "ぶどうパン",
+  "ingredients": [
+    {
+      "id": 115,
+      "name": "ぶどうパン",
+      "lipid": 3.8,
+      "amount": 50,
+      "energy": 250,
+      "sodium": 353,
+      "protein": 7.3
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 250,
+    "protein_g": 7.3,
+    "fat_g": 3.8,
+    "carbohydrate_g": 0,
+    "salt_g": 0.9
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

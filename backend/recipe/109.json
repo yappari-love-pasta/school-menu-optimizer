@@ -1,0 +1,108 @@
+{
+  "id": "109",
+  "menu_name": "いろどりスープ",
+  "ingredients": [
+    {
+      "id": 59,
+      "name": "ベーコン",
+      "lipid": 0.8,
+      "amount": 2,
+      "energy": 8,
+      "sodium": 16,
+      "protein": 0.3
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 1,
+      "sodium": 2,
+      "protein": 0
+    },
+    {
+      "id": 13,
+      "name": "キャベツ",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 3,
+      "sodium": 1,
+      "protein": 0.2
+    },
+    {
+      "id": 39,
+      "name": "卵",
+      "lipid": 0.9,
+      "amount": 10,
+      "energy": 12,
+      "sodium": 12,
+      "protein": 1
+    },
+    {
+      "id": 169,
+      "name": "わかめ",
+      "lipid": 0,
+      "amount": 0.3,
+      "energy": 1,
+      "sodium": 11,
+      "protein": 0.1
+    },
+    {
+      "id": 37,
+      "name": "濃縮スープ（チキン）",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 1,
+      "sodium": 4,
+      "protein": 0.2
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 1,
+      "sodium": 57,
+      "protein": 0.1
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.9,
+      "energy": 0,
+      "sodium": 351,
+      "protein": 0
+    },
+    {
+      "id": 145,
+      "name": "片栗粉",
+      "lipid": 0,
+      "amount": 1.5,
+      "energy": 5,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 125,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 32,
+    "protein_g": 1.9,
+    "fat_g": 1.7,
+    "carbohydrate_g": 0,
+    "salt_g": 1.15
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

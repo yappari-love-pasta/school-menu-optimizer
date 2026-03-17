@@ -1,0 +1,108 @@
+{
+  "id": "1355",
+  "menu_name": "しょうゆ焼きそば",
+  "ingredients": [
+    {
+      "id": 38,
+      "name": "蒸し麺",
+      "lipid": 1.5,
+      "amount": 45.0,
+      "energy": 164.0,
+      "sodium": 144.0,
+      "protein": 5.0
+    },
+    {
+      "id": 137,
+      "name": "豚肉",
+      "lipid": 3.5,
+      "amount": 30.0,
+      "energy": 54.5,
+      "sodium": 14.8,
+      "protein": 6.0
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0.0,
+      "amount": 15.0,
+      "energy": 3.8,
+      "sodium": 4.5,
+      "protein": 0.1
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0.0,
+      "amount": 28.0,
+      "energy": 9.0,
+      "sodium": 0.6,
+      "protein": 0.3
+    },
+    {
+      "id": 10,
+      "name": "もやし",
+      "lipid": 0.0,
+      "amount": 20.0,
+      "energy": 3.0,
+      "sodium": 0.3,
+      "protein": 0.3
+    },
+    {
+      "id": 13,
+      "name": "キャベツ",
+      "lipid": 0.1,
+      "amount": 50.0,
+      "energy": 9.2,
+      "sodium": 2.5,
+      "protein": 0.6
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 0.2,
+      "amount": 2.0,
+      "energy": 1.4,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0.0,
+      "amount": 6.3,
+      "energy": 4.7,
+      "sodium": 359.1,
+      "protein": 0.5
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0.0,
+      "amount": 0.2,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0.0,
+      "amount": 0.04,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 250,
+    "protein_g": 12.8,
+    "fat_g": 5.3,
+    "carbohydrate_g": 0,
+    "salt_g": 1.34
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

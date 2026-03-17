@@ -1,0 +1,27 @@
+{
+  "id": "5",
+  "menu_name": "ごはん",
+  "ingredients": [
+    {
+      "id": 27,
+      "name": "米（委託炊飯）",
+      "lipid": 0.7,
+      "amount": 80,
+      "energy": 274,
+      "sodium": 1,
+      "protein": 4.9
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 274,
+    "protein_g": 4.9,
+    "fat_g": 0.7,
+    "carbohydrate_g": 0,
+    "salt_g": 0.0
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

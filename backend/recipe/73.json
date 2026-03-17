@@ -1,0 +1,27 @@
+{
+  "id": "73",
+  "menu_name": "チーズ",
+  "ingredients": [
+    {
+      "id": 172,
+      "name": "ベビーチーズ（鉄）",
+      "lipid": 3.7,
+      "amount": 15,
+      "energy": 47,
+      "sodium": 197,
+      "protein": 2.7
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 47,
+    "protein_g": 2.7,
+    "fat_g": 3.7,
+    "carbohydrate_g": 0,
+    "salt_g": 0.5
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

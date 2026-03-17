@@ -1,174 +1,145 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { generateMenu } from '../services/api';
+import { generateMenuStream } from '../services/api';
+import flatpickr from 'flatpickr';
+import { Japanese } from 'flatpickr/dist/l10n/ja.js';
+import 'flatpickr/dist/themes/airbnb.css';
 
-const RecipeCreation = ({ onMenuGenerated }) => {
+// 次の月曜日の日付を YYYY-MM-DD 形式で返す
+const getNextMonday = () => {
+  const d = new Date();
+  const day = d.getDay();
+  const diff = day === 0 ? 1 : 8 - day;
+  d.setDate(d.getDate() + diff);
+  return formatDate(d);
+};
+
+// 指定日付から n 日後を YYYY-MM-DD 形式で返す
+const addDays = (dateStr, n) => {
+  const d = new Date(dateStr + 'T00:00:00');
+  d.setDate(d.getDate() + n);
+  return formatDate(d);
+};
+
+// Date オブジェクトを YYYY-MM-DD 形式に変換（タイムゾーン安全）
+const formatDate = (date) => {
+  const y = date.getFullYear();
+  const m = String(date.getMonth() + 1).padStart(2, '0');
+  const d = String(date.getDate()).padStart(2, '0');
+  return `${y}-${m}-${d}`;
+};
+
+const RecipeCreation = ({ onMenuGenerated, schoolId, schoolIdB }) => {
   const navigate = useNavigate();
-  const [targetWeek, setTargetWeek] = useState('');
-  const [weekOptions, setWeekOptions] = useState([]);
-  const [targetCost, setTargetCost] = useState(1500); // 目標費用を状態管理
+  const defaultStart = getNextMonday();
+  const [startDate, setStartDate] = useState(defaultStart);
+  const [endDate, setEndDate] = useState(addDays(defaultStart, 4));
+  const [totalDays, setTotalDays] = useState(0);
+  const [targetCost, setTargetCost] = useState(300);
+  const [addMilk, setAddMilk] = useState(false);
   const [isGenerating, setIsGenerating] = useState(false);
   const [progressMessage, setProgressMessage] = useState('');
   const [error, setError] = useState(null);
+  const [partialResults, setPartialResults] = useState([]);
 
+  const startRef = useRef(null);
+  const endRef = useRef(null);
+  const fpStartRef = useRef(null);
+  const fpEndRef = useRef(null);
+  // onChange で最新値を参照するためのref
+  const startDateRef = useRef(defaultStart);
+  // start イベントで受け取った school_days を保持するref
+  const schoolDaysRef = useRef(null);
+
+  const isInvalid = !startDate || !endDate || endDate < startDate;
+
+  // flatpickr 初期化
   useEffect(() => {
-    // 今週から16週分の選択肢を生成 + 月単位の選択肢（3月・4月）を追加
-    const generateWeekOptions = () => {
-      const options = [];
-      const now = new Date();
+    fpStartRef.current = flatpickr(startRef.current, {
+      locale: Japanese,
+      dateFormat: 'Y-m-d',
+      defaultDate: startDate,
+      onChange: ([date]) => {
+        if (!date) return;
+        const val = formatDate(date);
+        startDateRef.current = val;
+        setStartDate(val);
+        fpEndRef.current?.set('minDate', date);
+        // 終了日が開始日より前になったらリセット
+        if (fpEndRef.current?.selectedDates[0] < date) {
+          fpEndRef.current.setDate(date);
+          setEndDate(val);
+        }
+      },
+    });
 
-      // 週単位の選択肢
-      for (let i = 0; i < 16; i++) {
-        // 今週の月曜日を基準に計算
-        const monday = new Date(now);
-        monday.setDate(now.getDate() - now.getDay() + 1 + (i * 7));
+    fpEndRef.current = flatpickr(endRef.current, {
+      locale: Japanese,
+      dateFormat: 'Y-m-d',
+      defaultDate: endDate,
+      minDate: startDate,
+      onChange: ([date]) => {
+        if (!date) return;
+        setEndDate(formatDate(date));
+      },
+    });
 
-        const friday = new Date(monday);
-        friday.setDate(monday.getDate() + 4);
-
-        const year = monday.getFullYear();
-        const month = monday.getMonth() + 1;
-        const day = monday.getDate();
-
-        options.push({
-          value: `${year}-${month}-${day}`,
-          label: `${year}年${month}月${day}日週 (${month}/${day} - ${friday.getMonth() + 1}/${friday.getDate()})`,
-          startDate: monday,
-          days: 5,
-          type: 'week'
-        });
-      }
-
-      // 月単位の選択肢を追加（3月・4月固定）
-      const currentYear = now.getFullYear();
-
-      // 3月 (31日)
-      options.push({
-        value: `${currentYear}-3-1-month`,
-        label: `${currentYear}年3月 (1ヶ月分・31日間)`,
-        startDate: new Date(currentYear, 2, 1),
-        days: 31,
-        type: 'month'
-      });
-
-      // 4月 (30日)
-      options.push({
-        value: `${currentYear}-4-1-month`,
-        label: `${currentYear}年4月 (1ヶ月分・30日間)`,
-        startDate: new Date(currentYear, 3, 1),
-        days: 30,
-        type: 'month'
-      });
-
-      setWeekOptions(options);
-      if (options.length > 0) {
-        setTargetWeek(options[0].value);
-      }
+    return () => {
+      fpStartRef.current?.destroy();
+      fpEndRef.current?.destroy();
     };
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-    generateWeekOptions();
-  }, []);
+  // 生成中はカレンダーを無効化
+  useEffect(() => {
+    const startInput = fpStartRef.current?._input;
+    const endInput = fpEndRef.current?._input;
+    if (startInput) startInput.disabled = isGenerating;
+    if (endInput) endInput.disabled = isGenerating;
+  }, [isGenerating]);
 
-  const handleGenerate = async () => {
+  const handleGenerate = () => {
     setIsGenerating(true);
     setError(null);
-    setProgressMessage('サーバーに送信中...');
+    setPartialResults([]);
+    setTotalDays(0);
+    setProgressMessage('アニーリング計算を開始しました...');
 
-    try {
-      // 進捗メッセージを段階的に更新
-      const messages = [
-        { delay: 1200, text: 'アニーリング計算を開始しました...' },
-        { delay: 2400, text: '最適化処理中...' },
-        { delay: 3600, text: '栄養バランスを検証中...' },
-        { delay: 4800, text: '献立を確定しています...' },
-      ];
+    const [year, month, day] = startDate.split('-').map(Number);
 
-      messages.forEach(({ delay, text }) => {
-        setTimeout(() => {
-          if (isGenerating) {
-            setProgressMessage(text);
-          }
-        }, delay);
-      });
-
-      // 1. 履歴データを構築（ここでは空の行列を送信しない）
-      const history = {};
-
-      // 2. 選択された期間の情報を取得
-      const selectedOption = weekOptions.find(opt => opt.value === targetWeek);
-
-      let year, month, day, days;
-
-      if (selectedOption && selectedOption.type === 'month') {
-        // 月単位の場合
-        const parts = targetWeek.split('-');
-        year = Number(parts[0]);
-        month = Number(parts[1]);
-        day = 1;
-        days = selectedOption.days;
-      } else {
-        // 週単位の場合
-        const parts = targetWeek.split('-').map(Number);
-        year = parts[0];
-        month = parts[1];
-        day = parts[2];
-        days = 5; // 平日5日分固定
-      }
-
-      // 3. バックエンドAPIを呼び出し（レシピデータはバックエンド側で構築）
-      // target_year_monthを YYYY-MM-DD 形式で作成
-      const targetYearMonth = `${year}-${String(month).padStart(2, '0')}-01`;
-
-      // 週番号を計算（日曜日始まり、1〜5）
-      let targetWeekNumber = null;
-      if (selectedOption && selectedOption.type === 'week') {
-        // その月の1日が何曜日か取得
-        const firstDayOfMonth = new Date(year, month - 1, 1);
-        const firstWeekday = firstDayOfMonth.getDay(); // 0=日曜日, 6=土曜日
-
-        // 週番号を計算（日曜日始まり）
-        // 日数 + 月初の曜日オフセット - 1 を7で割って切り上げ
-        targetWeekNumber = Math.floor((day + firstWeekday - 1) / 7) + 1;
-
-        // 週番号は1〜5の範囲に収める
-        if (targetWeekNumber < 1) {
-          targetWeekNumber = 1;
-        } else if (targetWeekNumber > 5) {
-          targetWeekNumber = 5;
-        }
-      }
-
-      console.log('Calling backend API with:', {
-        days,
+    generateMenuStream(
+      {
         cost: targetCost,
-        target_year_month: targetYearMonth,
-        target_week: targetWeekNumber,
-        type: selectedOption?.type
-      });
-
-      const result = await generateMenu({
-        days: days,
-        cost: targetCost,
-        target_year_month: targetYearMonth,
-        target_week: targetWeekNumber,
-        school_id: 'default_school',  // TODO: ログイン機能実装時に実際の school_id を使用
-        history: history,
-      });
-
-      console.log('API Response:', result);
-
-      // 7. 結果を保存してカレンダーページに遷移
-      onMenuGenerated(result.menu, { year, month: month - 1, startDay: day });
-
-      setIsGenerating(false);
-      navigate('/menu-calendar');
-
-    } catch (err) {
-      console.error('Menu generation failed:', err);
-      setError(err.message || '献立の生成に失敗しました');
-      setIsGenerating(false);
-      setProgressMessage('');
-    }
+        start_date: startDate,
+        end_date: endDate,
+        school_id: schoolId,
+        school_id_b: schoolIdB,
+        add_milk: addMilk,
+      },
+      (dayEvent) => {
+        setPartialResults(prev => {
+          const updated = [...prev];
+          updated[dayEvent.day - 1] = dayEvent;
+          return updated;
+        });
+        setProgressMessage(`${dayEvent.day}日目の献立が確定しました...`);
+      },
+      (result) => {
+        onMenuGenerated(result.menu, { year, month: month - 1, startDay: day, schoolDays: schoolDaysRef.current });
+        setIsGenerating(false);
+        navigate('/menu-calendar');
+      },
+      (err) => {
+        console.error('Menu generation failed:', err);
+        setError(err.message || '献立の生成に失敗しました');
+        setIsGenerating(false);
+        setProgressMessage('');
+      },
+      (startInfo) => {
+        setTotalDays(startInfo.total_days);
+        schoolDaysRef.current = startInfo.school_days || null;
+      }
+    );
   };
 
   return (
@@ -178,28 +149,39 @@ const RecipeCreation = ({ onMenuGenerated }) => {
           基本パラメータ
         </h3>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-4">
+          {/* 開始日 */}
           <div>
             <label className="block text-sm font-medium text-slate-700 mb-1">
-              対象期間（週または月）
+              開始日
             </label>
-            <select
-              value={targetWeek}
-              onChange={(e) => setTargetWeek(e.target.value)}
-              className="w-full border-slate-200 rounded-lg text-sm px-3 py-2 border focus:ring-2 focus:ring-blue-500 focus:outline-none"
-              disabled={isGenerating}
-            >
-              {weekOptions.map((option) => (
-                <option key={option.value} value={option.value}>
-                  {option.label}
-                </option>
-              ))}
-            </select>
+            <input
+              ref={startRef}
+              type="text"
+              placeholder="開始日を選択"
+              className="w-full border-slate-200 rounded-lg text-sm px-3 py-2 border focus:ring-2 focus:ring-blue-500 focus:outline-none cursor-pointer bg-white disabled:bg-slate-100 disabled:cursor-not-allowed"
+              readOnly
+            />
           </div>
 
+          {/* 終了日 */}
           <div>
             <label className="block text-sm font-medium text-slate-700 mb-1">
-              目標費用 (C)
+              終了日
+            </label>
+            <input
+              ref={endRef}
+              type="text"
+              placeholder="終了日を選択"
+              className="w-full border-slate-200 rounded-lg text-sm px-3 py-2 border focus:ring-2 focus:ring-blue-500 focus:outline-none cursor-pointer bg-white disabled:bg-slate-100 disabled:cursor-not-allowed"
+              readOnly
+            />
+          </div>
+
+          {/* 目標費用 */}
+          <div>
+            <label className="block text-sm font-medium text-slate-700 mb-1">
+              目標費用　※1日あたり（1人）
             </label>
             <div className="flex items-center gap-2">
               <input
@@ -209,11 +191,32 @@ const RecipeCreation = ({ onMenuGenerated }) => {
                 className="flex-1 border-slate-200 rounded-lg text-sm px-3 py-2 border focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 disabled={isGenerating}
                 min="0"
-                step="100"
+                step="10"
               />
               <span className="text-sm text-slate-500">円</span>
             </div>
           </div>
+        </div>
+
+        {/* 牛乳オプション */}
+        <div className="mt-4 pt-4 border-t border-slate-200">
+          <label className="flex items-center gap-3 cursor-pointer group">
+            <input
+              type="checkbox"
+              checked={addMilk}
+              onChange={(e) => setAddMilk(e.target.checked)}
+              className="w-5 h-5 text-blue-600 border-slate-300 rounded focus:ring-2 focus:ring-blue-500 cursor-pointer"
+              disabled={isGenerating}
+            />
+            <div className="flex-1">
+              <span className="text-sm font-medium text-slate-700 group-hover:text-blue-600 transition-colors">
+                牛乳を追加する（200ml）
+              </span>
+              <p className="text-xs text-slate-500 mt-0.5">
+                各日の献立に牛乳（エネルギー122kcal、たんぱく質6.6g、脂質7.6g、20円）を追加します
+              </p>
+            </div>
+          </label>
         </div>
       </div>
 
@@ -233,10 +236,10 @@ const RecipeCreation = ({ onMenuGenerated }) => {
       <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
         <button
           onClick={handleGenerate}
-          disabled={isGenerating}
+          disabled={isGenerating || isInvalid}
           className={`font-bold py-4 px-12 rounded-full shadow-lg transition-all flex items-center gap-3 mx-auto ${
-            isGenerating
-              ? 'bg-slate-400 cursor-not-allowed'
+            isGenerating || isInvalid
+              ? 'bg-slate-400 cursor-not-allowed text-white'
               : 'bg-blue-600 hover:bg-blue-700 text-white'
           }`}
         >
@@ -248,21 +251,120 @@ const RecipeCreation = ({ onMenuGenerated }) => {
           )}
           {isGenerating ? progressMessage : '献立を生成する'}
         </button>
-
-        {isGenerating && (
-          <p className="mt-4 text-sm text-slate-500">
-            アニーリング計算中です。しばらくお待ちください...
-          </p>
-        )}
       </div>
 
+      {/* リアルタイム生成プレビュー */}
+      {isGenerating && (
+        <div className="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+          <h3 className="text-sm font-bold text-slate-500 mb-3 uppercase tracking-wider flex items-center gap-2">
+            <svg className="animate-spin h-4 w-4 text-blue-500" viewBox="0 0 24 24">
+              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none"></circle>
+              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+            </svg>
+            アニーリング計算中
+          </h3>
+
+          {/* プログレスバー */}
+          {(() => {
+            const doneDays = partialResults.filter(Boolean).length;
+            const pct = totalDays > 0 ? Math.round((doneDays / totalDays) * 100) : 0;
+            return (
+              <div className="mb-4">
+                <div className="flex justify-between text-xs text-slate-500 mb-1">
+                  <span>{doneDays} / {totalDays || '...'} 日完了</span>
+                  <span>{pct}%</span>
+                </div>
+                <div className="w-full bg-slate-100 rounded-full h-2">
+                  <div
+                    className="bg-blue-500 h-2 rounded-full transition-all duration-500"
+                    style={{ width: `${pct}%` }}
+                  />
+                </div>
+              </div>
+            );
+          })()}
+
+          {/* 日ごとの結果 */}
+          <div className="space-y-2">
+            {Array.from({ length: totalDays || partialResults.length }, (_, i) => {
+              const dayResult = partialResults[i];
+              const recipes = dayResult?.plan_a?.recipes || [];
+              return (
+                <div
+                  key={i}
+                  className={`flex items-start gap-3 px-3 py-2 rounded-lg text-sm ${
+                    dayResult ? 'bg-green-50 border border-green-200' : 'bg-slate-50 border border-slate-200'
+                  }`}
+                >
+                  <div className={`mt-0.5 flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold ${
+                    dayResult ? 'bg-green-500 text-white' : 'bg-slate-300 text-slate-600'
+                  }`}>
+                    {dayResult ? '✓' : i + 1}
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <span className="font-medium text-slate-700 mr-2">{i + 1}日目</span>
+                    {dayResult ? (
+                      <span className="text-slate-600 text-xs">
+                        {recipes.map(r => r.title).join(' ／ ')}
+                      </span>
+                    ) : (
+                      <span className="text-slate-400 text-xs italic">最適化中...</span>
+                    )}
+                  </div>
+                  {dayResult && (
+                    <span className="text-xs text-green-600 font-medium flex-shrink-0">
+                      ¥{Math.round(dayResult.plan_a.totals?.cost ?? 0)}
+                    </span>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
       {/* 説明 */}
-      <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
-        <h4 className="text-sm font-bold text-blue-900 mb-2">📘 最適化について</h4>
-        <p className="text-sm text-blue-800">
-          Fixstars Amplify AE（アニーリングマシン）を使用して、
-          栄養価・費用・ジャンルの統一・多様性などの制約を満たす最適な献立を生成します。
-          計算には数秒〜数十秒かかる場合があります。
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 space-y-4">
+        <h4 className="text-sm font-bold text-blue-900">最適化について</h4>
+
+        {/* Solver構成 */}
+        <div>
+          <p className="text-xs font-semibold text-blue-700 mb-2 uppercase tracking-wider">使用 Solver</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <div className="bg-white border border-blue-200 rounded-lg px-3 py-2">
+              <p className="text-xs font-bold text-blue-800">Fixstars Amplify AE</p>
+              <p className="text-xs text-slate-600 mt-0.5">前半日程（Day 1→）を担当。シミュレーテッドアニーリング型クラウドSolver。</p>
+            </div>
+            <div className="bg-white border border-purple-200 rounded-lg px-3 py-2">
+              <p className="text-xs font-bold text-purple-800">TOSHIBA SQBM+</p>
+              <p className="text-xs text-slate-600 mt-0.5">後半日程（Day N←）を担当。東芝製量子インスパイアード Solver。トークン未設定時は Amplify AE にフォールバック。</p>
+            </div>
+          </div>
+        </div>
+
+        {/* 並列実行方式 */}
+        <div>
+          <p className="text-xs font-semibold text-blue-700 mb-1 uppercase tracking-wider">並列実行方式（投機的並列）</p>
+          <p className="text-sm text-blue-800">
+            2つの Solver が前方（Day 1→）と後方（Day N←）から同時に計算を開始し、中央で合流します。
+            各日の計算が完了し次第、順次結果が画面に表示されます。
+          </p>
+        </div>
+
+        {/* 最適化の制約 */}
+        <div>
+          <p className="text-xs font-semibold text-blue-700 mb-1 uppercase tracking-wider">最適化の制約条件</p>
+          <ul className="text-xs text-blue-800 space-y-0.5 list-disc list-inside">
+            <li>栄養バランス（エネルギー・たんぱく質・脂質・ナトリウム）</li>
+            <li>目標費用（指定した合計予算に近づける）</li>
+            <li>カテゴリ構成（主食・主菜・副菜・汁物の組み合わせ）</li>
+            <li>ジャンル多様性（同一ジャンルの連続を回避）</li>
+            <li>レシピ重複なし（期間内で同一レシピを繰り返さない）</li>
+          </ul>
+        </div>
+
+        <p className="text-xs text-blue-600">
+          計算時間は日数・レシピ数により異なります（通常 数十秒〜数分）。土日・祝日は自動的に除外されます。
         </p>
       </div>
     </div>

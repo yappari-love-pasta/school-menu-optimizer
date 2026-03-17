@@ -1,0 +1,81 @@
+{
+  "id": "48",
+  "menu_name": "バーベキューチキン",
+  "ingredients": [
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 7.1,
+      "amount": 70,
+      "energy": 113,
+      "sodium": 36,
+      "protein": 13.3
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.2,
+      "energy": 0,
+      "sodium": 78,
+      "protein": 0
+    },
+    {
+      "id": 122,
+      "name": "カレー粉",
+      "lipid": 0,
+      "amount": 0.2,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 7,
+      "name": "トマトケチャップ",
+      "lipid": 0,
+      "amount": 2.8,
+      "energy": 3,
+      "sodium": 34,
+      "protein": 0
+    },
+    {
+      "id": 155,
+      "name": "ウスターソース",
+      "lipid": 0,
+      "amount": 1.6,
+      "energy": 2,
+      "sodium": 53,
+      "protein": 0
+    },
+    {
+      "id": 154,
+      "name": "にんにく",
+      "lipid": 0,
+      "amount": 0.04,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0,
+      "amount": 1.5,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 121,
+    "protein_g": 13.3,
+    "fat_g": 7.1,
+    "carbohydrate_g": 0,
+    "salt_g": 0.51
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

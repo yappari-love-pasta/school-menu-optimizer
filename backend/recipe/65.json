@@ -1,0 +1,27 @@
+{
+  "id": "65",
+  "menu_name": "ヨーグルト",
+  "ingredients": [
+    {
+      "id": 140,
+      "name": "ヨーグルト（鉄）",
+      "lipid": 1.1,
+      "amount": 80,
+      "energy": 68,
+      "sodium": 31,
+      "protein": 2.3
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 68,
+    "protein_g": 2.3,
+    "fat_g": 1.1,
+    "carbohydrate_g": 0,
+    "salt_g": 0.08
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

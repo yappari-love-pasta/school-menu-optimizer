@@ -10,6 +10,8 @@ const NutritionList = () => {
     foodNumber: '',
     foodName: '',
   });
+  const [isAddModalOpen, setIsAddModalOpen] = useState(false);
+  const [newFood, setNewFood] = useState({});
 
   useEffect(() => {
     loadNutritionData();
@@ -42,6 +44,30 @@ const NutritionList = () => {
     setFilteredData(filtered);
   }, [filters, nutritionData]);
 
+  const openAddModal = () => {
+    setNewFood({});
+    setIsAddModalOpen(true);
+  };
+
+  const handleSaveAdd = () => {
+    if (!newFood['食品名']?.trim()) {
+      alert('食品名を入力してください');
+      return;
+    }
+    const entry = {
+      '食品群名': newFood['食品群名'] || '',
+      '食品番号': newFood['食品番号'] || '',
+      '食品名': newFood['食品名'].trim(),
+      'エネルギー(kcal)': newFood['エネルギー(kcal)'] !== '' ? newFood['エネルギー(kcal)'] : null,
+      'たんぱく質(g)': newFood['たんぱく質(g)'] !== '' ? newFood['たんぱく質(g)'] : null,
+      '脂質(g)': newFood['脂質(g)'] !== '' ? newFood['脂質(g)'] : null,
+      '炭水化物(g)': newFood['炭水化物(g)'] !== '' ? newFood['炭水化物(g)'] : null,
+      '食塩相当量(g)': newFood['食塩相当量(g)'] !== '' ? newFood['食塩相当量(g)'] : null,
+    };
+    setNutritionData(prev => [entry, ...prev]);
+    setIsAddModalOpen(false);
+  };
+
   const handleFilterChange = (field, value) => {
     setFilters((prev) => ({
       ...prev,
@@ -59,7 +85,16 @@ const NutritionList = () => {
 
   return (
     <div className="bg-white border border-slate-200 rounded-xl p-6">
-      <h2 className="text-lg font-bold text-slate-800 mb-4">栄養価一覧</h2>
+      <div className="flex items-center justify-between mb-4">
+        <h2 className="text-lg font-bold text-slate-800">栄養価一覧</h2>
+        <button
+          onClick={openAddModal}
+          className="flex items-center gap-1.5 px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors"
+        >
+          <span className="text-base leading-none">＋</span>
+          食品を追加
+        </button>
+      </div>
 
       {/* Filter Section */}
       <div className="bg-slate-50 rounded-lg p-4 mb-6">
@@ -190,6 +225,94 @@ const NutritionList = () => {
           </tbody>
         </table>
       </div>
+      {/* 食品追加モーダル */}
+      {isAddModalOpen && (
+        <div className="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center z-50">
+          <div className="bg-white rounded-2xl p-6 w-full max-w-lg shadow-2xl">
+            <h3 className="text-base font-bold text-slate-800 mb-5">食品を追加</h3>
+
+            <div className="space-y-3">
+              {/* 食品群名 */}
+              <div className="grid grid-cols-2 gap-3">
+                <div>
+                  <label className="block text-xs font-medium text-slate-600 mb-1">食品群名</label>
+                  <input
+                    type="text"
+                    value={newFood['食品群名'] || ''}
+                    onChange={(e) => setNewFood({ ...newFood, '食品群名': e.target.value })}
+                    placeholder="例: 野菜類"
+                    className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-medium text-slate-600 mb-1">食品番号</label>
+                  <input
+                    type="text"
+                    value={newFood['食品番号'] || ''}
+                    onChange={(e) => setNewFood({ ...newFood, '食品番号': e.target.value })}
+                    placeholder="例: 06001"
+                    className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                  />
+                </div>
+              </div>
+
+              {/* 食品名 */}
+              <div>
+                <label className="block text-xs font-medium text-slate-600 mb-1">
+                  食品名 <span className="text-red-500">*</span>
+                </label>
+                <input
+                  type="text"
+                  value={newFood['食品名'] || ''}
+                  onChange={(e) => setNewFood({ ...newFood, '食品名': e.target.value })}
+                  placeholder="例: にんじん"
+                  className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                  autoFocus
+                />
+              </div>
+
+              {/* 栄養価 */}
+              <div className="grid grid-cols-2 gap-3">
+                {[
+                  { label: 'エネルギー (kcal)', key: 'エネルギー(kcal)' },
+                  { label: 'たんぱく質 (g)',   key: 'たんぱく質(g)' },
+                  { label: '脂質 (g)',         key: '脂質(g)' },
+                  { label: '炭水化物 (g)',      key: '炭水化物(g)' },
+                  { label: '食塩相当量 (g)',    key: '食塩相当量(g)' },
+                ].map(({ label, key }) => (
+                  <div key={key}>
+                    <label className="block text-xs font-medium text-slate-600 mb-1">{label}</label>
+                    <input
+                      type="number"
+                      step="0.1"
+                      min="0"
+                      value={newFood[key] ?? ''}
+                      onChange={(e) => setNewFood({ ...newFood, [key]: e.target.value === '' ? '' : parseFloat(e.target.value) })}
+                      className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="flex justify-end gap-2 mt-6">
+              <button
+                onClick={() => setIsAddModalOpen(false)}
+                className="px-4 py-2 text-sm text-slate-600 border border-slate-200 rounded-lg hover:bg-slate-50 transition-colors"
+              >
+                キャンセル
+              </button>
+              <button
+                onClick={handleSaveAdd}
+                disabled={!newFood['食品名']?.trim()}
+                className="px-4 py-2 text-sm bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                追加する
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

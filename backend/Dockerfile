@@ -18,8 +18,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # アプリケーションファイルをコピー
 COPY main.py .
-COPY reciept.json .
-COPY reciept-cost.json .
+COPY app/data/reciept.json ./data/reciept.json
+COPY app/data/reciept-cost.json ./data/reciept-cost.json
+COPY recipe/ ./recipe/
 
 # ポート8080を公開
 EXPOSE 8080

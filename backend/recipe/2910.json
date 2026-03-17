@@ -1,0 +1,90 @@
+{
+  "id": "2910",
+  "menu_name": "キャベツのメンチカツ",
+  "ingredients": [
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 137,
+      "name": "豚肉",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 189,
+      "name": "大豆",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 16773,
+      "name": "乳",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 181,
+      "name": "小麦粉",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 159,
+      "name": "パン粉",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 51,
+      "name": "サラダ油",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 13,
+      "name": "キャベツ",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 0,
+    "protein_g": 0,
+    "fat_g": 0,
+    "carbohydrate_g": 0,
+    "salt_g": 0.0
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

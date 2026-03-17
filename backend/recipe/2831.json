@@ -1,0 +1,81 @@
+{
+  "id": "2831",
+  "menu_name": "さばのカレー揚げ",
+  "ingredients": [
+    {
+      "id": 48,
+      "name": "さば",
+      "lipid": 10.1,
+      "amount": 60.0,
+      "energy": 127.0,
+      "sodium": 66.0,
+      "protein": 12.4
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0.0,
+      "amount": 1.0,
+      "energy": 0.8,
+      "sodium": 57.0,
+      "protein": 0.1
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0.0,
+      "amount": 0.3,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 122,
+      "name": "カレー粉",
+      "lipid": 0.0,
+      "amount": 0.3,
+      "energy": 0.9,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 145,
+      "name": "片栗粉",
+      "lipid": 0.0,
+      "amount": 8.0,
+      "energy": 27.2,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 122,
+      "name": "カレー粉",
+      "lipid": 0.0,
+      "amount": 0.4,
+      "energy": 1.2,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 2.8,
+      "amount": 35.0,
+      "energy": 25.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 182,
+    "protein_g": 12.5,
+    "fat_g": 12.9,
+    "carbohydrate_g": 0,
+    "salt_g": 0.31
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

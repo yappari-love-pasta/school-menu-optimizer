@@ -1,0 +1,126 @@
+{
+  "id": "119",
+  "menu_name": "ミートローフ",
+  "ingredients": [
+    {
+      "id": 142,
+      "name": "豚ひき肉",
+      "lipid": 7,
+      "amount": 60,
+      "energy": 109,
+      "sodium": 29,
+      "protein": 12
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 5,
+      "sodium": 0,
+      "protein": 0.1
+    },
+    {
+      "id": 39,
+      "name": "卵",
+      "lipid": 0.7,
+      "amount": 8,
+      "energy": 10,
+      "sodium": 10,
+      "protein": 0.8
+    },
+    {
+      "id": 159,
+      "name": "パン粉",
+      "lipid": 0.3,
+      "amount": 5,
+      "energy": 18,
+      "sodium": 23,
+      "protein": 0.7
+    },
+    {
+      "id": 165,
+      "name": "調理用牛乳",
+      "lipid": 0.4,
+      "amount": 10,
+      "energy": 6,
+      "sodium": 4,
+      "protein": 0.3
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.4,
+      "energy": 0,
+      "sodium": 156,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.03,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 8,
+      "name": "ナツメグ",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 61,
+      "name": "ホールコーン",
+      "lipid": 0,
+      "amount": 7,
+      "energy": 5,
+      "sodium": 15,
+      "protein": 0.2
+    },
+    {
+      "id": 43,
+      "name": "グリンピース",
+      "lipid": 0,
+      "amount": 3,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0.2
+    },
+    {
+      "id": 7,
+      "name": "トマトケチャップ",
+      "lipid": 0,
+      "amount": 4,
+      "energy": 4,
+      "sodium": 48,
+      "protein": 0.1
+    },
+    {
+      "id": 46,
+      "name": "中濃ソース",
+      "lipid": 0,
+      "amount": 2.5,
+      "energy": 3,
+      "sodium": 58,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 162,
+    "protein_g": 14.4,
+    "fat_g": 8.4,
+    "carbohydrate_g": 0,
+    "salt_g": 0.87
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

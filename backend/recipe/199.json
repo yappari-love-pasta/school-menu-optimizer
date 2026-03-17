@@ -1,0 +1,90 @@
+{
+  "id": "199",
+  "menu_name": "凍り豆腐のスパイシー揚げ",
+  "ingredients": [
+    {
+      "id": 68,
+      "name": "凍り豆腐",
+      "lipid": 3.4,
+      "amount": 10,
+      "energy": 50,
+      "sodium": 44,
+      "protein": 5.1
+    },
+    {
+      "id": 145,
+      "name": "片栗粉",
+      "lipid": 0,
+      "amount": 12,
+      "energy": 41,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 4,
+      "amount": 35,
+      "energy": 35,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.13,
+      "energy": 0,
+      "sodium": 51,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 100,
+      "name": "パプリカ",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 122,
+      "name": "カレー粉",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 99,
+      "name": "チリパウダー",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 126,
+    "protein_g": 5.1,
+    "fat_g": 7.4,
+    "carbohydrate_g": 0,
+    "salt_g": 0.24
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

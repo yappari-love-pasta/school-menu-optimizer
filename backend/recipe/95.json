@@ -1,0 +1,162 @@
+{
+  "id": "95",
+  "menu_name": "どさんこ汁",
+  "ingredients": [
+    {
+      "id": 137,
+      "name": "豚肉",
+      "lipid": 1.2,
+      "amount": 10,
+      "energy": 18,
+      "sodium": 5,
+      "protein": 2
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 3,
+      "sodium": 3,
+      "protein": 0.1
+    },
+    {
+      "id": 141,
+      "name": "じゃがいも",
+      "lipid": 0,
+      "amount": 30,
+      "energy": 16,
+      "sodium": 0,
+      "protein": 0.5
+    },
+    {
+      "id": 154,
+      "name": "にんにく",
+      "lipid": 0,
+      "amount": 0.2,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 1,
+      "amount": 1,
+      "energy": 9,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 10,
+      "name": "もやし",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 3,
+      "sodium": 0,
+      "protein": 0.3
+    },
+    {
+      "id": 53,
+      "name": "冷凍豆腐",
+      "lipid": 0.8,
+      "amount": 30,
+      "energy": 18,
+      "sodium": 1,
+      "protein": 1.5
+    },
+    {
+      "id": 61,
+      "name": "ホールコーン",
+      "lipid": 0.1,
+      "amount": 10,
+      "energy": 8,
+      "sodium": 21,
+      "protein": 0.2
+    },
+    {
+      "id": 169,
+      "name": "わかめ",
+      "lipid": 0,
+      "amount": 0.5,
+      "energy": 1,
+      "sodium": 18,
+      "protein": 0.1
+    },
+    {
+      "id": 106,
+      "name": "長ねぎ",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0.1
+    },
+    {
+      "id": 87,
+      "name": "小松菜",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 2,
+      "sodium": 2,
+      "protein": 0.2
+    },
+    {
+      "id": 35,
+      "name": "かつお節",
+      "lipid": 0,
+      "amount": 1.5,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 160,
+      "name": "赤みそ",
+      "lipid": 0.3,
+      "amount": 5,
+      "energy": 9,
+      "sodium": 255,
+      "protein": 0.7
+    },
+    {
+      "id": 74,
+      "name": "白みそ",
+      "lipid": 0.3,
+      "amount": 5,
+      "energy": 9,
+      "sodium": 245,
+      "protein": 0.6
+    },
+    {
+      "id": 127,
+      "name": "バター",
+      "lipid": 0.8,
+      "amount": 1,
+      "energy": 7,
+      "sodium": 8,
+      "protein": 0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 110,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 105,
+    "protein_g": 6.3,
+    "fat_g": 4.5,
+    "carbohydrate_g": 0,
+    "salt_g": 1.42
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

@@ -1,0 +1,108 @@
+{
+  "id": "2054",
+  "menu_name": "ひき肉とさつまいものごはん",
+  "ingredients": [
+    {
+      "id": 185,
+      "name": "米",
+      "lipid": 0.5,
+      "amount": 62.0,
+      "energy": 212.3,
+      "sodium": 0.8,
+      "protein": 3.8
+    },
+    {
+      "id": 102,
+      "name": "麦",
+      "lipid": 0.2,
+      "amount": 8.0,
+      "energy": 26.4,
+      "sodium": 0.0,
+      "protein": 0.6
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0.0,
+      "amount": 0.8,
+      "energy": 0.8,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 44,
+      "name": "さつまいも",
+      "lipid": 0.0,
+      "amount": 20.0,
+      "energy": 23.0,
+      "sodium": 2.0,
+      "protein": 0.2
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0.0,
+      "amount": 8.0,
+      "energy": 2.0,
+      "sodium": 2.4,
+      "protein": 0.0
+    },
+    {
+      "id": 142,
+      "name": "豚ひき肉",
+      "lipid": 1.2,
+      "amount": 10.0,
+      "energy": 18.2,
+      "sodium": 4.8,
+      "protein": 2.0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0.0,
+      "amount": 2.0,
+      "energy": 1.5,
+      "sodium": 114.0,
+      "protein": 0.1
+    },
+    {
+      "id": 30,
+      "name": "みりん",
+      "lipid": 0.0,
+      "amount": 1.0,
+      "energy": 2.5,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0.0,
+      "amount": 0.2,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 287,
+    "protein_g": 6.7,
+    "fat_g": 1.9,
+    "carbohydrate_g": 0,
+    "salt_g": 0.32
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

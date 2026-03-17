@@ -1,0 +1,117 @@
+{
+  "id": "127",
+  "menu_name": "野菜のスープ煮",
+  "ingredients": [
+    {
+      "id": 137,
+      "name": "豚肉",
+      "lipid": 5.3,
+      "amount": 45,
+      "energy": 82,
+      "sodium": 22,
+      "protein": 9
+    },
+    {
+      "id": 59,
+      "name": "ベーコン",
+      "lipid": 1.2,
+      "amount": 3,
+      "energy": 12,
+      "sodium": 24,
+      "protein": 0.4
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 5,
+      "sodium": 6,
+      "protein": 0.1
+    },
+    {
+      "id": 141,
+      "name": "じゃがいも",
+      "lipid": 0.1,
+      "amount": 80,
+      "energy": 42,
+      "sodium": 1,
+      "protein": 1.3
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 40,
+      "energy": 12,
+      "sodium": 1,
+      "protein": 0.4
+    },
+    {
+      "id": 21,
+      "name": "濃縮スープ（ポーク）",
+      "lipid": 0.2,
+      "amount": 4.8,
+      "energy": 3,
+      "sodium": 4,
+      "protein": 0.2
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.57,
+      "energy": 0,
+      "sodium": 222,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 0.67,
+      "energy": 1,
+      "sodium": 38,
+      "protein": 0.1
+    },
+    {
+      "id": 88,
+      "name": "ベイリーフ",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 60,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 157,
+    "protein_g": 11.5,
+    "fat_g": 6.8,
+    "carbohydrate_g": 0,
+    "salt_g": 0.81
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

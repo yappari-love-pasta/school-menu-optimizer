@@ -1,0 +1,117 @@
+{
+  "id": "2033",
+  "menu_name": "とり肉のねぎ塩炒め",
+  "ingredients": [
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 6.1,
+      "amount": 60.0,
+      "energy": 97.6,
+      "sodium": 31.2,
+      "protein": 11.4
+    },
+    {
+      "id": 106,
+      "name": "長ねぎ",
+      "lipid": 0.0,
+      "amount": 15.0,
+      "energy": 3.0,
+      "sodium": 0.0,
+      "protein": 0.1
+    },
+    {
+      "id": 13,
+      "name": "キャベツ",
+      "lipid": 0.1,
+      "amount": 35.0,
+      "energy": 6.4,
+      "sodium": 1.8,
+      "protein": 0.4
+    },
+    {
+      "id": 78,
+      "name": "ごま油",
+      "lipid": 1.0,
+      "amount": 1.0,
+      "energy": 8.7,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0.0,
+      "amount": 0.7,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0.0,
+      "amount": 0.04,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0.0,
+      "amount": 1.0,
+      "energy": 1.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 154,
+      "name": "にんにく",
+      "lipid": 0.0,
+      "amount": 0.2,
+      "energy": 0.3,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 166,
+      "name": "白ごま",
+      "lipid": 0.5,
+      "amount": 1.0,
+      "energy": 6.0,
+      "sodium": 0.0,
+      "protein": 0.2
+    },
+    {
+      "id": 145,
+      "name": "片栗粉",
+      "lipid": 0.0,
+      "amount": 1.5,
+      "energy": 5.1,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 128,
+    "protein_g": 12.1,
+    "fat_g": 7.7,
+    "carbohydrate_g": 0,
+    "salt_g": 0.08
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

@@ -1,0 +1,117 @@
+{
+  "id": "13",
+  "menu_name": "豚汁",
+  "ingredients": [
+    {
+      "id": 137,
+      "name": "豚肉",
+      "lipid": 2.9,
+      "amount": 25,
+      "energy": 46,
+      "sodium": 12,
+      "protein": 5
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 5,
+      "sodium": 6,
+      "protein": 0.1
+    },
+    {
+      "id": 141,
+      "name": "じゃがいも",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 11,
+      "sodium": 0,
+      "protein": 0.3
+    },
+    {
+      "id": 131,
+      "name": "大根",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 3,
+      "sodium": 3,
+      "protein": 0.1
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 6,
+      "sodium": 0,
+      "protein": 0.2
+    },
+    {
+      "id": 150,
+      "name": "えのき",
+      "lipid": 0,
+      "amount": 3,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0.1
+    },
+    {
+      "id": 186,
+      "name": "冷凍油揚げ",
+      "lipid": 2.4,
+      "amount": 7,
+      "energy": 29,
+      "sodium": 0,
+      "protein": 1.6
+    },
+    {
+      "id": 87,
+      "name": "小松菜",
+      "lipid": 0,
+      "amount": 12,
+      "energy": 2,
+      "sodium": 2,
+      "protein": 0.2
+    },
+    {
+      "id": 35,
+      "name": "かつお節",
+      "lipid": 0,
+      "amount": 1.5,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 74,
+      "name": "白みそ",
+      "lipid": 0.6,
+      "amount": 10,
+      "energy": 18,
+      "sodium": 490,
+      "protein": 1.3
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 110,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 121,
+    "protein_g": 8.9,
+    "fat_g": 5.9,
+    "carbohydrate_g": 0,
+    "salt_g": 1.3
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

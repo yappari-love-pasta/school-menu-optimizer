@@ -1,0 +1,108 @@
+{
+  "id": "147",
+  "menu_name": "カレー焼きそば",
+  "ingredients": [
+    {
+      "id": 38,
+      "name": "蒸し麺",
+      "lipid": 1.5,
+      "amount": 45,
+      "energy": 164,
+      "sodium": 144,
+      "protein": 5
+    },
+    {
+      "id": 137,
+      "name": "豚肉",
+      "lipid": 2.9,
+      "amount": 25,
+      "energy": 46,
+      "sodium": 12,
+      "protein": 5
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 3,
+      "sodium": 3,
+      "protein": 0.1
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 30,
+      "energy": 9,
+      "sodium": 1,
+      "protein": 0.3
+    },
+    {
+      "id": 10,
+      "name": "もやし",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 3,
+      "sodium": 0,
+      "protein": 0.3
+    },
+    {
+      "id": 13,
+      "name": "キャベツ",
+      "lipid": 0.1,
+      "amount": 50,
+      "energy": 9,
+      "sodium": 2,
+      "protein": 0.6
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 2,
+      "amount": 2,
+      "energy": 18,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 122,
+      "name": "カレー粉",
+      "lipid": 0,
+      "amount": 0.4,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0.1
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.7,
+      "energy": 0,
+      "sodium": 273,
+      "protein": 0
+    },
+    {
+      "id": 155,
+      "name": "ウスターソース",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 6,
+      "sodium": 165,
+      "protein": 0.1
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 259,
+    "protein_g": 11.5,
+    "fat_g": 6.5,
+    "carbohydrate_g": 0,
+    "salt_g": 1.52
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

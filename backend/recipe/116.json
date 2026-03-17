@@ -1,0 +1,171 @@
+{
+  "id": "116",
+  "menu_name": "じゃがいものクリーム煮",
+  "ingredients": [
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 4,
+      "amount": 40,
+      "energy": 65,
+      "sodium": 21,
+      "protein": 7.6
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 30,
+      "energy": 9,
+      "sodium": 1,
+      "protein": 0.3
+    },
+    {
+      "id": 141,
+      "name": "じゃがいも",
+      "lipid": 0.1,
+      "amount": 80,
+      "energy": 42,
+      "sodium": 1,
+      "protein": 1.3
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 3,
+      "sodium": 3,
+      "protein": 0.1
+    },
+    {
+      "id": 61,
+      "name": "ホールコーン",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 4,
+      "sodium": 11,
+      "protein": 0.1
+    },
+    {
+      "id": 59,
+      "name": "ベーコン",
+      "lipid": 0.8,
+      "amount": 2,
+      "energy": 8,
+      "sodium": 16,
+      "protein": 0.3
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 1,
+      "amount": 1,
+      "energy": 9,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 180,
+      "name": "ほうれん草",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 3,
+      "sodium": 17,
+      "protein": 0.4
+    },
+    {
+      "id": 127,
+      "name": "バター",
+      "lipid": 1.2,
+      "amount": 1.5,
+      "energy": 11,
+      "sodium": 11,
+      "protein": 0
+    },
+    {
+      "id": 181,
+      "name": "小麦粉",
+      "lipid": 0.1,
+      "amount": 4,
+      "energy": 14,
+      "sodium": 0,
+      "protein": 0.3
+    },
+    {
+      "id": 37,
+      "name": "濃縮スープ（チキン）",
+      "lipid": 0,
+      "amount": 3,
+      "energy": 0,
+      "sodium": 3,
+      "protein": 0.1
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.7,
+      "energy": 0,
+      "sodium": 273,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.04,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 93,
+      "name": "脱脂粉乳",
+      "lipid": 0.1,
+      "amount": 12,
+      "energy": 42,
+      "sodium": 68,
+      "protein": 4.1
+    },
+    {
+      "id": 18,
+      "name": "白ワイン",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 88,
+      "name": "ベイリーフ",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 70,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 211,
+    "protein_g": 14.6,
+    "fat_g": 7.3,
+    "carbohydrate_g": 0,
+    "salt_g": 1.08
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

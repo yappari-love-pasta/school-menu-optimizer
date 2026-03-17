@@ -1,0 +1,63 @@
+{
+  "id": "22",
+  "menu_name": "ごまあえ",
+  "ingredients": [
+    {
+      "id": 13,
+      "name": "キャベツ",
+      "lipid": 0.1,
+      "amount": 45,
+      "energy": 8,
+      "sodium": 2,
+      "protein": 0.5
+    },
+    {
+      "id": 10,
+      "name": "もやし",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 3,
+      "sodium": 0,
+      "protein": 0.3
+    },
+    {
+      "id": 166,
+      "name": "白ごま",
+      "lipid": 1.7,
+      "amount": 2.8,
+      "energy": 18,
+      "sodium": 0,
+      "protein": 0.5
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 2.2,
+      "energy": 9,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 2.8,
+      "energy": 2,
+      "sodium": 160,
+      "protein": 0.2
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 40,
+    "protein_g": 1.5,
+    "fat_g": 1.8,
+    "carbohydrate_g": 0,
+    "salt_g": 0.41
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

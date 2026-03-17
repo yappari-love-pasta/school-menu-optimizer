@@ -1,0 +1,189 @@
+{
+  "id": "201",
+  "menu_name": "チキンクリームライス",
+  "ingredients": [
+    {
+      "id": 185,
+      "name": "米",
+      "lipid": 0.6,
+      "amount": 70,
+      "energy": 239,
+      "sodium": 1,
+      "protein": 4.3
+    },
+    {
+      "id": 102,
+      "name": "麦",
+      "lipid": 0.2,
+      "amount": 10,
+      "energy": 33,
+      "sodium": 0,
+      "protein": 0.7
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 0.3,
+      "amount": 0.3,
+      "energy": 3,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 3,
+      "sodium": 3,
+      "protein": 0.1
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 0,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 3,
+      "amount": 30,
+      "energy": 49,
+      "sodium": 16,
+      "protein": 5.7
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 50,
+      "energy": 16,
+      "sodium": 1,
+      "protein": 0.5
+    },
+    {
+      "id": 90,
+      "name": "マッシュルーム",
+      "lipid": 0,
+      "amount": 6,
+      "energy": 1,
+      "sodium": 21,
+      "protein": 0.2
+    },
+    {
+      "id": 127,
+      "name": "バター",
+      "lipid": 0.8,
+      "amount": 1,
+      "energy": 7,
+      "sodium": 8,
+      "protein": 0
+    },
+    {
+      "id": 181,
+      "name": "小麦粉",
+      "lipid": 0.1,
+      "amount": 4,
+      "energy": 14,
+      "sodium": 0,
+      "protein": 0.3
+    },
+    {
+      "id": 165,
+      "name": "調理用牛乳",
+      "lipid": 1.1,
+      "amount": 30,
+      "energy": 18,
+      "sodium": 12,
+      "protein": 1
+    },
+    {
+      "id": 93,
+      "name": "脱脂粉乳",
+      "lipid": 0,
+      "amount": 4.5,
+      "energy": 16,
+      "sodium": 26,
+      "protein": 1.5
+    },
+    {
+      "id": 37,
+      "name": "濃縮スープ（チキン）",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 0,
+      "sodium": 2,
+      "protein": 0.1
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.9,
+      "energy": 0,
+      "sodium": 351,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.04,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 86,
+      "name": "生クリーム",
+      "lipid": 0.3,
+      "amount": 1.5,
+      "energy": 3,
+      "sodium": 2,
+      "protein": 0.1
+    },
+    {
+      "id": 125,
+      "name": "粉チーズ",
+      "lipid": 0.5,
+      "amount": 1.5,
+      "energy": 7,
+      "sodium": 23,
+      "protein": 0.7
+    },
+    {
+      "id": 112,
+      "name": "乾燥パセリ",
+      "lipid": 0,
+      "amount": 0.06,
+      "energy": 0,
+      "sodium": 1,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 410,
+    "protein_g": 15.2,
+    "fat_g": 6.9,
+    "carbohydrate_g": 0,
+    "salt_g": 1.19
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

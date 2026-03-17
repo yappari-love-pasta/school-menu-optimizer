@@ -1,0 +1,234 @@
+{
+  "id": "335",
+  "menu_name": "ジャージャー丼",
+  "ingredients": [
+    {
+      "id": 185,
+      "name": "米",
+      "lipid": 0.6,
+      "amount": 70.0,
+      "energy": 239.8,
+      "sodium": 0.9,
+      "protein": 4.3
+    },
+    {
+      "id": 102,
+      "name": "麦",
+      "lipid": 0.2,
+      "amount": 10.0,
+      "energy": 33.0,
+      "sodium": 0.0,
+      "protein": 0.7
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 0.0,
+      "amount": 0.3,
+      "energy": 0.2,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0.0,
+      "amount": 1.0,
+      "energy": 1.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 142,
+      "name": "豚ひき肉",
+      "lipid": 5.8,
+      "amount": 50.0,
+      "energy": 90.8,
+      "sodium": 24.2,
+      "protein": 10.0
+    },
+    {
+      "id": 117,
+      "name": "大豆ミート",
+      "lipid": 0.1,
+      "amount": 5.0,
+      "energy": 18.1,
+      "sodium": 0.0,
+      "protein": 2.3
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0.0,
+      "amount": 15.0,
+      "energy": 3.8,
+      "sodium": 4.5,
+      "protein": 0.1
+    },
+    {
+      "id": 106,
+      "name": "長ねぎ",
+      "lipid": 0.0,
+      "amount": 3.0,
+      "energy": 0.6,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 10,
+      "name": "もやし",
+      "lipid": 0.1,
+      "amount": 30.0,
+      "energy": 4.5,
+      "sodium": 0.5,
+      "protein": 0.5
+    },
+    {
+      "id": 164,
+      "name": "しょうが",
+      "lipid": 0.0,
+      "amount": 1.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 23,
+      "name": "干し椎茸",
+      "lipid": 0.0,
+      "amount": 0.5,
+      "energy": 1.2,
+      "sodium": 0.0,
+      "protein": 0.1
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 0.0,
+      "amount": 0.5,
+      "energy": 0.4,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 21,
+      "name": "濃縮スープ（ポーク）",
+      "lipid": 0.1,
+      "amount": 3.0,
+      "energy": 1.5,
+      "sodium": 2.6,
+      "protein": 0.1
+    },
+    {
+      "id": 160,
+      "name": "赤みそ",
+      "lipid": 0.1,
+      "amount": 2.0,
+      "energy": 3.6,
+      "sodium": 102.0,
+      "protein": 0.3
+    },
+    {
+      "id": 74,
+      "name": "白みそ",
+      "lipid": 0.1,
+      "amount": 2.0,
+      "energy": 3.6,
+      "sodium": 98.0,
+      "protein": 0.3
+    },
+    {
+      "id": 120,
+      "name": "甜面醤",
+      "lipid": 0.3,
+      "amount": 4.0,
+      "energy": 10.0,
+      "sodium": 116.0,
+      "protein": 0.3
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0.0,
+      "amount": 0.7,
+      "energy": 2.7,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0.0,
+      "amount": 1.4,
+      "energy": 1.4,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 30,
+      "name": "みりん",
+      "lipid": 0.0,
+      "amount": 0.7,
+      "energy": 1.8,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 11,
+      "name": "豆板醤",
+      "lipid": 0.0,
+      "amount": 0.2,
+      "energy": 0.0,
+      "sodium": 14.0,
+      "protein": 0.0
+    },
+    {
+      "id": 145,
+      "name": "片栗粉",
+      "lipid": 0.0,
+      "amount": 1.0,
+      "energy": 3.4,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 78,
+      "name": "ごま油",
+      "lipid": 0.5,
+      "amount": 0.5,
+      "energy": 4.3,
+      "sodium": 0.0,
+      "protein": 0.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 426,
+    "protein_g": 19.0,
+    "fat_g": 7.9,
+    "carbohydrate_g": 0,
+    "salt_g": 0.92
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

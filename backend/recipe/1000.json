@@ -1,0 +1,99 @@
+{
+  "id": "1000",
+  "menu_name": "しいらとじゃがいもの揚げ煮",
+  "ingredients": [
+    {
+      "id": 109,
+      "name": "しいら",
+      "lipid": 0.7,
+      "amount": 40.0,
+      "energy": 40.0,
+      "sodium": 20.0,
+      "protein": 8.5
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0.0,
+      "amount": 0.1,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0.0,
+      "amount": 1.0,
+      "energy": 1.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 145,
+      "name": "片栗粉",
+      "lipid": 0.0,
+      "amount": 7.0,
+      "energy": 23.8,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 141,
+      "name": "じゃがいも",
+      "lipid": 0.0,
+      "amount": 60.0,
+      "energy": 31.7,
+      "sodium": 0.4,
+      "protein": 1.0
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 2.8,
+      "amount": 35.0,
+      "energy": 25.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0.0,
+      "amount": 4.8,
+      "energy": 18.7,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0.0,
+      "amount": 2.8,
+      "energy": 2.1,
+      "sodium": 159.6,
+      "protein": 0.2
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 142,
+    "protein_g": 9.7,
+    "fat_g": 3.5,
+    "carbohydrate_g": 0,
+    "salt_g": 0.46
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

@@ -1,0 +1,144 @@
+{
+  "id": "2806",
+  "menu_name": "けいちゃん焼き",
+  "ingredients": [
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 5.6,
+      "amount": 55.0,
+      "energy": 89.5,
+      "sodium": 28.6,
+      "protein": 10.5
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0.0,
+      "amount": 13.0,
+      "energy": 3.2,
+      "sodium": 3.9,
+      "protein": 0.1
+    },
+    {
+      "id": 13,
+      "name": "キャベツ",
+      "lipid": 0.1,
+      "amount": 50.0,
+      "energy": 9.2,
+      "sodium": 2.5,
+      "protein": 0.6
+    },
+    {
+      "id": 106,
+      "name": "長ねぎ",
+      "lipid": 0.0,
+      "amount": 5.0,
+      "energy": 1.0,
+      "sodium": 0.0,
+      "protein": 0.1
+    },
+    {
+      "id": 154,
+      "name": "にんにく",
+      "lipid": 0.0,
+      "amount": 0.5,
+      "energy": 0.8,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 0.1,
+      "amount": 1.0,
+      "energy": 0.7,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 95,
+      "name": "にら",
+      "lipid": 0.0,
+      "amount": 5.0,
+      "energy": 1.0,
+      "sodium": 0.0,
+      "protein": 0.1
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0.0,
+      "amount": 1.5,
+      "energy": 1.5,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0.0,
+      "amount": 0.5,
+      "energy": 1.9,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 30,
+      "name": "みりん",
+      "lipid": 0.0,
+      "amount": 1.0,
+      "energy": 2.5,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0.0,
+      "amount": 1.5,
+      "energy": 1.1,
+      "sodium": 85.5,
+      "protein": 0.1
+    },
+    {
+      "id": 74,
+      "name": "白みそ",
+      "lipid": 0.3,
+      "amount": 5.5,
+      "energy": 9.9,
+      "sodium": 269.5,
+      "protein": 0.7
+    },
+    {
+      "id": 145,
+      "name": "片栗粉",
+      "lipid": 0.0,
+      "amount": 1.0,
+      "energy": 3.4,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 126,
+    "protein_g": 12.2,
+    "fat_g": 6.1,
+    "carbohydrate_g": 0,
+    "salt_g": 0.99
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

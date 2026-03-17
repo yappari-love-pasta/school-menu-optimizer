@@ -1,0 +1,81 @@
+{
+  "id": "265",
+  "menu_name": "中華あえ",
+  "ingredients": [
+    {
+      "id": 13,
+      "name": "キャベツ",
+      "lipid": 0.1,
+      "amount": 50,
+      "energy": 9,
+      "sodium": 2,
+      "protein": 0.6
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 1,
+      "sodium": 2,
+      "protein": 0
+    },
+    {
+      "id": 61,
+      "name": "ホールコーン",
+      "lipid": 0.1,
+      "amount": 15,
+      "energy": 12,
+      "sodium": 32,
+      "protein": 0.3
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 2.7,
+      "energy": 2,
+      "sodium": 154,
+      "protein": 0.2
+    },
+    {
+      "id": 119,
+      "name": "酢",
+      "lipid": 0,
+      "amount": 3.2,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 1.6,
+      "energy": 6,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 78,
+      "name": "ごま油",
+      "lipid": 1,
+      "amount": 1,
+      "energy": 9,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 41,
+    "protein_g": 1.1,
+    "fat_g": 1.2,
+    "carbohydrate_g": 0,
+    "salt_g": 0.48
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

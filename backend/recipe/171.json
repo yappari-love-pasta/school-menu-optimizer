@@ -1,0 +1,72 @@
+{
+  "id": "171",
+  "menu_name": "とり肉のごまみそ焼き",
+  "ingredients": [
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 7.1,
+      "amount": 70,
+      "energy": 113,
+      "sodium": 36,
+      "protein": 13.3
+    },
+    {
+      "id": 160,
+      "name": "赤みそ",
+      "lipid": 0.2,
+      "amount": 4,
+      "energy": 7,
+      "sodium": 204,
+      "protein": 0.5
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 4,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 30,
+      "name": "みりん",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 166,
+      "name": "白ごま",
+      "lipid": 1.6,
+      "amount": 3,
+      "energy": 18,
+      "sodium": 0,
+      "protein": 0.6
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 145,
+    "protein_g": 14.4,
+    "fat_g": 8.9,
+    "carbohydrate_g": 0,
+    "salt_g": 0.61
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

@@ -1,0 +1,99 @@
+{
+  "id": "16",
+  "menu_name": "生揚げと野菜のそぼろ煮",
+  "ingredients": [
+    {
+      "id": 149,
+      "name": "冷凍生揚げ",
+      "lipid": 5.3,
+      "amount": 50,
+      "energy": 81,
+      "sodium": 34,
+      "protein": 5.2
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 8,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 3,
+      "energy": 2,
+      "sodium": 171,
+      "protein": 0.2
+    },
+    {
+      "id": 142,
+      "name": "豚ひき肉",
+      "lipid": 2.9,
+      "amount": 25,
+      "energy": 46,
+      "sodium": 12,
+      "protein": 5
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 4,
+      "sodium": 5,
+      "protein": 0.1
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 35,
+      "energy": 11,
+      "sodium": 1,
+      "protein": 0.3
+    },
+    {
+      "id": 141,
+      "name": "じゃがいも",
+      "lipid": 0.1,
+      "amount": 60,
+      "energy": 32,
+      "sodium": 1,
+      "protein": 1
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 1.2,
+      "amount": 1.2,
+      "energy": 11,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 43,
+      "name": "グリンピース",
+      "lipid": 0,
+      "amount": 3,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0.2
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 197,
+    "protein_g": 12,
+    "fat_g": 9.5,
+    "carbohydrate_g": 0,
+    "salt_g": 0.57
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

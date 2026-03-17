@@ -1,0 +1,72 @@
+{
+  "id": "1",
+  "menu_name": "とりたま煮",
+  "ingredients": [
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 5.6,
+      "amount": 55,
+      "energy": 89,
+      "sodium": 29,
+      "protein": 10.5
+    },
+    {
+      "id": 174,
+      "name": "うずら卵水煮",
+      "lipid": 5.6,
+      "amount": 40,
+      "energy": 65,
+      "sodium": 84,
+      "protein": 4.4
+    },
+    {
+      "id": 41,
+      "name": "こんにゃく",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 1,
+      "sodium": 2,
+      "protein": 0
+    },
+    {
+      "id": 164,
+      "name": "しょうが",
+      "lipid": 0,
+      "amount": 0.6,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 3,
+      "energy": 12,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 4,
+      "energy": 3,
+      "sodium": 228,
+      "protein": 0.3
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 170,
+    "protein_g": 15.2,
+    "fat_g": 11.2,
+    "carbohydrate_g": 0,
+    "salt_g": 0.87
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

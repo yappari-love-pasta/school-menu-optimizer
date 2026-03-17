@@ -1,0 +1,81 @@
+{
+  "id": "207",
+  "menu_name": "ごまみそあえ",
+  "ingredients": [
+    {
+      "id": 10,
+      "name": "もやし",
+      "lipid": 0,
+      "amount": 40,
+      "energy": 6,
+      "sodium": 1,
+      "protein": 0.7
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 1,
+      "sodium": 2,
+      "protein": 0
+    },
+    {
+      "id": 13,
+      "name": "キャベツ",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 4,
+      "sodium": 1,
+      "protein": 0.2
+    },
+    {
+      "id": 166,
+      "name": "白ごま",
+      "lipid": 1,
+      "amount": 1.6,
+      "energy": 10,
+      "sodium": 0,
+      "protein": 0.3
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 1.7,
+      "energy": 7,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 74,
+      "name": "白みそ",
+      "lipid": 0.1,
+      "amount": 2,
+      "energy": 4,
+      "sodium": 98,
+      "protein": 0.3
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 1,
+      "sodium": 57,
+      "protein": 0.1
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 33,
+    "protein_g": 1.6,
+    "fat_g": 1.1,
+    "carbohydrate_g": 0,
+    "salt_g": 0.4
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

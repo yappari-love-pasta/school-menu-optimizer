@@ -1,0 +1,81 @@
+{
+  "id": "101",
+  "menu_name": "フルーツポンチ",
+  "ingredients": [
+    {
+      "id": 188,
+      "name": "みかん缶",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 13,
+      "sodium": 1,
+      "protein": 0.1
+    },
+    {
+      "id": 63,
+      "name": "パイン缶",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 15,
+      "sodium": 0,
+      "protein": 0.1
+    },
+    {
+      "id": 157,
+      "name": "りんご缶",
+      "lipid": 0,
+      "amount": 25,
+      "energy": 20,
+      "sodium": 1,
+      "protein": 0.1
+    },
+    {
+      "id": 158,
+      "name": "みかんダイスゼリー",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 19,
+      "sodium": 18,
+      "protein": 0
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 6,
+      "energy": 23,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 13.5,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 56,
+      "name": "かんづめの汁",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 6,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 96,
+    "protein_g": 0.3,
+    "fat_g": 0,
+    "carbohydrate_g": 0,
+    "salt_g": 0.05
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

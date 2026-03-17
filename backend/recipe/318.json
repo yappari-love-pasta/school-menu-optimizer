@@ -1,0 +1,72 @@
+{
+  "id": "318",
+  "menu_name": "わかめの酢の物",
+  "ingredients": [
+    {
+      "id": 169,
+      "name": "わかめ",
+      "lipid": 0.0,
+      "amount": 0.8,
+      "energy": 1.3,
+      "sodium": 29.3,
+      "protein": 0.1
+    },
+    {
+      "id": 13,
+      "name": "キャベツ",
+      "lipid": 0.1,
+      "amount": 50.0,
+      "energy": 9.2,
+      "sodium": 2.5,
+      "protein": 0.6
+    },
+    {
+      "id": 84,
+      "name": "きゅうり",
+      "lipid": 0.0,
+      "amount": 8.0,
+      "energy": 1.1,
+      "sodium": 0.0,
+      "protein": 0.1
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0.0,
+      "amount": 1.8,
+      "energy": 7.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 119,
+      "name": "酢",
+      "lipid": 0.0,
+      "amount": 4.8,
+      "energy": 3.2,
+      "sodium": 0.8,
+      "protein": 0.0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0.0,
+      "amount": 2.4,
+      "energy": 1.8,
+      "sodium": 136.8,
+      "protein": 0.2
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 24,
+    "protein_g": 1.0,
+    "fat_g": 0.1,
+    "carbohydrate_g": 0,
+    "salt_g": 0.43
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

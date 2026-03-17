@@ -1,0 +1,180 @@
+{
+  "id": "87",
+  "menu_name": "ガパオライス",
+  "ingredients": [
+    {
+      "id": 185,
+      "name": "米",
+      "lipid": 0.6,
+      "amount": 70,
+      "energy": 239,
+      "sodium": 1,
+      "protein": 4.3
+    },
+    {
+      "id": 102,
+      "name": "麦",
+      "lipid": 0.2,
+      "amount": 10,
+      "energy": 33,
+      "sodium": 0,
+      "protein": 0.7
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 0.3,
+      "amount": 0.3,
+      "energy": 3,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 0,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 142,
+      "name": "豚ひき肉",
+      "lipid": 5.3,
+      "amount": 45,
+      "energy": 82,
+      "sodium": 22,
+      "protein": 9
+    },
+    {
+      "id": 117,
+      "name": "大豆ミート",
+      "lipid": 0.2,
+      "amount": 5,
+      "energy": 18,
+      "sodium": 0,
+      "protein": 2.3
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 30,
+      "energy": 9,
+      "sodium": 1,
+      "protein": 0.3
+    },
+    {
+      "id": 77,
+      "name": "ピーマン",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 154,
+      "name": "にんにく",
+      "lipid": 0,
+      "amount": 0.5,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 3,
+      "energy": 2,
+      "sodium": 171,
+      "protein": 0.2
+    },
+    {
+      "id": 45,
+      "name": "オイスターソース",
+      "lipid": 0,
+      "amount": 1.5,
+      "energy": 2,
+      "sodium": 68,
+      "protein": 0.1
+    },
+    {
+      "id": 30,
+      "name": "みりん",
+      "lipid": 0,
+      "amount": 0.5,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 0.3,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 11,
+      "name": "豆板醤",
+      "lipid": 0,
+      "amount": 0.2,
+      "energy": 0,
+      "sodium": 14,
+      "protein": 0
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.3,
+      "energy": 0,
+      "sodium": 117,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 47,
+      "name": "乾燥バジル",
+      "lipid": 0,
+      "amount": 0.06,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 393,
+    "protein_g": 16.9,
+    "fat_g": 6.6,
+    "carbohydrate_g": 0,
+    "salt_g": 1.0
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

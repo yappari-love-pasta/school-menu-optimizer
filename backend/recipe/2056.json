@@ -1,0 +1,45 @@
+{
+  "id": "2056",
+  "menu_name": "ししゃものから揚げ",
+  "ingredients": [
+    {
+      "id": 11937,
+      "name": "ししゃも",
+      "lipid": 4.0,
+      "amount": 40.0,
+      "energy": 64.0,
+      "sodium": 236.0,
+      "protein": 5.0
+    },
+    {
+      "id": 145,
+      "name": "片栗粉",
+      "lipid": 0.0,
+      "amount": 5.7,
+      "energy": 19.4,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 2.8,
+      "amount": 35.0,
+      "energy": 25.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 108,
+    "protein_g": 5.0,
+    "fat_g": 6.8,
+    "carbohydrate_g": 0,
+    "salt_g": 0.6
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

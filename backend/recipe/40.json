@@ -1,0 +1,36 @@
+{
+  "id": "40",
+  "menu_name": "とり肉の塩こうじ焼き",
+  "ingredients": [
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 7.1,
+      "amount": 70,
+      "energy": 113,
+      "sodium": 36,
+      "protein": 13.3
+    },
+    {
+      "id": 161,
+      "name": "塩こうじ",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 9,
+      "sodium": 255,
+      "protein": 0.2
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 122,
+    "protein_g": 13.5,
+    "fat_g": 7.1,
+    "carbohydrate_g": 0,
+    "salt_g": 0.74
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

@@ -1,0 +1,108 @@
+{
+  "id": "1642",
+  "menu_name": "生揚げのそぼろ煮",
+  "ingredients": [
+    {
+      "id": 149,
+      "name": "冷凍生揚げ",
+      "lipid": 7.4,
+      "amount": 70.0,
+      "energy": 113.6,
+      "sodium": 47.4,
+      "protein": 7.3
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0.0,
+      "amount": 2.0,
+      "energy": 7.8,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0.0,
+      "amount": 3.0,
+      "energy": 2.2,
+      "sodium": 171.0,
+      "protein": 0.2
+    },
+    {
+      "id": 142,
+      "name": "豚ひき肉",
+      "lipid": 4.1,
+      "amount": 35.0,
+      "energy": 63.6,
+      "sodium": 16.9,
+      "protein": 7.0
+    },
+    {
+      "id": 30,
+      "name": "みりん",
+      "lipid": 0.0,
+      "amount": 0.7,
+      "energy": 1.8,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0.0,
+      "amount": 2.7,
+      "energy": 10.5,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0.0,
+      "amount": 4.0,
+      "energy": 3.0,
+      "sodium": 228.0,
+      "protein": 0.3
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0.0,
+      "amount": 2.0,
+      "energy": 2.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 145,
+      "name": "片栗粉",
+      "lipid": 0.0,
+      "amount": 1.0,
+      "energy": 3.4,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 208,
+    "protein_g": 14.8,
+    "fat_g": 11.5,
+    "carbohydrate_g": 0,
+    "salt_g": 1.18
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

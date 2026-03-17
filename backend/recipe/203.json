@@ -1,0 +1,162 @@
+{
+  "id": "203",
+  "menu_name": "とり肉のクリーム煮",
+  "ingredients": [
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 7.1,
+      "amount": 70,
+      "energy": 113,
+      "sodium": 36,
+      "protein": 13.3
+    },
+    {
+      "id": 18,
+      "name": "白ワイン",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 40,
+      "energy": 12,
+      "sodium": 1,
+      "protein": 0.4
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 4,
+      "sodium": 5,
+      "protein": 0.1
+    },
+    {
+      "id": 72,
+      "name": "しめじ",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0.1
+    },
+    {
+      "id": 180,
+      "name": "ほうれん草",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 3,
+      "sodium": 17,
+      "protein": 0.4
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 0.8,
+      "amount": 0.8,
+      "energy": 7,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 127,
+      "name": "バター",
+      "lipid": 1.6,
+      "amount": 2,
+      "energy": 14,
+      "sodium": 15,
+      "protein": 0
+    },
+    {
+      "id": 181,
+      "name": "小麦粉",
+      "lipid": 0.1,
+      "amount": 4,
+      "energy": 14,
+      "sodium": 0,
+      "protein": 0.3
+    },
+    {
+      "id": 165,
+      "name": "調理用牛乳",
+      "lipid": 0.8,
+      "amount": 20,
+      "energy": 12,
+      "sodium": 8,
+      "protein": 0.7
+    },
+    {
+      "id": 93,
+      "name": "脱脂粉乳",
+      "lipid": 0.1,
+      "amount": 5,
+      "energy": 18,
+      "sodium": 29,
+      "protein": 1.7
+    },
+    {
+      "id": 37,
+      "name": "濃縮スープ（チキン）",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 0,
+      "sodium": 2,
+      "protein": 0.1
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.6,
+      "energy": 0,
+      "sodium": 234,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.04,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 88,
+      "name": "ベイリーフ",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 35,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 200,
+    "protein_g": 17.1,
+    "fat_g": 10.5,
+    "carbohydrate_g": 0,
+    "salt_g": 0.88
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

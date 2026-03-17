@@ -1,0 +1,234 @@
+{
+  "id": "183",
+  "menu_name": "ベイスターズ青星寮カレー",
+  "ingredients": [
+    {
+      "id": 185,
+      "name": "米",
+      "lipid": 0.6,
+      "amount": 70,
+      "energy": 239,
+      "sodium": 1,
+      "protein": 4.3
+    },
+    {
+      "id": 102,
+      "name": "麦",
+      "lipid": 0.2,
+      "amount": 10,
+      "energy": 33,
+      "sodium": 0,
+      "protein": 0.7
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 0.3,
+      "amount": 0.3,
+      "energy": 3,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 0,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 137,
+      "name": "豚肉",
+      "lipid": 5.1,
+      "amount": 50,
+      "energy": 86,
+      "sodium": 24,
+      "protein": 10.3
+    },
+    {
+      "id": 79,
+      "name": "赤ワイン",
+      "lipid": 0,
+      "amount": 3,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 5,
+      "sodium": 6,
+      "protein": 0.1
+    },
+    {
+      "id": 154,
+      "name": "にんにく",
+      "lipid": 0,
+      "amount": 0.1,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 164,
+      "name": "しょうが",
+      "lipid": 0,
+      "amount": 0.2,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 127,
+      "name": "バター",
+      "lipid": 0.8,
+      "amount": 1,
+      "energy": 7,
+      "sodium": 8,
+      "protein": 0
+    },
+    {
+      "id": 181,
+      "name": "小麦粉",
+      "lipid": 0.1,
+      "amount": 6,
+      "energy": 21,
+      "sodium": 0,
+      "protein": 0.5
+    },
+    {
+      "id": 122,
+      "name": "カレー粉",
+      "lipid": 0.1,
+      "amount": 1,
+      "energy": 3,
+      "sodium": 0,
+      "protein": 0.1
+    },
+    {
+      "id": 5,
+      "name": "クミン",
+      "lipid": 0.1,
+      "amount": 0.3,
+      "energy": 1,
+      "sodium": 1,
+      "protein": 0.1
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 40,
+      "energy": 12,
+      "sodium": 1,
+      "protein": 0.4
+    },
+    {
+      "id": 65,
+      "name": "炒め玉ねぎ",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 12,
+      "sodium": 1,
+      "protein": 0.4
+    },
+    {
+      "id": 21,
+      "name": "濃縮スープ（ポーク）",
+      "lipid": 0.1,
+      "amount": 2,
+      "energy": 1,
+      "sodium": 2,
+      "protein": 0.1
+    },
+    {
+      "id": 155,
+      "name": "ウスターソース",
+      "lipid": 0,
+      "amount": 3,
+      "energy": 4,
+      "sodium": 99,
+      "protein": 0
+    },
+    {
+      "id": 46,
+      "name": "中濃ソース",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 3,
+      "sodium": 46,
+      "protein": 0
+    },
+    {
+      "id": 7,
+      "name": "トマトケチャップ",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 2,
+      "sodium": 24,
+      "protein": 0
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 0,
+      "sodium": 390,
+      "protein": 0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 1,
+      "sodium": 57,
+      "protein": 0.1
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 0.2,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 88,
+      "name": "ベイリーフ",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 437,
+    "protein_g": 17.1,
+    "fat_g": 7.4,
+    "carbohydrate_g": 0,
+    "salt_g": 1.68
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

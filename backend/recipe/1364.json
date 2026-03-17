@@ -1,0 +1,135 @@
+{
+  "id": "1364",
+  "menu_name": "とり肉と凍り豆腐のごまみそあえ",
+  "ingredients": [
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 4.1,
+      "amount": 40.0,
+      "energy": 65.1,
+      "sodium": 20.8,
+      "protein": 7.6
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0.0,
+      "amount": 0.8,
+      "energy": 0.8,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 145,
+      "name": "片栗粉",
+      "lipid": 0.0,
+      "amount": 5.0,
+      "energy": 17.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 68,
+      "name": "凍り豆腐",
+      "lipid": 1.7,
+      "amount": 5.0,
+      "energy": 25.0,
+      "sodium": 22.0,
+      "protein": 2.5
+    },
+    {
+      "id": 145,
+      "name": "片栗粉",
+      "lipid": 0.0,
+      "amount": 6.0,
+      "energy": 20.4,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 2.8,
+      "amount": 35.0,
+      "energy": 25.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 164,
+      "name": "しょうが",
+      "lipid": 0.0,
+      "amount": 1.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 74,
+      "name": "白みそ",
+      "lipid": 0.2,
+      "amount": 4.0,
+      "energy": 7.2,
+      "sodium": 196.0,
+      "protein": 0.5
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0.0,
+      "amount": 1.5,
+      "energy": 1.1,
+      "sodium": 85.5,
+      "protein": 0.1
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0.0,
+      "amount": 1.5,
+      "energy": 5.8,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0.0,
+      "amount": 1.0,
+      "energy": 1.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0.0,
+      "amount": 10.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 166,
+      "name": "白ごま",
+      "lipid": 1.6,
+      "amount": 3.0,
+      "energy": 18.0,
+      "sodium": 0.0,
+      "protein": 0.6
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 186,
+    "protein_g": 11.3,
+    "fat_g": 10.4,
+    "carbohydrate_g": 0,
+    "salt_g": 0.82
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

@@ -1,0 +1,72 @@
+{
+  "id": "52",
+  "menu_name": "ナムル",
+  "ingredients": [
+    {
+      "id": 116,
+      "name": "切り干し大根",
+      "lipid": 0,
+      "amount": 3,
+      "energy": 8,
+      "sodium": 6,
+      "protein": 0.3
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 3,
+      "sodium": 3,
+      "protein": 0.1
+    },
+    {
+      "id": 87,
+      "name": "小松菜",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 3,
+      "sodium": 3,
+      "protein": 0.3
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 2.5,
+      "energy": 2,
+      "sodium": 143,
+      "protein": 0.2
+    },
+    {
+      "id": 78,
+      "name": "ごま油",
+      "lipid": 0.3,
+      "amount": 0.3,
+      "energy": 3,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 166,
+      "name": "白ごま",
+      "lipid": 0.5,
+      "amount": 1,
+      "energy": 6,
+      "sodium": 0,
+      "protein": 0.2
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 25,
+    "protein_g": 1.1,
+    "fat_g": 0.8,
+    "carbohydrate_g": 0,
+    "salt_g": 0.39
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

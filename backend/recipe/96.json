@@ -1,0 +1,117 @@
+{
+  "id": "96",
+  "menu_name": "とり肉と豆のトマト煮こみ",
+  "ingredients": [
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 5.6,
+      "amount": 55,
+      "energy": 89,
+      "sodium": 29,
+      "protein": 10.5
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.1,
+      "energy": 0,
+      "sodium": 39,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 30,
+      "energy": 9,
+      "sodium": 1,
+      "protein": 0.3
+    },
+    {
+      "id": 154,
+      "name": "にんにく",
+      "lipid": 0,
+      "amount": 0.3,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 114,
+      "name": "オリーブ油",
+      "lipid": 0.5,
+      "amount": 0.5,
+      "energy": 4,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 136,
+      "name": "ダイストマト",
+      "lipid": 0.1,
+      "amount": 40,
+      "energy": 8,
+      "sodium": 2,
+      "protein": 0.4
+    },
+    {
+      "id": 66,
+      "name": "金時豆（ボイル）",
+      "lipid": 0.3,
+      "amount": 25,
+      "energy": 32,
+      "sodium": 0,
+      "protein": 2.3
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 8,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 79,
+      "name": "赤ワイン",
+      "lipid": 0,
+      "amount": 1.5,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 47,
+      "name": "乾燥バジル",
+      "lipid": 0,
+      "amount": 0.03,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 151,
+    "protein_g": 13.5,
+    "fat_g": 6.5,
+    "carbohydrate_g": 0,
+    "salt_g": 0.18
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

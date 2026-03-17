@@ -1,0 +1,144 @@
+{
+  "id": "17",
+  "menu_name": "コーンチャウダー",
+  "ingredients": [
+    {
+      "id": 137,
+      "name": "豚肉",
+      "lipid": 2.3,
+      "amount": 20,
+      "energy": 36,
+      "sodium": 10,
+      "protein": 4
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 4,
+      "sodium": 5,
+      "protein": 0.1
+    },
+    {
+      "id": 141,
+      "name": "じゃがいも",
+      "lipid": 0,
+      "amount": 50,
+      "energy": 27,
+      "sodium": 0,
+      "protein": 0.8
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 30,
+      "energy": 9,
+      "sodium": 1,
+      "protein": 0.3
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 0.7,
+      "amount": 0.7,
+      "energy": 6,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 82,
+      "name": "クリームコーン",
+      "lipid": 0.3,
+      "amount": 50,
+      "energy": 41,
+      "sodium": 130,
+      "protein": 0.9
+    },
+    {
+      "id": 181,
+      "name": "小麦粉",
+      "lipid": 0,
+      "amount": 3,
+      "energy": 10,
+      "sodium": 0,
+      "protein": 0.2
+    },
+    {
+      "id": 127,
+      "name": "バター",
+      "lipid": 1,
+      "amount": 1.2,
+      "energy": 8,
+      "sodium": 9,
+      "protein": 0
+    },
+    {
+      "id": 21,
+      "name": "濃縮スープ（ポーク）",
+      "lipid": 0.2,
+      "amount": 5,
+      "energy": 3,
+      "sodium": 4,
+      "protein": 0.2
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.75,
+      "energy": 0,
+      "sodium": 293,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.04,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 93,
+      "name": "脱脂粉乳",
+      "lipid": 0.1,
+      "amount": 12,
+      "energy": 42,
+      "sodium": 68,
+      "protein": 4.1
+    },
+    {
+      "id": 88,
+      "name": "ベイリーフ",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 90,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 186,
+    "protein_g": 10.6,
+    "fat_g": 4.6,
+    "carbohydrate_g": 0,
+    "salt_g": 1.32
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

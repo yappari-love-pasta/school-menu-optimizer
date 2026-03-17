@@ -1,0 +1,108 @@
+{
+  "id": "10",
+  "menu_name": "みそドレッシングサラダ",
+  "ingredients": [
+    {
+      "id": 13,
+      "name": "キャベツ",
+      "lipid": 0.1,
+      "amount": 35,
+      "energy": 6,
+      "sodium": 1,
+      "protein": 0.4
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 1,
+      "sodium": 2,
+      "protein": 0
+    },
+    {
+      "id": 10,
+      "name": "もやし",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 3,
+      "sodium": 0,
+      "protein": 0.3
+    },
+    {
+      "id": 87,
+      "name": "小松菜",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 2,
+      "sodium": 2,
+      "protein": 0.2
+    },
+    {
+      "id": 74,
+      "name": "白みそ",
+      "lipid": 0.2,
+      "amount": 3.6,
+      "energy": 7,
+      "sodium": 176,
+      "protein": 0.5
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 8,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 51,
+      "name": "サラダ油",
+      "lipid": 1.2,
+      "amount": 1.2,
+      "energy": 11,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 119,
+      "name": "酢",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 78,
+      "name": "ごま油",
+      "lipid": 0.4,
+      "amount": 0.4,
+      "energy": 4,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 166,
+      "name": "白ごま",
+      "lipid": 0.4,
+      "amount": 0.8,
+      "energy": 5,
+      "sodium": 0,
+      "protein": 0.2
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 48,
+    "protein_g": 1.6,
+    "fat_g": 2.3,
+    "carbohydrate_g": 0,
+    "salt_g": 0.46
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

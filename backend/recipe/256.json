@@ -1,0 +1,126 @@
+{
+  "id": "256",
+  "menu_name": "みそ煮こみうどん",
+  "ingredients": [
+    {
+      "id": 162,
+      "name": "干しうどん",
+      "lipid": 0.4,
+      "amount": 40,
+      "energy": 133,
+      "sodium": 202,
+      "protein": 3.4
+    },
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 2.5,
+      "amount": 25,
+      "energy": 41,
+      "sodium": 13,
+      "protein": 4.8
+    },
+    {
+      "id": 186,
+      "name": "冷凍油揚げ",
+      "lipid": 2.8,
+      "amount": 8,
+      "energy": 33,
+      "sodium": 0,
+      "protein": 1.9
+    },
+    {
+      "id": 171,
+      "name": "ちくわ",
+      "lipid": 0.1,
+      "amount": 5,
+      "energy": 6,
+      "sodium": 42,
+      "protein": 0.6
+    },
+    {
+      "id": 106,
+      "name": "長ねぎ",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 4,
+      "sodium": 0,
+      "protein": 0.2
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 3,
+      "sodium": 3,
+      "protein": 0.1
+    },
+    {
+      "id": 103,
+      "name": "白菜",
+      "lipid": 0,
+      "amount": 25,
+      "energy": 3,
+      "sodium": 1,
+      "protein": 0.2
+    },
+    {
+      "id": 87,
+      "name": "小松菜",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 2,
+      "sodium": 2,
+      "protein": 0.2
+    },
+    {
+      "id": 35,
+      "name": "かつお節",
+      "lipid": 0,
+      "amount": 1.8,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 160,
+      "name": "赤みそ",
+      "lipid": 0.4,
+      "amount": 8,
+      "energy": 14,
+      "sodium": 408,
+      "protein": 1
+    },
+    {
+      "id": 74,
+      "name": "白みそ",
+      "lipid": 0.1,
+      "amount": 2,
+      "energy": 4,
+      "sodium": 98,
+      "protein": 0.3
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 135,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 243,
+    "protein_g": 12.7,
+    "fat_g": 6.3,
+    "carbohydrate_g": 0,
+    "salt_g": 1.95
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

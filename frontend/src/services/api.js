@@ -13,7 +13,7 @@ const apiClient = axios.create({
   headers: {
     'Content-Type': 'application/json',
   },
-  timeout: 70000, // 70秒のタイムアウト（量子アニーリング計算は時間がかかる）
+  timeout: 180000, // 3分のタイムアウト（量子アニーリング計算は時間がかかる）
 });
 
 /**
@@ -23,6 +23,7 @@ const apiClient = axios.create({
  * @param {number} params.cost - M日間の合計コスト目標値（円）
  * @param {string} [params.school_id] - 小学校ID（オプション、デフォルト: "default_school"）
  * @param {string} [params.target_year_month] - 対象年月（YYYY-MM-DD形式、オプション）
+ * @param {boolean} [params.add_milk=false] - 牛乳を追加するか（オプション、デフォルト: false）
  * @param {Object} params.history - 履歴データ（現在は未使用）
  * @returns {Promise} APIレスポンス
  */
@@ -65,9 +66,10 @@ export const generateMenu = async (params) => {
       M: params.days || 5,  // 献立日数
       cost: params.cost || 1500.0,  // M日間の合計コスト目標値
       save_to_db: true,  // データベースに保存
-      school_id: params.school_id || 9999,  // 小学校ID
+      school_id: params.school_id || '62059dce-db8f-4fde-b59a-444853efe5d8',  // 小学校ID（横須賀市小学校のUUID）
       target_year_month: params.target_year_month || null,  // 対象年月（YYYY-MM-DD形式）
-      target_week: params.target_week || null  // 対象週（1〜5、NULLも可）
+      target_week: params.target_week || null,  // 対象週（1〜5、NULLも可）
+      add_milk: params.add_milk || false  // 牛乳を追加するか
     };
 
     console.log('📤 Request to /optimize:', apiParams);
@@ -95,6 +97,81 @@ export const generateMenu = async (params) => {
       throw new Error('リクエストの送信に失敗しました: ' + error.message);
     }
   }
+};
+
+/**
+ * 献立生成SSEストリーミングAPI（1日ごとにリアルタイム受信）
+ * @param {Object} params - リクエストパラメータ（generateMenuと同形式）
+ * @param {Function} onDay - 1日分が完了するたびに呼ばれる (dayEvent) => void
+ * @param {Function} onDone - 全日完了時に呼ばれる (result) => void（transformBackendResponse済み）
+ * @param {Function} onError - エラー時に呼ばれる (error) => void
+ * @returns {AbortController} - キャンセル用コントローラー
+ */
+export const generateMenuStream = (params, onDay, onDone, onError, onStart) => {
+  const apiParams = {
+    cost: params.cost || 1500.0,
+    save_to_db: true,
+    school_id: params.school_id || '62059dce-db8f-4fde-b59a-444853efe5d8',
+    school_id_b: params.school_id_b || 'b4e2f891-c7d3-4a56-9f18-2b3c4d5e6f7a',
+    start_date: params.start_date || null,
+    end_date: params.end_date || null,
+    add_milk: params.add_milk || false,
+  };
+
+  const controller = new AbortController();
+
+  (async () => {
+    try {
+      const response = await fetch(`${API_BASE_URL}/optimize-stream`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(apiParams),
+        signal: controller.signal,
+      });
+
+      if (!response.ok) {
+        throw new Error(`サーバーエラー: HTTP ${response.status}`);
+      }
+
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = '';
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        buffer += decoder.decode(value, { stream: true });
+        const parts = buffer.split('\n\n');
+        buffer = parts.pop(); // 未完了部分を保持
+
+        for (const part of parts) {
+          if (!part.startsWith('data: ')) continue;
+          try {
+            const data = JSON.parse(part.slice(6));
+            if (data.event === 'start') {
+              onStart?.(data);
+            } else if (data.event === 'day') {
+              onDay(data);
+            } else if (data.event === 'done') {
+              onDone(transformBackendResponse(data.result));
+            } else if (data.event === 'error') {
+              onError(new Error(data.message || '最適化エラーが発生しました'));
+              return;
+            }
+          } catch (e) {
+            console.warn('SSE parse error:', e, part);
+          }
+        }
+      }
+    } catch (err) {
+      if (err.name !== 'AbortError') {
+        onError(err);
+      }
+    }
+  })();
+
+  return controller;
 };
 
 /**
@@ -203,60 +280,65 @@ export const loadRecipe = async (menuId) => {
 };
 
 /**
- * バックエンドからレシピ一覧を取得
- * @returns {Promise} レシピ一覧
+ * バックエンドから指定されたIDのレシピを取得
+ * @param {number|string} recipeId - レシピID
+ * @returns {Promise} レシピデータ
  */
-export const getRecipes = async () => {
+export const getRecipes = async (recipeId) => {
   try {
-    // backend/reciept.json からレシピを読み込む
-    const response = await loadJSON('reciept.json');
-
-    // JSONからレシピ一覧を抽出
-    const recipes = [];
-    if (Array.isArray(response)) {
-      response.forEach(recipe => {
-        // カテゴリマッピング
-        const categoryMap = {
-          1: '主食',
-          2: '主菜',
-          3: '副菜',
-          4: '汁物',
-          5: 'デザート'
-        };
-
-        recipes.push({
-          menu_id: `M${String(recipe.id).padStart(9, '0')}`, // id を M000000001 形式に変換
-          name: recipe.title,
-          category: categoryMap[recipe.category] || '未分類',
-          ingredients: recipe.ingredients || [],
-          nutrition: recipe.nutritions || {}
-        });
-      });
+    if (!recipeId) {
+      throw new Error('レシピIDが指定されていません');
     }
 
-    return recipes;
+    // バックエンドの /get-recipes エンドポイントにリクエスト
+    const response = await apiClient.get('/get-recipes', {
+      params: { id: recipeId }
+    });
+
+    console.log(`✅ Recipe ${recipeId} retrieved successfully:`, response.data);
+    return response.data;
   } catch (error) {
-    console.error('Failed to fetch recipes:', error);
-    throw new Error('レシピ一覧の取得に失敗しました');
+    if (error.response && error.response.status === 404) {
+      console.error(`Recipe ${recipeId} not found`);
+      throw new Error(`レシピ ${recipeId} が見つかりません`);
+    }
+    console.error(`Failed to fetch recipe ${recipeId}:`, error);
+    throw new Error(`レシピ ${recipeId} の取得に失敗しました`);
+  }
+};
+
+/**
+ * 全レシピ一覧を取得する
+ * @returns {Promise} 全レシピデータ（カテゴリー、ジャンル、栄養価含む）
+ */
+export const getAllRecipes = async () => {
+  try {
+    // バックエンドの /get-all-recipes エンドポイントにリクエスト
+    const response = await apiClient.get('/get-all-recipes');
+
+    console.log('✅ All recipes retrieved successfully:', response.data);
+    return response.data;
+  } catch (error) {
+    console.error('Failed to fetch all recipes:', error);
+    throw new Error('全レシピの取得に失敗しました');
   }
 };
 
 /**
  * 保存された献立を取得する
  * @param {Object} params - リクエストパラメータ
- * @param {number} [params.school_id=1] - 小学校ID
+ * @param {string} [params.school_id='62059dce-db8f-4fde-b59a-444853efe5d8'] - 小学校ID（UUID）
  * @param {string} [params.target_year_month] - 対象年月（YYYY-MM-DD形式）
  * @param {number} [params.target_week] - 対象週（1〜5、省略時は月全体のすべての週を取得）
  * @returns {Promise} APIレスポンス（target_week指定時は単一オブジェクト、未指定時は{menus: []}）
  */
 export const getSavedMenu = async (params = {}) => {
   try {
-    const { school_id = 1, target_year_month, target_week } = params;
+    const { school_id = '62059dce-db8f-4fde-b59a-444853efe5d8', target_year_month } = params;
 
     const response = await apiClient.post('/get_menu', {
       school_id,
       target_year_month,
-      target_week,
     });
 
     console.log('✅ Saved menu retrieved successfully:', response.data);
@@ -271,10 +353,270 @@ export const getSavedMenu = async (params = {}) => {
   }
 };
 
+/**
+ * 食材価格一覧を取得する
+ * @returns {Promise} 食材価格データ（food_id, food_name, price_per_gram含む）
+ */
+export const getFoodCosts = async () => {
+  try {
+    const response = await apiClient.get('/get-food-costs');
+    console.log('✅ Food costs retrieved successfully:', response.data);
+    return response.data;
+  } catch (error) {
+    console.error('Failed to fetch food costs:', error);
+    throw new Error('食材価格の取得に失敗しました');
+  }
+};
+
+/**
+ * 食材価格を更新する
+ * @param {number} foodId - 食材ID
+ * @param {string} schoolId - 小学校ID（UUID）
+ * @param {number} pricePerGram - グラム単価（円/g）
+ * @returns {Promise} 更新結果
+ */
+export const updateFoodCost = async (foodId, schoolId, pricePerGram) => {
+  try {
+    const response = await apiClient.post('/update-food-cost', {
+      food_id: foodId,
+      school_id: schoolId,
+      price_per_gram: pricePerGram,
+    });
+    console.log(`✅ Food cost updated successfully for food_id ${foodId}:`, response.data);
+    return response.data;
+  } catch (error) {
+    console.error(`Failed to update food cost for food_id ${foodId}:`, error);
+    throw new Error('食材価格の更新に失敗しました');
+  }
+};
+
+/**
+ * レシピ詳細を取得する（食材・調理工程含む）
+ * @param {number} recipeId - レシピID
+ * @returns {Promise} レシピ詳細データ（recipe, ingredients, workload_steps）
+ */
+export const getRecipeDetail = async (recipeId) => {
+  try {
+    const response = await apiClient.get(`/get-recipe-detail/${recipeId}`);
+    console.log(`✅ Recipe detail ${recipeId} retrieved successfully:`, response.data);
+    return response.data;
+  } catch (error) {
+    console.error(`Failed to fetch recipe detail ${recipeId}:`, error);
+    throw new Error(`レシピ詳細の取得に失敗しました (ID: ${recipeId})`);
+  }
+};
+
+/**
+ * レシピを更新する（食材・調理工程含む）
+ * @param {number} recipeId - レシピID
+ * @param {Object} recipe - レシピ基本情報
+ * @param {Array} ingredients - 食材リスト [{food_id, food_name, amount_g}]
+ * @param {Array} workloadSteps - 調理工程リスト [{step_name, cooking_time_min, use_heat, use_oven, requires_prep_day_before}]
+ * @returns {Promise} 更新結果
+ */
+export const updateRecipe = async (recipeId, recipe, ingredients, workloadSteps) => {
+  try {
+    const response = await apiClient.post('/update-recipe', {
+      recipe_id: recipeId,
+      recipe: recipe,
+      ingredients: ingredients,
+      workload_steps: workloadSteps,
+    });
+    console.log(`✅ Recipe ${recipeId} updated successfully:`, response.data);
+    return response.data;
+  } catch (error) {
+    console.error(`Failed to update recipe ${recipeId}:`, error);
+    throw new Error(`レシピの更新に失敗しました (ID: ${recipeId})`);
+  }
+};
+
+/**
+ * 新規食材を追加する
+ * @param {string} foodName - 食材名
+ * @param {string} schoolId - 小学校ID（UUID）
+ * @param {number} pricePerGram - グラム単価（円/g）
+ * @param {number|null} foodColorClass - 食品色分類（1=赤, 2=黄, 3=緑, null=未分類）
+ * @returns {Promise} 追加結果（food_id含む）
+ */
+export const addFood = async (foodName, schoolId, pricePerGram, foodColorClass = null) => {
+  try {
+    const response = await apiClient.post('/add-food', {
+      food_name: foodName,
+      school_id: schoolId,
+      price_per_gram: pricePerGram,
+      food_color_class: foodColorClass,
+    });
+    console.log('✅ Food added successfully:', response.data);
+    return response.data;
+  } catch (error) {
+    console.error('Failed to add food:', error);
+    throw new Error('食材の追加に失敗しました');
+  }
+};
+
+/**
+ * 新規レシピを追加する
+ * @param {Object} recipe - レシピ基本情報 {recipe_name, category, genre, energy_kcal, protein_g, fat_g, salt_g}
+ * @param {Array} ingredients - 食材リスト [{food_name, amount_g}]
+ * @param {Array} workloadSteps - 調理工程リスト [{step_name, cooking_time_min, use_heat, use_oven, requires_prep_day_before}]
+ * @returns {Promise} 追加結果（recipe_id含む）
+ */
+export const addRecipe = async (recipe, ingredients, workloadSteps) => {
+  try {
+    const response = await apiClient.post('/add-recipe', {
+      recipe,
+      ingredients,
+      workload_steps: workloadSteps,
+    });
+    console.log('✅ Recipe added successfully:', response.data);
+    return response.data;
+  } catch (error) {
+    console.error('Failed to add recipe:', error);
+    throw new Error('レシピの追加に失敗しました');
+  }
+};
+
+/**
+ * 食材を削除する
+ * @param {number} foodId - 食材ID
+ * @param {string} schoolId - 小学校ID（UUID）
+ * @returns {Promise} 削除結果
+ */
+export const deleteFood = async (foodId, schoolId) => {
+  try {
+    const response = await apiClient.post('/delete-food', {
+      food_id: foodId,
+      school_id: schoolId,
+    });
+    console.log(`✅ Food ${foodId} deleted successfully:`, response.data);
+    return response.data;
+  } catch (error) {
+    console.error(`Failed to delete food ${foodId}:`, error);
+    throw new Error('食材の削除に失敗しました');
+  }
+};
+
+/**
+ * レシピを削除する
+ * @param {number} recipeId - レシピID
+ * @returns {Promise} 削除結果
+ */
+export const deleteRecipe = async (recipeId) => {
+  try {
+    const response = await apiClient.post('/delete-recipe', {
+      recipe_id: recipeId,
+    });
+    console.log(`✅ Recipe ${recipeId} deleted successfully:`, response.data);
+    return response.data;
+  } catch (error) {
+    console.error(`Failed to delete recipe ${recipeId}:`, error);
+    throw new Error('レシピの削除に失敗しました');
+  }
+};
+
+/**
+ * 食材価格CSVを一括インポートする（バックエンド側でループ処理）
+ * @param {Array} rows - CSVから変換した行オブジェクトの配列
+ * @param {string} schoolId - 学校ID
+ * @returns {Promise} { success_count, error_count, errors, items }
+ */
+export const importFoodCosts = async (rows, schoolId) => {
+  try {
+    const response = await apiClient.post('/import-food-costs', { rows, school_id: schoolId });
+    return response.data;
+  } catch (error) {
+    console.error('Failed to import food costs:', error);
+    throw new Error('食材価格の一括インポートに失敗しました');
+  }
+};
+
+/**
+ * レシピCSVを一括インポートする（バックエンド側でループ処理）
+ * @param {Array} rows - CSVから変換した行オブジェクトの配列
+ * @returns {Promise} { success_count, error_count, errors }
+ */
+export const importRecipes = async (rows) => {
+  try {
+    const response = await apiClient.post('/import-recipes', { rows });
+    return response.data;
+  } catch (error) {
+    console.error('Failed to import recipes:', error);
+    throw new Error('レシピの一括インポートに失敗しました');
+  }
+};
+
+/**
+ * 祝日リストを取得する
+ * @param {number} [year] - 取得する年（省略時は全件）
+ * @returns {Promise<string[]>} "YYYY-MM-DD" 形式の祝日配列
+ */
+export const getHolidays = async (year) => {
+  try {
+    const params = year ? { year } : {};
+    const response = await apiClient.get('/get-holidays', { params });
+    return response.data.holidays || [];
+  } catch (error) {
+    console.error('Failed to fetch holidays:', error);
+    return [];
+  }
+};
+
+/**
+ * 指定日付の献立を削除する
+ * @param {string} schoolId - 小学校ID（UUID）
+ * @param {string} targetDate - 対象日付（"YYYY-MM-DD"形式）
+ * @returns {Promise} { deleted_count, target_date }
+ */
+export const deleteMenu = async (schoolId, targetDate) => {
+  try {
+    const response = await apiClient.post('/delete-menu', {
+      school_id: schoolId,
+      target_date: targetDate,
+    });
+    console.log(`✅ Menu deleted for ${targetDate}:`, response.data);
+    return response.data;
+  } catch (error) {
+    console.error('Failed to delete menu:', error);
+    throw new Error('献立の削除に失敗しました');
+  }
+};
+
+/**
+ * ダッシュボード用の統計データを取得する
+ * @param {string} schoolId - 小学校ID（UUID）
+ * @returns {Promise} { summary, monthly_trends }
+ */
+export const getDashboardStats = async (schoolId = '62059dce-db8f-4fde-b59a-444853efe5d8') => {
+  try {
+    const response = await apiClient.get('/dashboard-stats', {
+      params: { school_id: schoolId },
+    });
+    return response.data;
+  } catch (error) {
+    console.error('Failed to fetch dashboard stats:', error);
+    throw new Error('ダッシュボード統計の取得に失敗しました');
+  }
+};
+
 export default {
   generateMenu,
+  generateMenuStream,
   loadJSON,
   loadRecipe,
   getRecipes,
+  getAllRecipes,
   getSavedMenu,
+  addRecipe,
+  importRecipes,
+  importFoodCosts,
+  getFoodCosts,
+  updateFoodCost,
+  getRecipeDetail,
+  updateRecipe,
+  addFood,
+  deleteFood,
+  deleteRecipe,
+  getDashboardStats,
+  getHolidays,
+  deleteMenu,
 };

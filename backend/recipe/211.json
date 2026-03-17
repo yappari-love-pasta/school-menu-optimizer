@@ -1,0 +1,99 @@
+{
+  "id": "211",
+  "menu_name": "マヨネーズサラダ",
+  "ingredients": [
+    {
+      "id": 13,
+      "name": "キャベツ",
+      "lipid": 0.1,
+      "amount": 45,
+      "energy": 8,
+      "sodium": 2,
+      "protein": 0.5
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 1,
+      "sodium": 2,
+      "protein": 0
+    },
+    {
+      "id": 61,
+      "name": "ホールコーン",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 4,
+      "sodium": 11,
+      "protein": 0.1
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 0.2,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.22,
+      "energy": 0,
+      "sodium": 86,
+      "protein": 0
+    },
+    {
+      "id": 119,
+      "name": "酢",
+      "lipid": 0,
+      "amount": 0.9,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 51,
+      "name": "サラダ油",
+      "lipid": 1.3,
+      "amount": 1.3,
+      "energy": 12,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 96,
+      "name": "卵ぬきマヨネーズ",
+      "lipid": 2.4,
+      "amount": 3.7,
+      "energy": 22,
+      "sodium": 27,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 49,
+    "protein_g": 0.6,
+    "fat_g": 3.8,
+    "carbohydrate_g": 0,
+    "salt_g": 0.33
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

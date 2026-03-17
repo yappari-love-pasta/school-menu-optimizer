@@ -1,0 +1,189 @@
+{
+  "id": "230",
+  "menu_name": "サンマーメン",
+  "ingredients": [
+    {
+      "id": 2,
+      "name": "中華麺",
+      "lipid": 0.5,
+      "amount": 32,
+      "energy": 108,
+      "sodium": 131,
+      "protein": 3.7
+    },
+    {
+      "id": 137,
+      "name": "豚肉",
+      "lipid": 2.3,
+      "amount": 20,
+      "energy": 36,
+      "sodium": 10,
+      "protein": 4
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 3,
+      "sodium": 3,
+      "protein": 0.1
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 5,
+      "sodium": 0,
+      "protein": 0.1
+    },
+    {
+      "id": 10,
+      "name": "もやし",
+      "lipid": 0,
+      "amount": 42,
+      "energy": 6,
+      "sodium": 1,
+      "protein": 0.7
+    },
+    {
+      "id": 95,
+      "name": "にら",
+      "lipid": 0,
+      "amount": 4,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0.1
+    },
+    {
+      "id": 164,
+      "name": "しょうが",
+      "lipid": 0,
+      "amount": 0.3,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 154,
+      "name": "にんにく",
+      "lipid": 0,
+      "amount": 0.3,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 0.8,
+      "amount": 0.8,
+      "energy": 7,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 35,
+      "name": "かつお節",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 21,
+      "name": "濃縮スープ（ポーク）",
+      "lipid": 0.2,
+      "amount": 5,
+      "energy": 3,
+      "sodium": 4,
+      "protein": 0.2
+    },
+    {
+      "id": 37,
+      "name": "濃縮スープ（チキン）",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 1,
+      "sodium": 4,
+      "protein": 0.2
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 7,
+      "energy": 5,
+      "sodium": 399,
+      "protein": 0.5
+    },
+    {
+      "id": 45,
+      "name": "オイスターソース",
+      "lipid": 0,
+      "amount": 0.5,
+      "energy": 1,
+      "sodium": 23,
+      "protein": 0
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.4,
+      "energy": 0,
+      "sodium": 156,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.03,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 145,
+      "name": "片栗粉",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 17,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 140,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 78,
+      "name": "ごま油",
+      "lipid": 0.4,
+      "amount": 0.4,
+      "energy": 4,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 197,
+    "protein_g": 9.6,
+    "fat_g": 4.2,
+    "carbohydrate_g": 0,
+    "salt_g": 1.86
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

@@ -1,0 +1,27 @@
+{
+  "id": "83",
+  "menu_name": "のり",
+  "ingredients": [
+    {
+      "id": 111,
+      "name": "のり",
+      "lipid": 0.1,
+      "amount": 4,
+      "energy": 12,
+      "sodium": 21,
+      "protein": 1.7
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 12,
+    "protein_g": 1.7,
+    "fat_g": 0.1,
+    "carbohydrate_g": 0,
+    "salt_g": 0.05
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

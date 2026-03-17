@@ -1,0 +1,72 @@
+{
+  "id": "245",
+  "menu_name": "とり肉の南部焼き",
+  "ingredients": [
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 7.1,
+      "amount": 70,
+      "energy": 113,
+      "sodium": 36,
+      "protein": 13.3
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 4,
+      "energy": 3,
+      "sodium": 228,
+      "protein": 0.3
+    },
+    {
+      "id": 166,
+      "name": "白ごま",
+      "lipid": 1.6,
+      "amount": 3,
+      "energy": 18,
+      "sodium": 0,
+      "protein": 0.6
+    },
+    {
+      "id": 106,
+      "name": "長ねぎ",
+      "lipid": 0,
+      "amount": 0.5,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 179,
+      "name": "一味とうがらし",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 135,
+    "protein_g": 14.2,
+    "fat_g": 8.7,
+    "carbohydrate_g": 0,
+    "salt_g": 0.67
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

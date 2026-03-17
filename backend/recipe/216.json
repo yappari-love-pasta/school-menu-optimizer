@@ -1,0 +1,36 @@
+{
+  "id": "216",
+  "menu_name": "さけの塩こうじ焼き",
+  "ingredients": [
+    {
+      "id": 40,
+      "name": "さけ",
+      "lipid": 2.5,
+      "amount": 60,
+      "energy": 74,
+      "sodium": 40,
+      "protein": 13.4
+    },
+    {
+      "id": 161,
+      "name": "塩こうじ",
+      "lipid": 0,
+      "amount": 4.8,
+      "energy": 8,
+      "sodium": 245,
+      "protein": 0.1
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 82,
+    "protein_g": 13.5,
+    "fat_g": 2.5,
+    "carbohydrate_g": 0,
+    "salt_g": 0.72
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

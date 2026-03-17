@@ -1,0 +1,108 @@
+{
+  "id": "150",
+  "menu_name": "のしどり",
+  "ingredients": [
+    {
+      "id": 36,
+      "name": "鶏ひき肉",
+      "lipid": 6.1,
+      "amount": 60,
+      "energy": 97,
+      "sodium": 31,
+      "protein": 11.4
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 6,
+      "sodium": 0,
+      "protein": 0.2
+    },
+    {
+      "id": 39,
+      "name": "卵",
+      "lipid": 0.7,
+      "amount": 8,
+      "energy": 10,
+      "sodium": 10,
+      "protein": 0.8
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 8,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 2,
+      "sodium": 114,
+      "protein": 0.2
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.6,
+      "energy": 0,
+      "sodium": 234,
+      "protein": 0
+    },
+    {
+      "id": 164,
+      "name": "しょうが",
+      "lipid": 0,
+      "amount": 0.5,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0,
+      "amount": 0.5,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 181,
+      "name": "小麦粉",
+      "lipid": 0,
+      "amount": 1.7,
+      "energy": 6,
+      "sodium": 0,
+      "protein": 0.1
+    },
+    {
+      "id": 166,
+      "name": "白ごま",
+      "lipid": 0.3,
+      "amount": 0.5,
+      "energy": 3,
+      "sodium": 0,
+      "protein": 0.1
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 133,
+    "protein_g": 12.8,
+    "fat_g": 7.1,
+    "carbohydrate_g": 0,
+    "salt_g": 0.99
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

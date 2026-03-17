@@ -1,0 +1,45 @@
+{
+  "id": "2029",
+  "menu_name": "ぶどう豆",
+  "ingredients": [
+    {
+      "id": 189,
+      "name": "大豆",
+      "lipid": 3.5,
+      "amount": 18.0,
+      "energy": 66.7,
+      "sodium": 0.0,
+      "protein": 6.0
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0.0,
+      "amount": 5.0,
+      "energy": 19.5,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0.0,
+      "amount": 1.4,
+      "energy": 1.0,
+      "sodium": 79.8,
+      "protein": 0.1
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 87,
+    "protein_g": 6.1,
+    "fat_g": 3.5,
+    "carbohydrate_g": 0,
+    "salt_g": 0.2
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

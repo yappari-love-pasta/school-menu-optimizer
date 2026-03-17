@@ -1,0 +1,108 @@
+{
+  "id": "270",
+  "menu_name": "とり肉とうずら卵のてり煮",
+  "ingredients": [
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 6.6,
+      "amount": 65,
+      "energy": 105,
+      "sodium": 34,
+      "protein": 12.4
+    },
+    {
+      "id": 41,
+      "name": "こんにゃく",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 1,
+      "sodium": 2,
+      "protein": 0
+    },
+    {
+      "id": 174,
+      "name": "うずら卵水煮",
+      "lipid": 4.9,
+      "amount": 35,
+      "energy": 57,
+      "sodium": 74,
+      "protein": 3.9
+    },
+    {
+      "id": 164,
+      "name": "しょうが",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 30,
+      "name": "みりん",
+      "lipid": 0,
+      "amount": 3,
+      "energy": 7,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 4,
+      "energy": 3,
+      "sodium": 228,
+      "protein": 0.3
+    },
+    {
+      "id": 173,
+      "name": "三温糖",
+      "lipid": 0,
+      "amount": 3,
+      "energy": 12,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 0,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 179,
+      "name": "一味とうがらし",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 186,
+    "protein_g": 16.6,
+    "fat_g": 11.5,
+    "carbohydrate_g": 0,
+    "salt_g": 0.86
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

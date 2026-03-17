@@ -1,0 +1,81 @@
+{
+  "id": "252",
+  "menu_name": "さわらのゆうあん焼き",
+  "ingredients": [
+    {
+      "id": 57,
+      "name": "さわら",
+      "lipid": 5.8,
+      "amount": 60,
+      "energy": 97,
+      "sodium": 39,
+      "protein": 12.1
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 1.2,
+      "energy": 5,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 4,
+      "energy": 3,
+      "sodium": 228,
+      "protein": 0.3
+    },
+    {
+      "id": 128,
+      "name": "ゆず果汁",
+      "lipid": 0,
+      "amount": 0.8,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 30,
+      "name": "みりん",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 1,
+      "amount": 1,
+      "energy": 9,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 117,
+    "protein_g": 12.4,
+    "fat_g": 6.8,
+    "carbohydrate_g": 0,
+    "salt_g": 0.68
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

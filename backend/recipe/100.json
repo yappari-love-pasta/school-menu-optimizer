@@ -1,0 +1,63 @@
+{
+  "id": "100",
+  "menu_name": "ごま入りおひたし",
+  "ingredients": [
+    {
+      "id": 13,
+      "name": "キャベツ",
+      "lipid": 0.1,
+      "amount": 45,
+      "energy": 8,
+      "sodium": 2,
+      "protein": 0.5
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 1,
+      "sodium": 2,
+      "protein": 0
+    },
+    {
+      "id": 180,
+      "name": "ほうれん草",
+      "lipid": 0.1,
+      "amount": 20,
+      "energy": 4,
+      "sodium": 23,
+      "protein": 0.6
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 3,
+      "energy": 2,
+      "sodium": 171,
+      "protein": 0.2
+    },
+    {
+      "id": 166,
+      "name": "白ごま",
+      "lipid": 0.8,
+      "amount": 1.5,
+      "energy": 9,
+      "sodium": 0,
+      "protein": 0.3
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 24,
+    "protein_g": 1.6,
+    "fat_g": 1,
+    "carbohydrate_g": 0,
+    "salt_g": 0.5
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

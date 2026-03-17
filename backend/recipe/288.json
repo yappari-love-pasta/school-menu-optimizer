@@ -1,0 +1,144 @@
+{
+  "id": "288",
+  "menu_name": "あんかけうどん",
+  "ingredients": [
+    {
+      "id": 162,
+      "name": "干しうどん",
+      "lipid": 0.4,
+      "amount": 40,
+      "energy": 133,
+      "sodium": 202,
+      "protein": 3.4
+    },
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 1.5,
+      "amount": 15,
+      "energy": 24,
+      "sodium": 8,
+      "protein": 2.9
+    },
+    {
+      "id": 186,
+      "name": "冷凍油揚げ",
+      "lipid": 1.4,
+      "amount": 4,
+      "energy": 17,
+      "sodium": 0,
+      "protein": 0.9
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 3,
+      "sodium": 3,
+      "protein": 0.1
+    },
+    {
+      "id": 103,
+      "name": "白菜",
+      "lipid": 0,
+      "amount": 35,
+      "energy": 4,
+      "sodium": 2,
+      "protein": 0.3
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 1,
+      "amount": 1,
+      "energy": 9,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 106,
+      "name": "長ねぎ",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 3,
+      "sodium": 0,
+      "protein": 0.1
+    },
+    {
+      "id": 180,
+      "name": "ほうれん草",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 3,
+      "sodium": 17,
+      "protein": 0.4
+    },
+    {
+      "id": 35,
+      "name": "かつお節",
+      "lipid": 0,
+      "amount": 1.8,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 0.3,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.5,
+      "energy": 0,
+      "sodium": 195,
+      "protein": 0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 6,
+      "energy": 5,
+      "sodium": 342,
+      "protein": 0.5
+    },
+    {
+      "id": 145,
+      "name": "片栗粉",
+      "lipid": 0,
+      "amount": 3.5,
+      "energy": 12,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 110,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 214,
+    "protein_g": 8.6,
+    "fat_g": 4.3,
+    "carbohydrate_g": 0,
+    "salt_g": 1.95
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

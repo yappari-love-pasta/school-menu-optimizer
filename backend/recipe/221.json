@@ -1,0 +1,108 @@
+{
+  "id": "221",
+  "menu_name": "牛すき丼",
+  "ingredients": [
+    {
+      "id": 27,
+      "name": "米（委託炊飯）",
+      "lipid": 0.7,
+      "amount": 80,
+      "energy": 274,
+      "sodium": 1,
+      "protein": 4.9
+    },
+    {
+      "id": 20,
+      "name": "牛肉",
+      "lipid": 5.3,
+      "amount": 40,
+      "energy": 78,
+      "sodium": 20,
+      "protein": 7.8
+    },
+    {
+      "id": 68,
+      "name": "凍り豆腐",
+      "lipid": 2,
+      "amount": 6,
+      "energy": 30,
+      "sodium": 26,
+      "protein": 3
+    },
+    {
+      "id": 15,
+      "name": "しらたき",
+      "lipid": 0,
+      "amount": 30,
+      "energy": 2,
+      "sodium": 3,
+      "protein": 0.1
+    },
+    {
+      "id": 106,
+      "name": "長ねぎ",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0.1
+    },
+    {
+      "id": 103,
+      "name": "白菜",
+      "lipid": 0,
+      "amount": 50,
+      "energy": 6,
+      "sodium": 3,
+      "protein": 0.4
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 1.2,
+      "amount": 1.2,
+      "energy": 11,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 3.4,
+      "energy": 13,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 7,
+      "energy": 5,
+      "sodium": 399,
+      "protein": 0.5
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 422,
+    "protein_g": 16.8,
+    "fat_g": 9.2,
+    "carbohydrate_g": 0,
+    "salt_g": 1.15
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

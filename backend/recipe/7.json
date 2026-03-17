@@ -1,0 +1,54 @@
+{
+  "id": "7",
+  "menu_name": "ミックスフルーツ",
+  "ingredients": [
+    {
+      "id": 188,
+      "name": "みかん缶",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 13,
+      "sodium": 1,
+      "protein": 0.1
+    },
+    {
+      "id": 157,
+      "name": "りんご缶",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 16,
+      "sodium": 0,
+      "protein": 0.1
+    },
+    {
+      "id": 146,
+      "name": "ぶどうダイスゼリー",
+      "lipid": 0,
+      "amount": 40,
+      "energy": 35,
+      "sodium": 21,
+      "protein": 0
+    },
+    {
+      "id": 56,
+      "name": "かんづめの汁",
+      "lipid": 0,
+      "amount": 30,
+      "energy": 19,
+      "sodium": 1,
+      "protein": 0.1
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 83,
+    "protein_g": 0.3,
+    "fat_g": 0,
+    "carbohydrate_g": 0,
+    "salt_g": 0.06
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

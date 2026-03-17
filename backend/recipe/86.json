@@ -1,0 +1,72 @@
+{
+  "id": "86",
+  "menu_name": "かじきのつけ焼き",
+  "ingredients": [
+    {
+      "id": 184,
+      "name": "かじき",
+      "lipid": 4.6,
+      "amount": 60,
+      "energy": 83,
+      "sodium": 43,
+      "protein": 11.5
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 2.8,
+      "energy": 2,
+      "sodium": 160,
+      "protein": 0.2
+    },
+    {
+      "id": 160,
+      "name": "赤みそ",
+      "lipid": 0.1,
+      "amount": 2,
+      "energy": 4,
+      "sodium": 102,
+      "protein": 0.3
+    },
+    {
+      "id": 164,
+      "name": "しょうが",
+      "lipid": 0,
+      "amount": 1.2,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 1,
+      "amount": 1,
+      "energy": 9,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 99,
+    "protein_g": 12,
+    "fat_g": 5.7,
+    "carbohydrate_g": 0,
+    "salt_g": 0.77
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

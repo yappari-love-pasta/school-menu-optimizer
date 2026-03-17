@@ -1,0 +1,117 @@
+{
+  "id": "263",
+  "menu_name": "にゅうめん",
+  "ingredients": [
+    {
+      "id": 17,
+      "name": "そうめん",
+      "lipid": 0.1,
+      "amount": 7,
+      "energy": 23,
+      "sodium": 16,
+      "protein": 0.7
+    },
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 1.5,
+      "amount": 15,
+      "energy": 24,
+      "sodium": 8,
+      "protein": 2.9
+    },
+    {
+      "id": 186,
+      "name": "冷凍油揚げ",
+      "lipid": 2.1,
+      "amount": 6,
+      "energy": 25,
+      "sodium": 0,
+      "protein": 1.4
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 3,
+      "sodium": 3,
+      "protein": 0.1
+    },
+    {
+      "id": 131,
+      "name": "大根",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 2,
+      "sodium": 2,
+      "protein": 0.1
+    },
+    {
+      "id": 106,
+      "name": "長ねぎ",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 35,
+      "name": "かつお節",
+      "lipid": 0,
+      "amount": 1.5,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.5,
+      "energy": 0,
+      "sodium": 195,
+      "protein": 0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 2.5,
+      "energy": 2,
+      "sodium": 143,
+      "protein": 0.2
+    },
+    {
+      "id": 30,
+      "name": "みりん",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 130,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 82,
+    "protein_g": 5.4,
+    "fat_g": 3.7,
+    "carbohydrate_g": 0,
+    "salt_g": 0.93
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

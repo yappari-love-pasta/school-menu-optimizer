@@ -1,0 +1,81 @@
+{
+  "id": "317",
+  "menu_name": "さわらのごまみそ焼き",
+  "ingredients": [
+    {
+      "id": 57,
+      "name": "さわら",
+      "lipid": 5.8,
+      "amount": 60.0,
+      "energy": 97.0,
+      "sodium": 39.0,
+      "protein": 12.1
+    },
+    {
+      "id": 160,
+      "name": "赤みそ",
+      "lipid": 0.2,
+      "amount": 4.0,
+      "energy": 7.3,
+      "sodium": 204.0,
+      "protein": 0.5
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0.0,
+      "amount": 1.0,
+      "energy": 3.9,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0.0,
+      "amount": 1.0,
+      "energy": 1.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 30,
+      "name": "みりん",
+      "lipid": 0.0,
+      "amount": 1.0,
+      "energy": 2.5,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 0.1,
+      "amount": 1.0,
+      "energy": 0.7,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 166,
+      "name": "白ごま",
+      "lipid": 1.6,
+      "amount": 3.0,
+      "energy": 18.0,
+      "sodium": 0.0,
+      "protein": 0.6
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 130,
+    "protein_g": 13.2,
+    "fat_g": 7.7,
+    "carbohydrate_g": 0,
+    "salt_g": 0.62
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

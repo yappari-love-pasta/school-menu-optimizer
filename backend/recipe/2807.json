@@ -1,0 +1,108 @@
+{
+  "id": "2807",
+  "menu_name": "かきたま汁",
+  "ingredients": [
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0.0,
+      "amount": 8.0,
+      "energy": 2.0,
+      "sodium": 2.4,
+      "protein": 0.0
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0.0,
+      "amount": 20.0,
+      "energy": 6.4,
+      "sodium": 0.4,
+      "protein": 0.2
+    },
+    {
+      "id": 53,
+      "name": "冷凍豆腐",
+      "lipid": 0.7,
+      "amount": 25.0,
+      "energy": 15.0,
+      "sodium": 0.8,
+      "protein": 1.2
+    },
+    {
+      "id": 39,
+      "name": "卵",
+      "lipid": 1.8,
+      "amount": 20.0,
+      "energy": 24.0,
+      "sodium": 24.0,
+      "protein": 2.1
+    },
+    {
+      "id": 180,
+      "name": "ほうれん草",
+      "lipid": 0.1,
+      "amount": 10.0,
+      "energy": 2.0,
+      "sodium": 11.5,
+      "protein": 0.3
+    },
+    {
+      "id": 35,
+      "name": "かつお節",
+      "lipid": 0.0,
+      "amount": 1.5,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0.0,
+      "amount": 0.8,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0.0,
+      "amount": 1.8,
+      "energy": 1.4,
+      "sodium": 102.6,
+      "protein": 0.1
+    },
+    {
+      "id": 145,
+      "name": "片栗粉",
+      "lipid": 0.0,
+      "amount": 2.0,
+      "energy": 6.8,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 58,
+    "protein_g": 3.9,
+    "fat_g": 2.6,
+    "carbohydrate_g": 0,
+    "salt_g": 0.36
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

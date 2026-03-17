@@ -1,0 +1,27 @@
+{
+  "id": "129",
+  "menu_name": "味のり",
+  "ingredients": [
+    {
+      "id": 32,
+      "name": "味のり",
+      "lipid": 0.3,
+      "amount": 1.4,
+      "energy": 3,
+      "sodium": 36,
+      "protein": 0.5
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 3,
+    "protein_g": 0.5,
+    "fat_g": 0.3,
+    "carbohydrate_g": 0,
+    "salt_g": 0.09
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

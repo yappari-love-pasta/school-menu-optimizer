@@ -1,0 +1,162 @@
+{
+  "id": "286",
+  "menu_name": "ボルシチ",
+  "ingredients": [
+    {
+      "id": 137,
+      "name": "豚肉",
+      "lipid": 4.1,
+      "amount": 35,
+      "energy": 64,
+      "sodium": 17,
+      "protein": 7
+    },
+    {
+      "id": 141,
+      "name": "じゃがいも",
+      "lipid": 0.1,
+      "amount": 60,
+      "energy": 32,
+      "sodium": 1,
+      "protein": 1
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 40,
+      "energy": 12,
+      "sodium": 1,
+      "protein": 0.4
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 4,
+      "sodium": 5,
+      "protein": 0.1
+    },
+    {
+      "id": 131,
+      "name": "大根",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 3,
+      "sodium": 3,
+      "protein": 0.1
+    },
+    {
+      "id": 13,
+      "name": "キャベツ",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 4,
+      "sodium": 1,
+      "protein": 0.2
+    },
+    {
+      "id": 112,
+      "name": "乾燥パセリ",
+      "lipid": 0,
+      "amount": 0.03,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 110,
+      "name": "トマトピューレ",
+      "lipid": 0,
+      "amount": 8,
+      "energy": 4,
+      "sodium": 2,
+      "protein": 0.2
+    },
+    {
+      "id": 7,
+      "name": "トマトケチャップ",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 5,
+      "sodium": 60,
+      "protein": 0.1
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.9,
+      "energy": 0,
+      "sodium": 351,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 21,
+      "name": "濃縮スープ（ポーク）",
+      "lipid": 0.2,
+      "amount": 5,
+      "energy": 3,
+      "sodium": 4,
+      "protein": 0.2
+    },
+    {
+      "id": 79,
+      "name": "赤ワイン",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 71,
+      "name": "ローリエ",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 80,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 86,
+      "name": "生クリーム",
+      "lipid": 0.6,
+      "amount": 2,
+      "energy": 6,
+      "sodium": 1,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 138,
+    "protein_g": 9.3,
+    "fat_g": 5.0,
+    "carbohydrate_g": 0,
+    "salt_g": 1.13
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

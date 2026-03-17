@@ -1,0 +1,207 @@
+{
+  "id": "105",
+  "menu_name": "メキシカンソース",
+  "ingredients": [
+    {
+      "id": 142,
+      "name": "豚ひき肉",
+      "lipid": 5.3,
+      "amount": 45,
+      "energy": 82,
+      "sodium": 22,
+      "protein": 9
+    },
+    {
+      "id": 117,
+      "name": "大豆ミート",
+      "lipid": 0.2,
+      "amount": 8,
+      "energy": 29,
+      "sodium": 0,
+      "protein": 3.7
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 40,
+      "energy": 12,
+      "sodium": 1,
+      "protein": 0.4
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 5,
+      "sodium": 6,
+      "protein": 0.1
+    },
+    {
+      "id": 61,
+      "name": "ホールコーン",
+      "lipid": 0.1,
+      "amount": 15,
+      "energy": 12,
+      "sodium": 32,
+      "protein": 0.3
+    },
+    {
+      "id": 90,
+      "name": "マッシュルーム",
+      "lipid": 0,
+      "amount": 3,
+      "energy": 1,
+      "sodium": 11,
+      "protein": 0.1
+    },
+    {
+      "id": 154,
+      "name": "にんにく",
+      "lipid": 0,
+      "amount": 0.07,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 0.8,
+      "amount": 0.8,
+      "energy": 7,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 43,
+      "name": "グリンピース",
+      "lipid": 0,
+      "amount": 3,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0.2
+    },
+    {
+      "id": 21,
+      "name": "濃縮スープ（ポーク）",
+      "lipid": 0.1,
+      "amount": 3,
+      "energy": 2,
+      "sodium": 2,
+      "protein": 0.1
+    },
+    {
+      "id": 8,
+      "name": "ナツメグ",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 88,
+      "name": "ベイリーフ",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 7,
+      "name": "トマトケチャップ",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 16,
+      "sodium": 180,
+      "protein": 0.2
+    },
+    {
+      "id": 99,
+      "name": "チリパウダー",
+      "lipid": 0,
+      "amount": 0.06,
+      "energy": 0,
+      "sodium": 2,
+      "protein": 0
+    },
+    {
+      "id": 179,
+      "name": "一味とうがらし",
+      "lipid": 0,
+      "amount": 0.02,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.13,
+      "energy": 0,
+      "sodium": 51,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 0.6,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 0.6,
+      "energy": 0,
+      "sodium": 34,
+      "protein": 0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 34,
+      "name": "米粉",
+      "lipid": 0,
+      "amount": 3,
+      "energy": 11,
+      "sodium": 0,
+      "protein": 0.2
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 181,
+    "protein_g": 14.3,
+    "fat_g": 6.5,
+    "carbohydrate_g": 0,
+    "salt_g": 0.87
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

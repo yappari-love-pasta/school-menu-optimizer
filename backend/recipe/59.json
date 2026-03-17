@@ -1,0 +1,27 @@
+{
+  "id": "59",
+  "menu_name": "コッペパン",
+  "ingredients": [
+    {
+      "id": 143,
+      "name": "コッペパン",
+      "lipid": 3.8,
+      "amount": 50,
+      "energy": 208,
+      "sodium": 351,
+      "protein": 7
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 208,
+    "protein_g": 7,
+    "fat_g": 3.8,
+    "carbohydrate_g": 0,
+    "salt_g": 0.89
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

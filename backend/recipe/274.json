@@ -1,0 +1,135 @@
+{
+  "id": "274",
+  "menu_name": "ホキのたれカツ丼",
+  "ingredients": [
+    {
+      "id": 27,
+      "name": "米（委託炊飯）",
+      "lipid": 0.7,
+      "amount": 80,
+      "energy": 274,
+      "sodium": 1,
+      "protein": 4.9
+    },
+    {
+      "id": 24,
+      "name": "ホキ",
+      "lipid": 0.8,
+      "amount": 60,
+      "energy": 47,
+      "sodium": 96,
+      "protein": 10.2
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.1,
+      "energy": 0,
+      "sodium": 39,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.02,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 181,
+      "name": "小麦粉",
+      "lipid": 0.1,
+      "amount": 4,
+      "energy": 14,
+      "sodium": 0,
+      "protein": 0.3
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 14,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 159,
+      "name": "パン粉",
+      "lipid": 0.5,
+      "amount": 7,
+      "energy": 26,
+      "sodium": 32,
+      "protein": 1
+    },
+    {
+      "id": 108,
+      "name": "大豆フレーク",
+      "lipid": 1.5,
+      "amount": 7,
+      "energy": 29,
+      "sodium": 0,
+      "protein": 2.4
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 6,
+      "amount": 35,
+      "energy": 53,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 4,
+      "sodium": 285,
+      "protein": 0.4
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 4,
+      "energy": 16,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 30,
+      "name": "みりん",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 467,
+    "protein_g": 19.2,
+    "fat_g": 9.6,
+    "carbohydrate_g": 0,
+    "salt_g": 1.15
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

@@ -1,0 +1,180 @@
+{
+  "id": "117",
+  "menu_name": "ミートソースグラタン",
+  "ingredients": [
+    {
+      "id": 67,
+      "name": "マカロニ",
+      "lipid": 0.5,
+      "amount": 25,
+      "energy": 87,
+      "sodium": 0,
+      "protein": 3.2
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.4,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 142,
+      "name": "豚ひき肉",
+      "lipid": 3.5,
+      "amount": 30,
+      "energy": 55,
+      "sodium": 15,
+      "protein": 6
+    },
+    {
+      "id": 117,
+      "name": "大豆ミート",
+      "lipid": 0.1,
+      "amount": 3,
+      "energy": 11,
+      "sodium": 0,
+      "protein": 1.4
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 40,
+      "energy": 12,
+      "sodium": 1,
+      "protein": 0.4
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 3,
+      "sodium": 3,
+      "protein": 0.1
+    },
+    {
+      "id": 154,
+      "name": "にんにく",
+      "lipid": 0,
+      "amount": 0.5,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 177,
+      "name": "セロリ",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 0.7,
+      "amount": 0.7,
+      "energy": 6,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 21,
+      "name": "濃縮スープ（ポーク）",
+      "lipid": 0.1,
+      "amount": 3,
+      "energy": 2,
+      "sodium": 2,
+      "protein": 0.1
+    },
+    {
+      "id": 7,
+      "name": "トマトケチャップ",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 11,
+      "sodium": 120,
+      "protein": 0.2
+    },
+    {
+      "id": 50,
+      "name": "デミグラスソース",
+      "lipid": 0.2,
+      "amount": 5,
+      "energy": 4,
+      "sodium": 26,
+      "protein": 0.1
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 0.4,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 46,
+      "name": "中濃ソース",
+      "lipid": 0,
+      "amount": 0.5,
+      "energy": 1,
+      "sodium": 12,
+      "protein": 0
+    },
+    {
+      "id": 181,
+      "name": "小麦粉",
+      "lipid": 0.1,
+      "amount": 4,
+      "energy": 14,
+      "sodium": 0,
+      "protein": 0.3
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 50,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 33,
+      "name": "とろけるチーズ",
+      "lipid": 2.6,
+      "amount": 10,
+      "energy": 31,
+      "sodium": 110,
+      "protein": 2.3
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 240,
+    "protein_g": 14.1,
+    "fat_g": 7.8,
+    "carbohydrate_g": 0,
+    "salt_g": 0.73
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

@@ -1,0 +1,99 @@
+{
+  "id": "9",
+  "menu_name": "ツナそぼろごはん",
+  "ingredients": [
+    {
+      "id": 27,
+      "name": "米（委託炊飯）",
+      "lipid": 0.7,
+      "amount": 80,
+      "energy": 274,
+      "sodium": 1,
+      "protein": 4.9
+    },
+    {
+      "id": 187,
+      "name": "ツナ",
+      "lipid": 11.9,
+      "amount": 55,
+      "energy": 146,
+      "sodium": 187,
+      "protein": 9.7
+    },
+    {
+      "id": 68,
+      "name": "凍り豆腐",
+      "lipid": 1.4,
+      "amount": 4,
+      "energy": 20,
+      "sodium": 18,
+      "protein": 2
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 4,
+      "sodium": 5,
+      "protein": 0.1
+    },
+    {
+      "id": 164,
+      "name": "しょうが",
+      "lipid": 0,
+      "amount": 0.7,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 3.9,
+      "energy": 3,
+      "sodium": 222,
+      "protein": 0.3
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 2.6,
+      "energy": 10,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0,
+      "amount": 1.5,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 30,
+      "name": "みりん",
+      "lipid": 0,
+      "amount": 0.8,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 461,
+    "protein_g": 17.0,
+    "fat_g": 14,
+    "carbohydrate_g": 0,
+    "salt_g": 1.1
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

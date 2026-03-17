@@ -1,0 +1,135 @@
+{
+  "id": "136",
+  "menu_name": "ジャーチャン豆腐",
+  "ingredients": [
+    {
+      "id": 149,
+      "name": "冷凍生揚げ",
+      "lipid": 9.5,
+      "amount": 90,
+      "energy": 146,
+      "sodium": 61,
+      "protein": 9.4
+    },
+    {
+      "id": 142,
+      "name": "豚ひき肉",
+      "lipid": 2.9,
+      "amount": 25,
+      "energy": 46,
+      "sodium": 12,
+      "protein": 5
+    },
+    {
+      "id": 154,
+      "name": "にんにく",
+      "lipid": 0,
+      "amount": 0.2,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 3,
+      "sodium": 3,
+      "protein": 0.1
+    },
+    {
+      "id": 106,
+      "name": "長ねぎ",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 176,
+      "name": "エリンギ",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 3,
+      "sodium": 0,
+      "protein": 0.3
+    },
+    {
+      "id": 95,
+      "name": "にら",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0.1
+    },
+    {
+      "id": 78,
+      "name": "ごま油",
+      "lipid": 0.5,
+      "amount": 0.5,
+      "energy": 4,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 160,
+      "name": "赤みそ",
+      "lipid": 0.2,
+      "amount": 4,
+      "energy": 7,
+      "sodium": 204,
+      "protein": 0.5
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 2,
+      "sodium": 114,
+      "protein": 0.2
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 8,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 145,
+      "name": "片栗粉",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 3,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 224,
+    "protein_g": 15.6,
+    "fat_g": 13.1,
+    "carbohydrate_g": 0,
+    "salt_g": 1.0
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

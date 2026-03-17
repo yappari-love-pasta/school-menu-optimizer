@@ -1,0 +1,72 @@
+{
+  "id": "21",
+  "menu_name": "いわしのたつた揚げ",
+  "ingredients": [
+    {
+      "id": 121,
+      "name": "いわし",
+      "lipid": 3.7,
+      "amount": 40,
+      "energy": 62,
+      "sodium": 32,
+      "protein": 7.7
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 2,
+      "sodium": 114,
+      "protein": 0.2
+    },
+    {
+      "id": 164,
+      "name": "しょうが",
+      "lipid": 0,
+      "amount": 0.6,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 145,
+      "name": "片栗粉",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 34,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 2.8,
+      "amount": 35,
+      "energy": 25,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 124,
+    "protein_g": 7.9,
+    "fat_g": 6.5,
+    "carbohydrate_g": 0,
+    "salt_g": 0.37
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

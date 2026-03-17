@@ -1,0 +1,126 @@
+{
+  "id": "2839",
+  "menu_name": "とり肉の香味漬け",
+  "ingredients": [
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 6.1,
+      "amount": 60.0,
+      "energy": 97.6,
+      "sodium": 31.2,
+      "protein": 11.4
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0.0,
+      "amount": 0.5,
+      "energy": 0.5,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0.0,
+      "amount": 1.0,
+      "energy": 0.8,
+      "sodium": 57.0,
+      "protein": 0.1
+    },
+    {
+      "id": 145,
+      "name": "片栗粉",
+      "lipid": 0.0,
+      "amount": 8.0,
+      "energy": 27.2,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 2.8,
+      "amount": 35.0,
+      "energy": 25.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 106,
+      "name": "長ねぎ",
+      "lipid": 0.0,
+      "amount": 10.0,
+      "energy": 2.0,
+      "sodium": 0.0,
+      "protein": 0.1
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 0.0,
+      "amount": 0.2,
+      "energy": 0.1,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 179,
+      "name": "一味とうがらし",
+      "lipid": 0.0,
+      "amount": 0.01,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0.0,
+      "amount": 2.5,
+      "energy": 1.9,
+      "sodium": 142.5,
+      "protein": 0.2
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0.0,
+      "amount": 3.0,
+      "energy": 11.7,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 119,
+      "name": "酢",
+      "lipid": 0.0,
+      "amount": 4.0,
+      "energy": 2.7,
+      "sodium": 0.7,
+      "protein": 0.0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0.0,
+      "amount": 8.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 170,
+    "protein_g": 11.8,
+    "fat_g": 8.9,
+    "carbohydrate_g": 0,
+    "salt_g": 0.59
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

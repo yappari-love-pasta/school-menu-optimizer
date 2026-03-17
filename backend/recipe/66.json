@@ -1,0 +1,189 @@
+{
+  "id": "66",
+  "menu_name": "ひよこ豆のカレー",
+  "ingredients": [
+    {
+      "id": 185,
+      "name": "米",
+      "lipid": 0.6,
+      "amount": 70,
+      "energy": 239,
+      "sodium": 1,
+      "protein": 4.3
+    },
+    {
+      "id": 102,
+      "name": "麦",
+      "lipid": 0.2,
+      "amount": 10,
+      "energy": 33,
+      "sodium": 0,
+      "protein": 0.7
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 0.3,
+      "amount": 0.3,
+      "energy": 3,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 153,
+      "name": "ターメリック",
+      "lipid": 0,
+      "amount": 0.05,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 0,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 142,
+      "name": "豚ひき肉",
+      "lipid": 4.1,
+      "amount": 35,
+      "energy": 64,
+      "sodium": 17,
+      "protein": 7
+    },
+    {
+      "id": 22,
+      "name": "ひよこ豆（ボイル）",
+      "lipid": 0.6,
+      "amount": 25,
+      "energy": 37,
+      "sodium": 1,
+      "protein": 2.4
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 5,
+      "sodium": 6,
+      "protein": 0.1
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 50,
+      "energy": 16,
+      "sodium": 1,
+      "protein": 0.5
+    },
+    {
+      "id": 154,
+      "name": "にんにく",
+      "lipid": 0,
+      "amount": 0.1,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 164,
+      "name": "しょうが",
+      "lipid": 0,
+      "amount": 0.2,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 181,
+      "name": "小麦粉",
+      "lipid": 0.1,
+      "amount": 6,
+      "energy": 21,
+      "sodium": 0,
+      "protein": 0.5
+    },
+    {
+      "id": 122,
+      "name": "カレー粉",
+      "lipid": 0.1,
+      "amount": 1,
+      "energy": 3,
+      "sodium": 0,
+      "protein": 0.1
+    },
+    {
+      "id": 21,
+      "name": "濃縮スープ（ポーク）",
+      "lipid": 0.1,
+      "amount": 2,
+      "energy": 1,
+      "sodium": 2,
+      "protein": 0.1
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.8,
+      "energy": 0,
+      "sodium": 312,
+      "protein": 0
+    },
+    {
+      "id": 7,
+      "name": "トマトケチャップ",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 2,
+      "sodium": 24,
+      "protein": 0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 2,
+      "energy": 2,
+      "sodium": 114,
+      "protein": 0.2
+    },
+    {
+      "id": 88,
+      "name": "ベイリーフ",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 427,
+    "protein_g": 15.9,
+    "fat_g": 6.1,
+    "carbohydrate_g": 0,
+    "salt_g": 1.21
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

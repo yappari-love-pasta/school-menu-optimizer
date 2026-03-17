@@ -1,0 +1,27 @@
+{
+  "id": "30",
+  "menu_name": "ソフトフランス",
+  "ingredients": [
+    {
+      "id": 94,
+      "name": "ソフトフランス",
+      "lipid": 3.8,
+      "amount": 50,
+      "energy": 217,
+      "sodium": 351,
+      "protein": 7
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 217,
+    "protein_g": 7,
+    "fat_g": 3.8,
+    "carbohydrate_g": 0,
+    "salt_g": 0.89
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

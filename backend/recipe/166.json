@@ -1,0 +1,108 @@
+{
+  "id": "166",
+  "menu_name": "とり肉とじゃがいものケチャップあえ",
+  "ingredients": [
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 5.1,
+      "amount": 50,
+      "energy": 81,
+      "sodium": 26,
+      "protein": 9.5
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.1,
+      "energy": 0,
+      "sodium": 39,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.03,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 145,
+      "name": "片栗粉",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 17,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 141,
+      "name": "じゃがいも",
+      "lipid": 0.1,
+      "amount": 70,
+      "energy": 37,
+      "sodium": 1,
+      "protein": 1.1
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 4,
+      "amount": 35,
+      "energy": 35,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 30,
+      "energy": 9,
+      "sodium": 1,
+      "protein": 0.3
+    },
+    {
+      "id": 7,
+      "name": "トマトケチャップ",
+      "lipid": 0,
+      "amount": 9.5,
+      "energy": 10,
+      "sodium": 114,
+      "protein": 0.2
+    },
+    {
+      "id": 46,
+      "name": "中濃ソース",
+      "lipid": 0,
+      "amount": 2.9,
+      "energy": 4,
+      "sodium": 67,
+      "protein": 0
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 1.9,
+      "energy": 7,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 200,
+    "protein_g": 11.1,
+    "fat_g": 9.2,
+    "carbohydrate_g": 0,
+    "salt_g": 0.63
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

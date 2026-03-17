@@ -1,0 +1,81 @@
+{
+  "id": "215",
+  "menu_name": "いわしのこはく揚げ",
+  "ingredients": [
+    {
+      "id": 121,
+      "name": "いわし",
+      "lipid": 3.7,
+      "amount": 40,
+      "energy": 62,
+      "sodium": 32,
+      "protein": 7.7
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 1.8,
+      "energy": 1,
+      "sodium": 103,
+      "protein": 0.1
+    },
+    {
+      "id": 160,
+      "name": "赤みそ",
+      "lipid": 0.1,
+      "amount": 1.2,
+      "energy": 2,
+      "sodium": 61,
+      "protein": 0.2
+    },
+    {
+      "id": 164,
+      "name": "しょうが",
+      "lipid": 0,
+      "amount": 0.8,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 145,
+      "name": "片栗粉",
+      "lipid": 0,
+      "amount": 14,
+      "energy": 47,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 2.8,
+      "amount": 35,
+      "energy": 25,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 138,
+    "protein_g": 8,
+    "fat_g": 6.6,
+    "carbohydrate_g": 0,
+    "salt_g": 0.5
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

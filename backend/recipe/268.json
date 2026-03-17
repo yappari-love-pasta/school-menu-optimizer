@@ -1,0 +1,99 @@
+{
+  "id": "268",
+  "menu_name": "しいらのスパイス揚げ",
+  "ingredients": [
+    {
+      "id": 109,
+      "name": "しいら",
+      "lipid": 1.1,
+      "amount": 60,
+      "energy": 60,
+      "sodium": 30,
+      "protein": 12.8
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.45,
+      "energy": 0,
+      "sodium": 176,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.03,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 154,
+      "name": "にんにく",
+      "lipid": 0,
+      "amount": 0.03,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 18,
+      "name": "白ワイン",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 8,
+      "name": "ナツメグ",
+      "lipid": 0,
+      "amount": 0.03,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 60,
+      "name": "からし粉",
+      "lipid": 0.1,
+      "amount": 0.5,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0.2
+    },
+    {
+      "id": 181,
+      "name": "小麦粉",
+      "lipid": 0.1,
+      "amount": 6,
+      "energy": 21,
+      "sodium": 0,
+      "protein": 0.5
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 4.2,
+      "amount": 35,
+      "energy": 37,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 121,
+    "protein_g": 13.5,
+    "fat_g": 5.5,
+    "carbohydrate_g": 0,
+    "salt_g": 0.52
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

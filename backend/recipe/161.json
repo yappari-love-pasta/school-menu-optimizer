@@ -1,0 +1,72 @@
+{
+  "id": "161",
+  "menu_name": "スタンポット",
+  "ingredients": [
+    {
+      "id": 141,
+      "name": "じゃがいも",
+      "lipid": 0.1,
+      "amount": 60,
+      "energy": 32,
+      "sodium": 1,
+      "protein": 1
+    },
+    {
+      "id": 180,
+      "name": "ほうれん草",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 2,
+      "sodium": 11,
+      "protein": 0.3
+    },
+    {
+      "id": 59,
+      "name": "ベーコン",
+      "lipid": 2,
+      "amount": 5,
+      "energy": 20,
+      "sodium": 40,
+      "protein": 0.6
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 0.8,
+      "amount": 0.8,
+      "energy": 7,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.2,
+      "energy": 0,
+      "sodium": 78,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.02,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 61,
+    "protein_g": 1.9,
+    "fat_g": 2.9,
+    "carbohydrate_g": 0,
+    "salt_g": 0.33
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

@@ -1,0 +1,126 @@
+{
+  "id": "47",
+  "menu_name": "ＡＢＣスープ",
+  "ingredients": [
+    {
+      "id": 134,
+      "name": "アルファベットマカロニ",
+      "lipid": 0.1,
+      "amount": 6,
+      "energy": 21,
+      "sodium": 0,
+      "protein": 0.8
+    },
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 1.5,
+      "amount": 15,
+      "energy": 24,
+      "sodium": 8,
+      "protein": 2.9
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 3,
+      "sodium": 3,
+      "protein": 0.1
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0,
+      "amount": 30,
+      "energy": 9,
+      "sodium": 1,
+      "protein": 0.3
+    },
+    {
+      "id": 141,
+      "name": "じゃがいも",
+      "lipid": 0,
+      "amount": 25,
+      "energy": 13,
+      "sodium": 0,
+      "protein": 0.4
+    },
+    {
+      "id": 13,
+      "name": "キャベツ",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 4,
+      "sodium": 1,
+      "protein": 0.2
+    },
+    {
+      "id": 61,
+      "name": "ホールコーン",
+      "lipid": 0.1,
+      "amount": 10,
+      "energy": 8,
+      "sodium": 21,
+      "protein": 0.2
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.9,
+      "energy": 0,
+      "sodium": 351,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.03,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 112,
+      "name": "乾燥パセリ",
+      "lipid": 0,
+      "amount": 0.03,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 37,
+      "name": "濃縮スープ（チキン）",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 1,
+      "sodium": 4,
+      "protein": 0.2
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 125,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 83,
+    "protein_g": 5.1,
+    "fat_g": 1.7,
+    "carbohydrate_g": 0,
+    "salt_g": 0.99
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

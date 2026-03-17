@@ -1,0 +1,27 @@
+{
+  "id": "940",
+  "menu_name": "ロールパン",
+  "ingredients": [
+    {
+      "id": 4458,
+      "name": "ロールパン",
+      "lipid": 7.9,
+      "amount": 50.0,
+      "energy": 254.0,
+      "sodium": 313.0,
+      "protein": 6.9
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 254,
+    "protein_g": 6.9,
+    "fat_g": 7.9,
+    "carbohydrate_g": 0,
+    "salt_g": 0.8
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

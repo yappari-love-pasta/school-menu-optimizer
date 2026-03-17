@@ -1,0 +1,81 @@
+{
+  "id": "540",
+  "menu_name": "さばの南部焼き",
+  "ingredients": [
+    {
+      "id": 48,
+      "name": "さば",
+      "lipid": 10.1,
+      "amount": 60.0,
+      "energy": 127.0,
+      "sodium": 66.0,
+      "protein": 12.4
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0.0,
+      "amount": 3.5,
+      "energy": 2.6,
+      "sodium": 199.5,
+      "protein": 0.3
+    },
+    {
+      "id": 166,
+      "name": "白ごま",
+      "lipid": 1.6,
+      "amount": 3.0,
+      "energy": 18.0,
+      "sodium": 0.0,
+      "protein": 0.6
+    },
+    {
+      "id": 106,
+      "name": "長ねぎ",
+      "lipid": 0.0,
+      "amount": 0.5,
+      "energy": 0.1,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 179,
+      "name": "一味とうがらし",
+      "lipid": 0.0,
+      "amount": 0.01,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0.0,
+      "amount": 1.5,
+      "energy": 1.5,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 0.1,
+      "amount": 1.0,
+      "energy": 0.7,
+      "sodium": 0.0,
+      "protein": 0.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 150,
+    "protein_g": 13.3,
+    "fat_g": 11.8,
+    "carbohydrate_g": 0,
+    "salt_g": 0.68
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

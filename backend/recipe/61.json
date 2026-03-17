@@ -1,0 +1,117 @@
+{
+  "id": "61",
+  "menu_name": "五目煮",
+  "ingredients": [
+    {
+      "id": 137,
+      "name": "豚肉",
+      "lipid": 4.7,
+      "amount": 40,
+      "energy": 73,
+      "sodium": 20,
+      "protein": 8
+    },
+    {
+      "id": 124,
+      "name": "さつま揚げ",
+      "lipid": 0.6,
+      "amount": 15,
+      "energy": 20,
+      "sodium": 110,
+      "protein": 1.9
+    },
+    {
+      "id": 170,
+      "name": "ごぼう",
+      "lipid": 0,
+      "amount": 12,
+      "energy": 6,
+      "sodium": 2,
+      "protein": 0.2
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 4,
+      "sodium": 5,
+      "protein": 0.1
+    },
+    {
+      "id": 141,
+      "name": "じゃがいも",
+      "lipid": 0.1,
+      "amount": 65,
+      "energy": 35,
+      "sodium": 1,
+      "protein": 1.1
+    },
+    {
+      "id": 41,
+      "name": "こんにゃく",
+      "lipid": 0,
+      "amount": 25,
+      "energy": 1,
+      "sodium": 3,
+      "protein": 0
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 1.2,
+      "amount": 1.2,
+      "energy": 11,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 43,
+      "name": "グリンピース",
+      "lipid": 0,
+      "amount": 3,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0.2
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 20,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 6,
+      "energy": 5,
+      "sodium": 342,
+      "protein": 0.5
+    },
+    {
+      "id": 30,
+      "name": "みりん",
+      "lipid": 0,
+      "amount": 1,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 179,
+    "protein_g": 12.0,
+    "fat_g": 6.6,
+    "carbohydrate_g": 0,
+    "salt_g": 1.23
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

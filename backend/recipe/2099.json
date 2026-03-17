@@ -1,0 +1,153 @@
+{
+  "id": "2099",
+  "menu_name": "チリコンカルネ",
+  "ingredients": [
+    {
+      "id": 12202,
+      "name": "金時豆",
+      "lipid": 0.3,
+      "amount": 20.0,
+      "energy": 56.0,
+      "sodium": 0.0,
+      "protein": 3.5
+    },
+    {
+      "id": 142,
+      "name": "豚ひき肉",
+      "lipid": 5.2,
+      "amount": 45.0,
+      "energy": 81.8,
+      "sodium": 21.8,
+      "protein": 9.0
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0.0,
+      "amount": 20.0,
+      "energy": 6.4,
+      "sodium": 0.4,
+      "protein": 0.2
+    },
+    {
+      "id": 154,
+      "name": "にんにく",
+      "lipid": 0.0,
+      "amount": 0.04,
+      "energy": 0.1,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 0.0,
+      "amount": 0.3,
+      "energy": 0.2,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 21,
+      "name": "濃縮スープ（ポーク）",
+      "lipid": 0.1,
+      "amount": 3.0,
+      "energy": 1.5,
+      "sodium": 2.6,
+      "protein": 0.1
+    },
+    {
+      "id": 8,
+      "name": "ナツメグ",
+      "lipid": 0.0,
+      "amount": 0.01,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 71,
+      "name": "ローリエ",
+      "lipid": 0.0,
+      "amount": 0.01,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 7,
+      "name": "トマトケチャップ",
+      "lipid": 0.0,
+      "amount": 13.0,
+      "energy": 13.9,
+      "sodium": 156.0,
+      "protein": 0.2
+    },
+    {
+      "id": 99,
+      "name": "チリパウダー",
+      "lipid": 0.0,
+      "amount": 0.05,
+      "energy": 0.2,
+      "sodium": 1.2,
+      "protein": 0.0
+    },
+    {
+      "id": 179,
+      "name": "一味とうがらし",
+      "lipid": 0.0,
+      "amount": 0.02,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0.0,
+      "amount": 0.06,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0.0,
+      "amount": 0.01,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0.0,
+      "amount": 1.0,
+      "energy": 3.9,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0.0,
+      "amount": 0.5,
+      "energy": 0.4,
+      "sodium": 28.5,
+      "protein": 0.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 164,
+    "protein_g": 13.0,
+    "fat_g": 5.6,
+    "carbohydrate_g": 0,
+    "salt_g": 0.53
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

@@ -1,0 +1,81 @@
+{
+  "id": "200",
+  "menu_name": "ほうれん草のサラダ",
+  "ingredients": [
+    {
+      "id": 180,
+      "name": "ほうれん草",
+      "lipid": 0.1,
+      "amount": 20,
+      "energy": 3,
+      "sodium": 3,
+      "protein": 0.4
+    },
+    {
+      "id": 13,
+      "name": "キャベツ",
+      "lipid": 0,
+      "amount": 20,
+      "energy": 4,
+      "sodium": 1,
+      "protein": 0.2
+    },
+    {
+      "id": 61,
+      "name": "ホールコーン",
+      "lipid": 0.1,
+      "amount": 20,
+      "energy": 16,
+      "sodium": 42,
+      "protein": 0.5
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 1.2,
+      "energy": 1,
+      "sodium": 68,
+      "protein": 0.1
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.1,
+      "energy": 0,
+      "sodium": 39,
+      "protein": 0
+    },
+    {
+      "id": 119,
+      "name": "酢",
+      "lipid": 0,
+      "amount": 0.7,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 78,
+      "name": "ごま油",
+      "lipid": 0.7,
+      "amount": 0.7,
+      "energy": 6,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 30,
+    "protein_g": 1.2,
+    "fat_g": 0.9,
+    "carbohydrate_g": 0,
+    "salt_g": 0.39
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

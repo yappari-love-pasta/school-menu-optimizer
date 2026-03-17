@@ -1,0 +1,27 @@
+{
+  "id": "2063",
+  "menu_name": "プルーン発酵乳",
+  "ingredients": [
+    {
+      "id": 11972,
+      "name": "プルーン発酵乳",
+      "lipid": 2.8,
+      "amount": 213.0,
+      "energy": 160.0,
+      "sodium": 192.0,
+      "protein": 6.4
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 160,
+    "protein_g": 6.4,
+    "fat_g": 2.8,
+    "carbohydrate_g": 0,
+    "salt_g": 0.49
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

@@ -1,0 +1,90 @@
+{
+  "id": "195",
+  "menu_name": "ホキの香草焼き",
+  "ingredients": [
+    {
+      "id": 24,
+      "name": "ホキ",
+      "lipid": 0.8,
+      "amount": 60,
+      "energy": 47,
+      "sodium": 96,
+      "protein": 10.2
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.5,
+      "energy": 0,
+      "sodium": 195,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.03,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 47,
+      "name": "乾燥バジル",
+      "lipid": 0,
+      "amount": 0.08,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 112,
+      "name": "乾燥パセリ",
+      "lipid": 0,
+      "amount": 0.1,
+      "energy": 0,
+      "sodium": 1,
+      "protein": 0
+    },
+    {
+      "id": 154,
+      "name": "にんにく",
+      "lipid": 0,
+      "amount": 0.2,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 18,
+      "name": "白ワイン",
+      "lipid": 0,
+      "amount": 0.5,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 114,
+      "name": "オリーブ油",
+      "lipid": 3,
+      "amount": 3,
+      "energy": 27,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 74,
+    "protein_g": 10.2,
+    "fat_g": 3.8,
+    "carbohydrate_g": 0,
+    "salt_g": 0.74
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

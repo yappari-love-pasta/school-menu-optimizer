@@ -1,0 +1,27 @@
+{
+  "id": "232",
+  "menu_name": "りんごジャム",
+  "ingredients": [
+    {
+      "id": 167,
+      "name": "りんごジャム",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 30,
+      "sodium": 1,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 30,
+    "protein_g": 0,
+    "fat_g": 0,
+    "carbohydrate_g": 0,
+    "salt_g": 0.0
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

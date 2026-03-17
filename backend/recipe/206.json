@@ -1,0 +1,54 @@
+{
+  "id": "206",
+  "menu_name": "ミートボール",
+  "ingredients": [
+    {
+      "id": 31,
+      "name": "肉団子",
+      "lipid": 8.2,
+      "amount": 60,
+      "energy": 133,
+      "sodium": 81,
+      "protein": 9.1
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 1.2,
+      "amount": 35,
+      "energy": 11,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 7,
+      "name": "トマトケチャップ",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 5,
+      "sodium": 60,
+      "protein": 0.1
+    },
+    {
+      "id": 46,
+      "name": "中濃ソース",
+      "lipid": 0,
+      "amount": 3,
+      "energy": 4,
+      "sodium": 69,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 153,
+    "protein_g": 9.2,
+    "fat_g": 9.4,
+    "carbohydrate_g": 0,
+    "salt_g": 0.53
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

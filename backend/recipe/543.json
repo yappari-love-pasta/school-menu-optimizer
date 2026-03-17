@@ -1,0 +1,153 @@
+{
+  "id": "543",
+  "menu_name": "とり肉のてり煮丼",
+  "ingredients": [
+    {
+      "id": 185,
+      "name": "米",
+      "lipid": 0.6,
+      "amount": 70.0,
+      "energy": 239.8,
+      "sodium": 0.9,
+      "protein": 4.3
+    },
+    {
+      "id": 102,
+      "name": "麦",
+      "lipid": 0.2,
+      "amount": 10.0,
+      "energy": 33.0,
+      "sodium": 0.0,
+      "protein": 0.7
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 0.0,
+      "amount": 0.3,
+      "energy": 0.2,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0.0,
+      "amount": 1.0,
+      "energy": 1.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 7.6,
+      "amount": 75.0,
+      "energy": 122.0,
+      "sodium": 39.0,
+      "protein": 14.3
+    },
+    {
+      "id": 26,
+      "name": "玉ねぎ",
+      "lipid": 0.0,
+      "amount": 25.0,
+      "energy": 8.0,
+      "sodium": 0.5,
+      "protein": 0.2
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 0.1,
+      "amount": 1.0,
+      "energy": 0.7,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 106,
+      "name": "長ねぎ",
+      "lipid": 0.0,
+      "amount": 5.0,
+      "energy": 1.0,
+      "sodium": 0.0,
+      "protein": 0.1
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0.0,
+      "amount": 6.0,
+      "energy": 4.5,
+      "sodium": 342.0,
+      "protein": 0.4
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0.0,
+      "amount": 3.5,
+      "energy": 13.7,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 30,
+      "name": "みりん",
+      "lipid": 0.0,
+      "amount": 1.0,
+      "energy": 2.5,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0.0,
+      "amount": 1.0,
+      "energy": 1.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 145,
+      "name": "片栗粉",
+      "lipid": 0.0,
+      "amount": 2.5,
+      "energy": 8.5,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 436,
+    "protein_g": 20.0,
+    "fat_g": 8.5,
+    "carbohydrate_g": 0,
+    "salt_g": 0.97
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

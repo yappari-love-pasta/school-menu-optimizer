@@ -1,0 +1,54 @@
+{
+  "id": "2",
+  "menu_name": "おひたし",
+  "ingredients": [
+    {
+      "id": 13,
+      "name": "キャベツ",
+      "lipid": 0.1,
+      "amount": 50,
+      "energy": 9,
+      "sodium": 2,
+      "protein": 0.6
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 1,
+      "sodium": 2,
+      "protein": 0
+    },
+    {
+      "id": 87,
+      "name": "小松菜",
+      "lipid": 0,
+      "amount": 15,
+      "energy": 2,
+      "sodium": 2,
+      "protein": 0.2
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 3,
+      "energy": 2,
+      "sodium": 171,
+      "protein": 0.2
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 14,
+    "protein_g": 1,
+    "fat_g": 0.1,
+    "carbohydrate_g": 0,
+    "salt_g": 0.45
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

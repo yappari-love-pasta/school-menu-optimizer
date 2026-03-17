@@ -1,0 +1,81 @@
+{
+  "id": "260",
+  "menu_name": "あじのフライ",
+  "ingredients": [
+    {
+      "id": 168,
+      "name": "あじ",
+      "lipid": 1.6,
+      "amount": 35,
+      "energy": 39,
+      "sodium": 46,
+      "protein": 6.9
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.07,
+      "energy": 0,
+      "sodium": 27,
+      "protein": 0
+    },
+    {
+      "id": 132,
+      "name": "こしょう",
+      "lipid": 0,
+      "amount": 0.03,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 181,
+      "name": "小麦粉",
+      "lipid": 0,
+      "amount": 3,
+      "energy": 10,
+      "sodium": 0,
+      "protein": 0.2
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 159,
+      "name": "パン粉",
+      "lipid": 0.7,
+      "amount": 10,
+      "energy": 37,
+      "sodium": 46,
+      "protein": 1.5
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 4,
+      "amount": 35,
+      "energy": 35,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 121,
+    "protein_g": 8.6,
+    "fat_g": 6.3,
+    "carbohydrate_g": 0,
+    "salt_g": 0.3
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

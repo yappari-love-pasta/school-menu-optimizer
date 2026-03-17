@@ -1,0 +1,72 @@
+{
+  "id": "74",
+  "menu_name": "いわしのかば焼き",
+  "ingredients": [
+    {
+      "id": 121,
+      "name": "いわし",
+      "lipid": 3.1,
+      "amount": 33.3,
+      "energy": 52,
+      "sodium": 27,
+      "protein": 6.4
+    },
+    {
+      "id": 181,
+      "name": "小麦粉",
+      "lipid": 0.1,
+      "amount": 5,
+      "energy": 17,
+      "sodium": 0,
+      "protein": 0.4
+    },
+    {
+      "id": 135,
+      "name": "油",
+      "lipid": 2.3,
+      "amount": 35,
+      "energy": 20,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 4.5,
+      "energy": 18,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 3.3,
+      "energy": 3,
+      "sodium": 188,
+      "protein": 0.3
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 0,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 110,
+    "protein_g": 7.1,
+    "fat_g": 5.5,
+    "carbohydrate_g": 0,
+    "salt_g": 0.55
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

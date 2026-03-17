@@ -1,0 +1,72 @@
+{
+  "id": "226",
+  "menu_name": "ピリカラきゅうり",
+  "ingredients": [
+    {
+      "id": 84,
+      "name": "きゅうり",
+      "lipid": 0,
+      "amount": 30,
+      "energy": 4,
+      "sodium": 0,
+      "protein": 0.3
+    },
+    {
+      "id": 164,
+      "name": "しょうが",
+      "lipid": 0,
+      "amount": 0.5,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 1.8,
+      "energy": 1,
+      "sodium": 103,
+      "protein": 0.1
+    },
+    {
+      "id": 119,
+      "name": "酢",
+      "lipid": 0,
+      "amount": 1.8,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 78,
+      "name": "ごま油",
+      "lipid": 0.2,
+      "amount": 0.18,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 179,
+      "name": "一味とうがらし",
+      "lipid": 0,
+      "amount": 0.01,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 8,
+    "protein_g": 0.4,
+    "fat_g": 0.2,
+    "carbohydrate_g": 0,
+    "salt_g": 0.26
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

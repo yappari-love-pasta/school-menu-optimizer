@@ -1,0 +1,27 @@
+{
+  "id": "202",
+  "menu_name": "ひじきの佃煮",
+  "ingredients": [
+    {
+      "id": 9,
+      "name": "ひじきつくだ煮",
+      "lipid": 0.1,
+      "amount": 5,
+      "energy": 10,
+      "sodium": 109,
+      "protein": 0.3
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 10,
+    "protein_g": 0.3,
+    "fat_g": 0.1,
+    "carbohydrate_g": 0,
+    "salt_g": 0.28
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

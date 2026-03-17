@@ -1,0 +1,108 @@
+{
+  "id": "1677",
+  "menu_name": "呉汁",
+  "ingredients": [
+    {
+      "id": 107,
+      "name": "大豆（ボイル）",
+      "lipid": 2.0,
+      "amount": 20.0,
+      "energy": 32.8,
+      "sodium": 0.4,
+      "protein": 3.0
+    },
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 1.5,
+      "amount": 15.0,
+      "energy": 24.4,
+      "sodium": 7.8,
+      "protein": 2.9
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0.0,
+      "amount": 10.0,
+      "energy": 2.5,
+      "sodium": 3.0,
+      "protein": 0.1
+    },
+    {
+      "id": 131,
+      "name": "大根",
+      "lipid": 0.0,
+      "amount": 30.0,
+      "energy": 3.9,
+      "sodium": 4.2,
+      "protein": 0.1
+    },
+    {
+      "id": 106,
+      "name": "長ねぎ",
+      "lipid": 0.0,
+      "amount": 15.0,
+      "energy": 3.0,
+      "sodium": 0.0,
+      "protein": 0.1
+    },
+    {
+      "id": 87,
+      "name": "小松菜",
+      "lipid": 0.0,
+      "amount": 15.0,
+      "energy": 2.2,
+      "sodium": 2.2,
+      "protein": 0.2
+    },
+    {
+      "id": 35,
+      "name": "かつお節",
+      "lipid": 0.0,
+      "amount": 1.5,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    },
+    {
+      "id": 160,
+      "name": "赤みそ",
+      "lipid": 0.2,
+      "amount": 4.5,
+      "energy": 8.2,
+      "sodium": 229.5,
+      "protein": 0.6
+    },
+    {
+      "id": 74,
+      "name": "白みそ",
+      "lipid": 0.3,
+      "amount": 4.5,
+      "energy": 8.1,
+      "sodium": 220.5,
+      "protein": 0.6
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0.0,
+      "amount": 0.0,
+      "energy": 0.0,
+      "sodium": 0.0,
+      "protein": 0.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 85,
+    "protein_g": 7.6,
+    "fat_g": 4.0,
+    "carbohydrate_g": 0,
+    "salt_g": 1.19
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

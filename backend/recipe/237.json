@@ -1,0 +1,27 @@
+{
+  "id": "237",
+  "menu_name": "ボイルウインナー",
+  "ingredients": [
+    {
+      "id": 83,
+      "name": "ウインナーソーセージ（鉄）",
+      "lipid": 8.4,
+      "amount": 30,
+      "energy": 95,
+      "sodium": 177,
+      "protein": 4.6
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 95,
+    "protein_g": 4.6,
+    "fat_g": 8.4,
+    "carbohydrate_g": 0,
+    "salt_g": 0.45
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

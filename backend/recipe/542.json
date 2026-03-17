@@ -1,0 +1,27 @@
+{
+  "id": "542",
+  "menu_name": "ひじきのつくだ煮",
+  "ingredients": [
+    {
+      "id": 9,
+      "name": "ひじきつくだ煮",
+      "lipid": 0.1,
+      "amount": 5.0,
+      "energy": 10.0,
+      "sodium": 109.0,
+      "protein": 0.3
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 10,
+    "protein_g": 0.3,
+    "fat_g": 0.1,
+    "carbohydrate_g": 0,
+    "salt_g": 0.28
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

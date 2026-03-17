@@ -1,0 +1,99 @@
+{
+  "id": "76",
+  "menu_name": "春雨サラダ",
+  "ingredients": [
+    {
+      "id": 69,
+      "name": "緑豆春雨",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 17,
+      "sodium": 1,
+      "protein": 0
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 1,
+      "sodium": 2,
+      "protein": 0
+    },
+    {
+      "id": 13,
+      "name": "キャベツ",
+      "lipid": 0.1,
+      "amount": 40,
+      "energy": 7,
+      "sodium": 2,
+      "protein": 0.4
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 0.5,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 2.5,
+      "energy": 2,
+      "sodium": 143,
+      "protein": 0.2
+    },
+    {
+      "id": 119,
+      "name": "酢",
+      "lipid": 0,
+      "amount": 3,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 78,
+      "name": "ごま油",
+      "lipid": 0.5,
+      "amount": 0.5,
+      "energy": 4,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 60,
+      "name": "からし粉",
+      "lipid": 0,
+      "amount": 0.1,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 51,
+      "name": "サラダ油",
+      "lipid": 2,
+      "amount": 2,
+      "energy": 18,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 53,
+    "protein_g": 0.6,
+    "fat_g": 2.6,
+    "carbohydrate_g": 0,
+    "salt_g": 0.38
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

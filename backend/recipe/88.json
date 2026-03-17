@@ -1,0 +1,99 @@
+{
+  "id": "88",
+  "menu_name": "ゆずポン酢サラダ",
+  "ingredients": [
+    {
+      "id": 13,
+      "name": "キャベツ",
+      "lipid": 0.1,
+      "amount": 45,
+      "energy": 8,
+      "sodium": 2,
+      "protein": 0.5
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 1,
+      "sodium": 2,
+      "protein": 0
+    },
+    {
+      "id": 10,
+      "name": "もやし",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0.2
+    },
+    {
+      "id": 169,
+      "name": "わかめ",
+      "lipid": 0,
+      "amount": 0.5,
+      "energy": 1,
+      "sodium": 18,
+      "protein": 0.1
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 0.6,
+      "energy": 2,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 2.4,
+      "energy": 2,
+      "sodium": 137,
+      "protein": 0.2
+    },
+    {
+      "id": 119,
+      "name": "酢",
+      "lipid": 0,
+      "amount": 1.7,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 128,
+      "name": "ゆず果汁",
+      "lipid": 0,
+      "amount": 0.4,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 51,
+      "name": "サラダ油",
+      "lipid": 3.2,
+      "amount": 3.2,
+      "energy": 28,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 44,
+    "protein_g": 1,
+    "fat_g": 3.3,
+    "carbohydrate_g": 0,
+    "salt_g": 0.4
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

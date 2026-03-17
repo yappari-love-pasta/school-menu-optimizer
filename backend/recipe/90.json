@@ -1,0 +1,108 @@
+{
+  "id": "90",
+  "menu_name": "こぎつねごはん",
+  "ingredients": [
+    {
+      "id": 185,
+      "name": "米",
+      "lipid": 0.6,
+      "amount": 62,
+      "energy": 212,
+      "sodium": 1,
+      "protein": 3.8
+    },
+    {
+      "id": 102,
+      "name": "麦",
+      "lipid": 0.2,
+      "amount": 8,
+      "energy": 27,
+      "sodium": 0,
+      "protein": 0.6
+    },
+    {
+      "id": 105,
+      "name": "酒",
+      "lipid": 0,
+      "amount": 0.8,
+      "energy": 1,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 101,
+      "name": "水",
+      "lipid": 0,
+      "amount": 0,
+      "energy": 0,
+      "sodium": 0,
+      "protein": 0
+    },
+    {
+      "id": 85,
+      "name": "鶏肉",
+      "lipid": 1,
+      "amount": 10,
+      "energy": 16,
+      "sodium": 5,
+      "protein": 1.9
+    },
+    {
+      "id": 186,
+      "name": "冷凍油揚げ",
+      "lipid": 4.8,
+      "amount": 14,
+      "energy": 58,
+      "sodium": 1,
+      "protein": 3.3
+    },
+    {
+      "id": 64,
+      "name": "人参",
+      "lipid": 0,
+      "amount": 10,
+      "energy": 3,
+      "sodium": 3,
+      "protein": 0.1
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "lipid": 0,
+      "amount": 5,
+      "energy": 4,
+      "sodium": 285,
+      "protein": 0.4
+    },
+    {
+      "id": 6,
+      "name": "塩",
+      "lipid": 0,
+      "amount": 0.2,
+      "energy": 0,
+      "sodium": 78,
+      "protein": 0
+    },
+    {
+      "id": 81,
+      "name": "さとう",
+      "lipid": 0,
+      "amount": 0.8,
+      "energy": 3,
+      "sodium": 0,
+      "protein": 0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 324,
+    "protein_g": 10.1,
+    "fat_g": 6.6,
+    "carbohydrate_g": 0,
+    "salt_g": 0.95
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}
