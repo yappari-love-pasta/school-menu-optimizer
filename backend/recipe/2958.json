@@ -1,0 +1,45 @@
+{
+  "id": "2958",
+  "menu_name": "レモンムース",
+  "ingredients": [
+    {
+      "id": 1114,
+      "name": "レモン果汁",
+      "amount": 10.0,
+      "energy": 3.0,
+      "protein": 0.0,
+      "lipid": 0.0,
+      "sodium": 0.0
+    },
+    {
+      "id": 86,
+      "name": "生クリーム",
+      "amount": 10.0,
+      "energy": 42.0,
+      "protein": 0.2,
+      "lipid": 3.0,
+      "sodium": 3.0
+    },
+    {
+      "id": 16771,
+      "name": "砂糖",
+      "amount": 10.0,
+      "energy": 37.0,
+      "protein": 1.2,
+      "lipid": 0.0,
+      "sodium": 12.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 82.0,
+    "protein_g": 1.4,
+    "fat_g": 3.0,
+    "carbohydrate_g": 0,
+    "salt_g": 0.04
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

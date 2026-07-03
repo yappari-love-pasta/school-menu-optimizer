@@ -1,0 +1,45 @@
+{
+  "id": "2952",
+  "menu_name": "かぼちゃの蒸しパン",
+  "ingredients": [
+    {
+      "id": 1012,
+      "name": "かぼちゃ",
+      "amount": 30.0,
+      "energy": 27.0,
+      "protein": 0.6,
+      "lipid": 0.1,
+      "sodium": 1.0
+    },
+    {
+      "id": 1005,
+      "name": "小麦粉",
+      "amount": 30.0,
+      "energy": 105.0,
+      "protein": 2.4,
+      "lipid": 0.4,
+      "sodium": 1.0
+    },
+    {
+      "id": 16771,
+      "name": "砂糖",
+      "amount": 1.0,
+      "energy": 6.0,
+      "protein": 0.0,
+      "lipid": 2.0,
+      "sodium": 83.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 138.0,
+    "protein_g": 3.0,
+    "fat_g": 2.5,
+    "carbohydrate_g": 0,
+    "salt_g": 0.22
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

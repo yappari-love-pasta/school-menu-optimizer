@@ -1,0 +1,54 @@
+{
+  "id": "2928",
+  "menu_name": "ココアムース",
+  "ingredients": [
+    {
+      "id": 165,
+      "name": "牛乳",
+      "amount": 60.0,
+      "energy": 40.0,
+      "protein": 2.0,
+      "lipid": 2.3,
+      "sodium": 25.0
+    },
+    {
+      "id": 1011,
+      "name": "ココアパウダー",
+      "amount": 3.0,
+      "energy": 8.0,
+      "protein": 0.3,
+      "lipid": 0.6,
+      "sodium": 1.0
+    },
+    {
+      "id": 16771,
+      "name": "砂糖",
+      "amount": 10.0,
+      "energy": 39.0,
+      "protein": 0.0,
+      "lipid": 0.0,
+      "sodium": 0.0
+    },
+    {
+      "id": 1003,
+      "name": "ゼラチン",
+      "amount": 2.0,
+      "energy": 8.0,
+      "protein": 0.1,
+      "lipid": 0.6,
+      "sodium": 2.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 95.0,
+    "protein_g": 2.4,
+    "fat_g": 3.5,
+    "carbohydrate_g": 0,
+    "salt_g": 0.07
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

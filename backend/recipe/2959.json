@@ -1,0 +1,45 @@
+{
+  "id": "2959",
+  "menu_name": "あずき入りカステラ",
+  "ingredients": [
+    {
+      "id": 39,
+      "name": "卵",
+      "amount": 20.0,
+      "energy": 30.0,
+      "protein": 2.3,
+      "lipid": 2.1,
+      "sodium": 28.0
+    },
+    {
+      "id": 1005,
+      "name": "小麦粉",
+      "amount": 20.0,
+      "energy": 70.0,
+      "protein": 1.6,
+      "lipid": 0.3,
+      "sodium": 1.0
+    },
+    {
+      "id": 1115,
+      "name": "あずき甘納豆",
+      "amount": 10.0,
+      "energy": 31.0,
+      "protein": 0.3,
+      "lipid": 1.1,
+      "sodium": 23.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 162.0,
+    "protein_g": 4.2,
+    "fat_g": 3.5,
+    "carbohydrate_g": 0,
+    "salt_g": 0.13
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

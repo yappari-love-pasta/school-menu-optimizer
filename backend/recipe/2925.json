@@ -1,0 +1,54 @@
+{
+  "id": "2925",
+  "menu_name": "スイートポテト",
+  "ingredients": [
+    {
+      "id": 44,
+      "name": "さつまいも",
+      "amount": 60.0,
+      "energy": 80.0,
+      "protein": 0.8,
+      "lipid": 0.1,
+      "sodium": 2.0
+    },
+    {
+      "id": 16771,
+      "name": "砂糖",
+      "amount": 5.0,
+      "energy": 19.0,
+      "protein": 0.0,
+      "lipid": 0.0,
+      "sodium": 0.0
+    },
+    {
+      "id": 127,
+      "name": "バター",
+      "amount": 5.0,
+      "energy": 15.0,
+      "protein": 0.1,
+      "lipid": 4.0,
+      "sodium": 5.0
+    },
+    {
+      "id": 165,
+      "name": "牛乳",
+      "amount": 10.0,
+      "energy": 6.0,
+      "protein": 0.3,
+      "lipid": 0.4,
+      "sodium": 5.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 120.0,
+    "protein_g": 1.2,
+    "fat_g": 4.5,
+    "carbohydrate_g": 0,
+    "salt_g": 0.03
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

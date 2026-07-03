@@ -1,0 +1,54 @@
+{
+  "id": "2929",
+  "menu_name": "かぼちゃのタルト風",
+  "ingredients": [
+    {
+      "id": 1012,
+      "name": "かぼちゃ",
+      "amount": 40.0,
+      "energy": 36.0,
+      "protein": 0.8,
+      "lipid": 0.1,
+      "sodium": 1.0
+    },
+    {
+      "id": 1005,
+      "name": "小麦粉",
+      "amount": 15.0,
+      "energy": 55.0,
+      "protein": 1.5,
+      "lipid": 0.2,
+      "sodium": 1.0
+    },
+    {
+      "id": 16771,
+      "name": "砂糖",
+      "amount": 5.0,
+      "energy": 19.0,
+      "protein": 0.0,
+      "lipid": 0.0,
+      "sodium": 0.0
+    },
+    {
+      "id": 127,
+      "name": "バター",
+      "amount": 6.0,
+      "energy": 25.0,
+      "protein": 0.5,
+      "lipid": 4.9,
+      "sodium": 48.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 135.0,
+    "protein_g": 2.8,
+    "fat_g": 5.2,
+    "carbohydrate_g": 0,
+    "salt_g": 0.13
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

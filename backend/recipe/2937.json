@@ -1,0 +1,54 @@
+{
+  "id": "2937",
+  "menu_name": "バナナマフィン",
+  "ingredients": [
+    {
+      "id": 1017,
+      "name": "バナナ",
+      "amount": 30.0,
+      "energy": 26.0,
+      "protein": 0.3,
+      "lipid": 0.1,
+      "sodium": 0.0
+    },
+    {
+      "id": 1005,
+      "name": "小麦粉",
+      "amount": 20.0,
+      "energy": 70.0,
+      "protein": 1.6,
+      "lipid": 0.3,
+      "sodium": 1.0
+    },
+    {
+      "id": 135,
+      "name": "植物油",
+      "amount": 6.0,
+      "energy": 23.0,
+      "protein": 0.0,
+      "lipid": 5.3,
+      "sodium": 46.0
+    },
+    {
+      "id": 39,
+      "name": "卵",
+      "amount": 10.0,
+      "energy": 31.0,
+      "protein": 1.1,
+      "lipid": 0.8,
+      "sodium": 13.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 150.0,
+    "protein_g": 3.0,
+    "fat_g": 6.5,
+    "carbohydrate_g": 0,
+    "salt_g": 0.15
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

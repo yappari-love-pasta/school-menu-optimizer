@@ -138,6 +138,26 @@ const Dashboard = ({ schoolId = '62059dce-db8f-4fde-b59a-444853efe5d8' }) => {
     }
   };
 
+  // 食塩相当量推移グラフデータ
+  const saltChartData = {
+    labels,
+    datasets: [{
+      label: '食塩相当量 (g)',
+      data: trends.map(t => Math.round(t.avg_sodium * 2.54 / 1000 * 10) / 10),
+      backgroundColor: '#6366f1',
+      borderRadius: 6
+    }]
+  };
+
+  const saltChartOptions = {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: {
+      y: { beginAtZero: true, grid: { borderDash: [5, 5] } }
+    }
+  };
+
   return (
     <div className="space-y-8 animate-fade-in">
       {/* 情報カード */}
@@ -242,7 +262,7 @@ const Dashboard = ({ schoolId = '62059dce-db8f-4fde-b59a-444853efe5d8' }) => {
             </div>
 
             {/* サブメトリクス */}
-            <div className="lg:col-span-2 grid grid-cols-2 gap-4">
+            <div className="lg:col-span-2 grid grid-cols-2 xl:grid-cols-3 gap-4">
               <div className="bg-white border border-slate-200 rounded-2xl p-6">
                 <p className="text-sm text-slate-500 font-medium">平均エネルギー</p>
                 <p className="text-3xl font-bold mt-2">
@@ -266,16 +286,6 @@ const Dashboard = ({ schoolId = '62059dce-db8f-4fde-b59a-444853efe5d8' }) => {
               </div>
 
               <div className="bg-white border border-slate-200 rounded-2xl p-6">
-                <p className="text-sm text-slate-500 font-medium">レシピ再利用率</p>
-                <p className="text-3xl font-bold mt-2">
-                  {summary ? summary.recipe_reuse_rate : '—'} <span className="text-sm font-normal text-slate-400">%</span>
-                </p>
-                <div className="mt-4 flex items-center gap-1 text-blue-600 text-xs font-bold">
-                  {summary ? (summary.recipe_reuse_rate <= 20 ? '多様性維持' : '再利用多め') : <span className="text-slate-400">データなし</span>}
-                </div>
-              </div>
-
-              <div className="bg-white border border-slate-200 rounded-2xl p-6">
                 <p className="text-sm text-slate-500 font-medium">平均たんぱく質</p>
                 <p className="text-3xl font-bold mt-2">
                   {summary ? summary.avg_protein : '—'} <span className="text-sm font-normal text-slate-400">g</span>
@@ -294,6 +304,60 @@ const Dashboard = ({ schoolId = '62059dce-db8f-4fde-b59a-444853efe5d8' }) => {
                       <span className="text-orange-500">基準値外（目標: 20g）</span>
                     )
                   ) : <span className="text-slate-400">データなし</span>}
+                </div>
+              </div>
+
+              <div className="bg-white border border-slate-200 rounded-2xl p-6">
+                <p className="text-sm text-slate-500 font-medium">平均脂質</p>
+                <p className="text-3xl font-bold mt-2">
+                  {summary ? summary.avg_fat : '—'} <span className="text-sm font-normal text-slate-400">g</span>
+                </p>
+                <div className="mt-4 flex items-center gap-1 text-xs font-bold">
+                  {summary ? (
+                    Math.abs(summary.avg_fat - 18) <= 1.8 ? (
+                      <span className="text-green-600 flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                          <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+                          <polyline points="16 7 22 7 22 13"/>
+                        </svg>
+                        基準値内
+                      </span>
+                    ) : (
+                      <span className="text-orange-500">基準値外（目標: 18g）</span>
+                    )
+                  ) : <span className="text-slate-400">データなし</span>}
+                </div>
+              </div>
+
+              <div className="bg-white border border-slate-200 rounded-2xl p-6">
+                <p className="text-sm text-slate-500 font-medium">平均食塩相当量</p>
+                <p className="text-3xl font-bold mt-2">
+                  {summary ? summary.avg_salt : '—'} <span className="text-sm font-normal text-slate-400">g</span>
+                </p>
+                <div className="mt-4 flex items-center gap-1 text-xs font-bold">
+                  {summary ? (
+                    summary.avg_salt <= 2.5 ? (
+                      <span className="text-green-600 flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                          <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+                          <polyline points="16 7 22 7 22 13"/>
+                        </svg>
+                        基準値内
+                      </span>
+                    ) : (
+                      <span className="text-red-500">基準値超（目標: 2.5g以下）</span>
+                    )
+                  ) : <span className="text-slate-400">データなし</span>}
+                </div>
+              </div>
+
+              <div className="bg-white border border-slate-200 rounded-2xl p-6">
+                <p className="text-sm text-slate-500 font-medium">レシピ再利用率</p>
+                <p className="text-3xl font-bold mt-2">
+                  {summary ? summary.recipe_reuse_rate : '—'} <span className="text-sm font-normal text-slate-400">%</span>
+                </p>
+                <div className="mt-4 flex items-center gap-1 text-blue-600 text-xs font-bold">
+                  {summary ? (summary.recipe_reuse_rate <= 20 ? '多様性維持' : '再利用多め') : <span className="text-slate-400">データなし</span>}
                 </div>
               </div>
 
@@ -359,6 +423,19 @@ const Dashboard = ({ schoolId = '62059dce-db8f-4fde-b59a-444853efe5d8' }) => {
               <div className="h-64">
                 {trends.length > 0
                   ? <Bar data={fatChartData} options={fatChartOptions} />
+                  : <p className="text-center text-slate-400 text-sm pt-20">データがありません</p>}
+              </div>
+            </div>
+
+            {/* 食塩相当量推移 */}
+            <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+              <h3 className="text-sm font-bold text-slate-700 mb-6 flex items-center justify-between">
+                食塩相当量推移 (g)
+                <span className="text-[10px] text-slate-400 font-normal">基準値: 2.5g以下</span>
+              </h3>
+              <div className="h-64">
+                {trends.length > 0
+                  ? <Bar data={saltChartData} options={saltChartOptions} />
                   : <p className="text-center text-slate-400 text-sm pt-20">データがありません</p>}
               </div>
             </div>

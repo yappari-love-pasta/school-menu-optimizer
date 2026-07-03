@@ -1,0 +1,36 @@
+{
+  "id": "2943",
+  "menu_name": "さつまいものレモン煮",
+  "ingredients": [
+    {
+      "id": 44,
+      "name": "さつまいも",
+      "amount": 80.0,
+      "energy": 105.0,
+      "protein": 0.8,
+      "lipid": 0.1,
+      "sodium": 2.0
+    },
+    {
+      "id": 16771,
+      "name": "砂糖",
+      "amount": 10.0,
+      "energy": 10.0,
+      "protein": 0.0,
+      "lipid": 0.0,
+      "sodium": 1.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 115.0,
+    "protein_g": 0.8,
+    "fat_g": 0.1,
+    "carbohydrate_g": 0,
+    "salt_g": 0.01
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

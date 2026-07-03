@@ -1,0 +1,54 @@
+{
+  "id": "2948",
+  "menu_name": "りんごのケーキ",
+  "ingredients": [
+    {
+      "id": 157,
+      "name": "りんご",
+      "amount": 30.0,
+      "energy": 16.0,
+      "protein": 0.1,
+      "lipid": 0.1,
+      "sodium": 0.0
+    },
+    {
+      "id": 1005,
+      "name": "小麦粉",
+      "amount": 20.0,
+      "energy": 70.0,
+      "protein": 1.6,
+      "lipid": 0.3,
+      "sodium": 1.0
+    },
+    {
+      "id": 127,
+      "name": "バター",
+      "amount": 5.0,
+      "energy": 35.0,
+      "protein": 0.1,
+      "lipid": 4.1,
+      "sodium": 35.0
+    },
+    {
+      "id": 16771,
+      "name": "砂糖",
+      "amount": 8.0,
+      "energy": 31.0,
+      "protein": 1.0,
+      "lipid": 1.5,
+      "sodium": 12.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 152.0,
+    "protein_g": 2.8,
+    "fat_g": 6.0,
+    "carbohydrate_g": 0,
+    "salt_g": 0.12
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

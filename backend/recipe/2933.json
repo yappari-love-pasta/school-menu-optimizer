@@ -1,0 +1,63 @@
+{
+  "id": "2933",
+  "menu_name": "大学いも",
+  "ingredients": [
+    {
+      "id": 44,
+      "name": "さつまいも",
+      "amount": 80.0,
+      "energy": 105.0,
+      "protein": 1.0,
+      "lipid": 0.2,
+      "sodium": 2.0
+    },
+    {
+      "id": 16771,
+      "name": "砂糖",
+      "amount": 8.0,
+      "energy": 31.0,
+      "protein": 0.0,
+      "lipid": 0.0,
+      "sodium": 0.0
+    },
+    {
+      "id": 1,
+      "name": "しょうゆ",
+      "amount": 1.0,
+      "energy": 1.0,
+      "protein": 0.0,
+      "lipid": 0.0,
+      "sodium": 0.0
+    },
+    {
+      "id": 152,
+      "name": "黒ごま",
+      "amount": 1.0,
+      "energy": 5.0,
+      "protein": 0.0,
+      "lipid": 0.4,
+      "sodium": 0.0
+    },
+    {
+      "id": 135,
+      "name": "植物油",
+      "amount": 5.0,
+      "energy": 18.0,
+      "protein": 0.0,
+      "lipid": 4.4,
+      "sodium": 0.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 160.0,
+    "protein_g": 1.0,
+    "fat_g": 5.0,
+    "carbohydrate_g": 0,
+    "salt_g": 0.01
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

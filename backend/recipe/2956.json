@@ -1,0 +1,45 @@
+{
+  "id": "2956",
+  "menu_name": "キャロットゼリー",
+  "ingredients": [
+    {
+      "id": 1112,
+      "name": "にんじん汁",
+      "amount": 30.0,
+      "energy": 12.0,
+      "protein": 0.2,
+      "lipid": 0.0,
+      "sodium": 8.0
+    },
+    {
+      "id": 188,
+      "name": "みかん",
+      "amount": 20.0,
+      "energy": 9.0,
+      "protein": 0.1,
+      "lipid": 0.0,
+      "sodium": 0.0
+    },
+    {
+      "id": 16771,
+      "name": "砂糖",
+      "amount": 10.0,
+      "energy": 37.0,
+      "protein": 0.7,
+      "lipid": 0.0,
+      "sodium": 4.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 58.0,
+    "protein_g": 1.0,
+    "fat_g": 0.0,
+    "carbohydrate_g": 0,
+    "salt_g": 0.03
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

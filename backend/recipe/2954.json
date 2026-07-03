@@ -1,0 +1,45 @@
+{
+  "id": "2954",
+  "menu_name": "いちごのヨーグルト和え",
+  "ingredients": [
+    {
+      "id": 1109,
+      "name": "プレーンヨーグルト",
+      "amount": 80.0,
+      "energy": 50.0,
+      "protein": 2.9,
+      "lipid": 2.4,
+      "sodium": 38.0
+    },
+    {
+      "id": 1110,
+      "name": "いちご",
+      "amount": 20.0,
+      "energy": 7.0,
+      "protein": 0.2,
+      "lipid": 0.1,
+      "sodium": 0.0
+    },
+    {
+      "id": 16771,
+      "name": "砂糖",
+      "amount": 4.0,
+      "energy": 15.0,
+      "protein": 0.1,
+      "lipid": 0.0,
+      "sodium": 2.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 72.0,
+    "protein_g": 3.2,
+    "fat_g": 2.5,
+    "carbohydrate_g": 0,
+    "salt_g": 0.1
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

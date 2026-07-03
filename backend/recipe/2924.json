@@ -1,0 +1,45 @@
+{
+  "id": "2924",
+  "menu_name": "わらびもち",
+  "ingredients": [
+    {
+      "id": 1020,
+      "name": "わらび粉",
+      "amount": 15.0,
+      "energy": 50.0,
+      "protein": 0.0,
+      "lipid": 0.0,
+      "sodium": 1.0
+    },
+    {
+      "id": 16771,
+      "name": "砂糖",
+      "amount": 8.0,
+      "energy": 31.0,
+      "protein": 0.0,
+      "lipid": 0.0,
+      "sodium": 0.0
+    },
+    {
+      "id": 1021,
+      "name": "きな粉",
+      "amount": 3.0,
+      "energy": 7.0,
+      "protein": 0.8,
+      "lipid": 0.4,
+      "sodium": 0.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 88.0,
+    "protein_g": 0.8,
+    "fat_g": 0.4,
+    "carbohydrate_g": 0,
+    "salt_g": 0.0
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

@@ -1,0 +1,45 @@
+{
+  "id": "2923",
+  "menu_name": "みかんゼリー",
+  "ingredients": [
+    {
+      "id": 188,
+      "name": "みかん",
+      "amount": 30.0,
+      "energy": 15.0,
+      "protein": 0.2,
+      "lipid": 0.0,
+      "sodium": 0.0
+    },
+    {
+      "id": 1003,
+      "name": "ゼラチン",
+      "amount": 2.0,
+      "energy": 7.0,
+      "protein": 0.1,
+      "lipid": 0.0,
+      "sodium": 4.0
+    },
+    {
+      "id": 16771,
+      "name": "砂糖",
+      "amount": 10.0,
+      "energy": 38.0,
+      "protein": 0.0,
+      "lipid": 0.0,
+      "sodium": 0.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 60.0,
+    "protein_g": 0.3,
+    "fat_g": 0.0,
+    "carbohydrate_g": 0,
+    "salt_g": 0.01
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

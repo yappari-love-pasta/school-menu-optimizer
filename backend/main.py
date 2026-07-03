@@ -2955,7 +2955,8 @@ def dashboard_stats():
                 ROUND(AVG(total_cost)::numeric, 0) AS avg_cost,
                 ROUND(AVG((total_nutrition->>'エネルギー')::numeric), 1) AS avg_energy,
                 ROUND(AVG((total_nutrition->>'たんぱく質')::numeric), 2) AS avg_protein,
-                ROUND(AVG((total_nutrition->>'脂質')::numeric), 2) AS avg_fat
+                ROUND(AVG((total_nutrition->>'脂質')::numeric), 2) AS avg_fat,
+                ROUND(AVG((total_nutrition->>'ナトリウム')::numeric), 1) AS avg_sodium
             FROM school_menus
             WHERE school_id = %s
               AND deleted_at IS NULL
@@ -2978,6 +2979,7 @@ def dashboard_stats():
                 "avg_energy": float(row[4]) if row[4] else 0,
                 "avg_protein": float(row[5]) if row[5] else 0,
                 "avg_fat": float(row[6]) if row[6] else 0,
+                "avg_sodium": float(row[7]) if row[7] else 0,
             })
 
         # ------------------------------------------------
@@ -3001,9 +3003,18 @@ def dashboard_stats():
                 avg_protein = round(
                     builtins.sum(t["avg_protein"] * t["serving_days"] for t in monthly_trends) / serving_days, 2
                 )
+                avg_fat = round(
+                    builtins.sum(t["avg_fat"] * t["serving_days"] for t in monthly_trends) / serving_days, 2
+                )
+                avg_sodium = round(
+                    builtins.sum(t["avg_sodium"] * t["serving_days"] for t in monthly_trends) / serving_days, 1
+                )
+                avg_salt = round(avg_sodium * 2.54 / 1000, 2)
             else:
                 avg_energy = 0.0
                 avg_protein = 0.0
+                avg_fat = 0.0
+                avg_salt = 0.0
 
             # レシピ再利用率（過去12ヶ月全体で同じrecipe_idが複数回登場する割合）
             cur.execute("""
@@ -3050,6 +3061,8 @@ def dashboard_stats():
                 "optimization_accuracy": accuracy,
                 "avg_energy": avg_energy,
                 "avg_protein": avg_protein,
+                "avg_fat": avg_fat,
+                "avg_salt": avg_salt,
                 "recipe_reuse_rate": reuse_rate,
                 "genre_diversity": genre_diversity,
                 "serving_days": serving_days,

@@ -1,0 +1,54 @@
+{
+  "id": "2930",
+  "menu_name": "おからドーナツ",
+  "ingredients": [
+    {
+      "id": 1013,
+      "name": "おから",
+      "amount": 30.0,
+      "energy": 33.0,
+      "protein": 1.8,
+      "lipid": 1.1,
+      "sodium": 2.0
+    },
+    {
+      "id": 1005,
+      "name": "小麦粉",
+      "amount": 20.0,
+      "energy": 70.0,
+      "protein": 2.0,
+      "lipid": 0.3,
+      "sodium": 1.0
+    },
+    {
+      "id": 16771,
+      "name": "砂糖",
+      "amount": 8.0,
+      "energy": 31.0,
+      "protein": 0.0,
+      "lipid": 0.0,
+      "sodium": 0.0
+    },
+    {
+      "id": 135,
+      "name": "植物油",
+      "amount": 7.0,
+      "energy": 21.0,
+      "protein": 0.4,
+      "lipid": 6.1,
+      "sodium": 77.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 155.0,
+    "protein_g": 4.2,
+    "fat_g": 7.5,
+    "carbohydrate_g": 0,
+    "salt_g": 0.2
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

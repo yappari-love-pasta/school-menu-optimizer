@@ -1,0 +1,54 @@
+{
+  "id": "2940",
+  "menu_name": "チーズドック",
+  "ingredients": [
+    {
+      "id": 181,
+      "name": "小麦粉",
+      "lipid": 0.1,
+      "amount": 6,
+      "energy": 21,
+      "sodium": 0,
+      "protein": 0.5
+    },
+    {
+      "id": 1019,
+      "name": "プロセスチーズ",
+      "amount": 10.0,
+      "energy": 33.0,
+      "protein": 2.2,
+      "lipid": 2.6,
+      "sodium": 110.0
+    },
+    {
+      "id": 39,
+      "name": "卵",
+      "amount": 8.0,
+      "energy": 12.0,
+      "protein": 1.0,
+      "lipid": 0.8,
+      "sodium": 9.0
+    },
+    {
+      "id": 135,
+      "name": "植物油",
+      "amount": 5.0,
+      "energy": 50.0,
+      "protein": 0.0,
+      "lipid": 4.8,
+      "sodium": 0.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 165.0,
+    "protein_g": 4.8,
+    "fat_g": 8.5,
+    "carbohydrate_g": 0,
+    "salt_g": 0.3
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

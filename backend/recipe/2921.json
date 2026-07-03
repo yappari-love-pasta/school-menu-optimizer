@@ -1,0 +1,45 @@
+{
+  "id": "2921",
+  "menu_name": "グレープゼリー",
+  "ingredients": [
+    {
+      "id": 1001,
+      "name": "ぶどう果汁",
+      "amount": 50.0,
+      "energy": 28.0,
+      "protein": 0.1,
+      "lipid": 0.0,
+      "sodium": 1.0
+    },
+    {
+      "id": 16771,
+      "name": "砂糖",
+      "amount": 10.0,
+      "energy": 37.0,
+      "protein": 0.0,
+      "lipid": 0.0,
+      "sodium": 0.0
+    },
+    {
+      "id": 1002,
+      "name": "アガー",
+      "amount": 2.0,
+      "energy": 0.0,
+      "protein": 0.1,
+      "lipid": 0.0,
+      "sodium": 4.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 65.0,
+    "protein_g": 0.2,
+    "fat_g": 0.0,
+    "carbohydrate_g": 0,
+    "salt_g": 0.01
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

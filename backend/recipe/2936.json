@@ -1,0 +1,54 @@
+{
+  "id": "2936",
+  "menu_name": "マンゴープリン",
+  "ingredients": [
+    {
+      "id": 1016,
+      "name": "マンゴーピューレ",
+      "amount": 30.0,
+      "energy": 19.0,
+      "protein": 0.2,
+      "lipid": 0.0,
+      "sodium": 1.0
+    },
+    {
+      "id": 165,
+      "name": "牛乳",
+      "amount": 30.0,
+      "energy": 20.0,
+      "protein": 1.0,
+      "lipid": 1.1,
+      "sodium": 12.0
+    },
+    {
+      "id": 86,
+      "name": "生クリーム",
+      "amount": 3.0,
+      "energy": 12.0,
+      "protein": 0.1,
+      "lipid": 0.9,
+      "sodium": 1.0
+    },
+    {
+      "id": 16771,
+      "name": "砂糖",
+      "amount": 8.0,
+      "energy": 31.0,
+      "protein": 0.2,
+      "lipid": 0.0,
+      "sodium": 6.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 82.0,
+    "protein_g": 1.5,
+    "fat_g": 2.0,
+    "carbohydrate_g": 0,
+    "salt_g": 0.05
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

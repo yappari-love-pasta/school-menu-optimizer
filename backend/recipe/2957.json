@@ -1,0 +1,45 @@
+{
+  "id": "2957",
+  "menu_name": "バナナの揚げ春巻き",
+  "ingredients": [
+    {
+      "id": 1017,
+      "name": "バナナ",
+      "amount": 40.0,
+      "energy": 35.0,
+      "protein": 0.4,
+      "lipid": 0.1,
+      "sodium": 0.0
+    },
+    {
+      "id": 1113,
+      "name": "春巻きの皮",
+      "amount": 10.0,
+      "energy": 30.0,
+      "protein": 1.0,
+      "lipid": 0.2,
+      "sodium": 45.0
+    },
+    {
+      "id": 135,
+      "name": "植物油",
+      "amount": 8.0,
+      "energy": 71.0,
+      "protein": 0.4,
+      "lipid": 6.5,
+      "sodium": 0.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 148.0,
+    "protein_g": 1.8,
+    "fat_g": 6.8,
+    "carbohydrate_g": 0,
+    "salt_g": 0.11
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

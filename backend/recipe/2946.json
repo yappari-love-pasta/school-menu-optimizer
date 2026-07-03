@@ -1,0 +1,45 @@
+{
+  "id": "2946",
+  "menu_name": "オレンジムース",
+  "ingredients": [
+    {
+      "id": 1105,
+      "name": "オレンジ果汁",
+      "amount": 50.0,
+      "energy": 23.0,
+      "protein": 0.4,
+      "lipid": 0.1,
+      "sodium": 1.0
+    },
+    {
+      "id": 86,
+      "name": "生クリーム",
+      "amount": 10.0,
+      "energy": 35.0,
+      "protein": 0.2,
+      "lipid": 2.9,
+      "sodium": 3.0
+    },
+    {
+      "id": 16771,
+      "name": "砂糖",
+      "amount": 8.0,
+      "energy": 30.0,
+      "protein": 1.2,
+      "lipid": 0.0,
+      "sodium": 14.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 88.0,
+    "protein_g": 1.8,
+    "fat_g": 3.0,
+    "carbohydrate_g": 0,
+    "salt_g": 0.05
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

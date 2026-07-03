@@ -1,0 +1,54 @@
+{
+  "id": "2949",
+  "menu_name": "ブルーベリーマフィン",
+  "ingredients": [
+    {
+      "id": 1107,
+      "name": "ブルーベリー",
+      "amount": 10.0,
+      "energy": 5.0,
+      "protein": 0.1,
+      "lipid": 0.0,
+      "sodium": 0.0
+    },
+    {
+      "id": 1005,
+      "name": "小麦粉",
+      "amount": 25.0,
+      "energy": 88.0,
+      "protein": 2.0,
+      "lipid": 0.4,
+      "sodium": 1.0
+    },
+    {
+      "id": 39,
+      "name": "卵",
+      "amount": 10.0,
+      "energy": 15.0,
+      "protein": 1.1,
+      "lipid": 1.0,
+      "sodium": 13.0
+    },
+    {
+      "id": 135,
+      "name": "植物油",
+      "amount": 5.0,
+      "energy": 37.0,
+      "protein": 0.0,
+      "lipid": 4.4,
+      "sodium": 41.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 145.0,
+    "protein_g": 3.2,
+    "fat_g": 5.8,
+    "carbohydrate_g": 0,
+    "salt_g": 0.14
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}

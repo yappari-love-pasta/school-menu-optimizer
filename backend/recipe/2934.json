@@ -1,0 +1,36 @@
+{
+  "id": "2934",
+  "menu_name": "りんごのコンポート",
+  "ingredients": [
+    {
+      "id": 157,
+      "name": "りんご",
+      "amount": 60.0,
+      "energy": 33.0,
+      "protein": 0.1,
+      "lipid": 0.1,
+      "sodium": 1.0
+    },
+    {
+      "id": 16771,
+      "name": "砂糖",
+      "amount": 5.0,
+      "energy": 19.0,
+      "protein": 0.0,
+      "lipid": 0.0,
+      "sodium": 0.0
+    }
+  ],
+  "nutrition": {
+    "energy_kcal": 52.0,
+    "protein_g": 0.1,
+    "fat_g": 0.1,
+    "carbohydrate_g": 0,
+    "salt_g": 0.0
+  },
+  "instructions": [
+    "材料を準備します。",
+    "調理手順は割愛"
+  ],
+  "notes": ""
+}
