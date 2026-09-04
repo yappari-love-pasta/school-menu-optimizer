@@ -1,7 +1,9 @@
 import builtins
 import os
+import re
 import sys
 import json
+import calendar
 import traceback
 import threading
 import queue as std_queue
@@ -188,6 +190,149 @@ def get_db_connection():
         return conn
 
 
+# ============
+# 献立JSONキャッシュ（月単位）
+#
+# DBアクセスの遅さを回避するため、献立を school_id × 年月（YYYY-MM）単位の
+# JSONファイルにも書き出し、月次読み出しはJSONファイルを優先して使用する。
+# GCP（Cloud Run等）ではファイルシステムが揮発性のため、ファイルが無い場合は
+# DBから読み出してキャッシュを再生成するフォールバックを備える。
+# ============
+MENU_CACHE_DIR = os.getenv(
+    "MENU_CACHE_DIR",
+    os.path.join(os.path.dirname(__file__), "data", "menu_cache"),
+)
+_menu_cache_lock = threading.Lock()
+
+# パストラバーサル対策: school_id は UUID 形式（英数字・ハイフン等）、ym は YYYY-MM のみ許可
+_SCHOOL_ID_RE = re.compile(r"^[A-Za-z0-9_-]{1,64}$")
+_YM_RE = re.compile(r"^\d{4}-\d{2}$")
+
+
+def _menu_cache_path(school_id: str, ym: str) -> str:
+    """school_id と YYYY-MM からキャッシュファイルのパスを返す（入力検証付き）"""
+    if not _SCHOOL_ID_RE.match(school_id) or not _YM_RE.match(ym):
+        raise ValueError(f"invalid school_id or year_month: school_id={school_id!r}, ym={ym!r}")
+    path = os.path.realpath(os.path.join(MENU_CACHE_DIR, f"{school_id}_{ym}.json"))
+    base = os.path.realpath(MENU_CACHE_DIR)
+    if not path.startswith(base + os.sep):
+        raise ValueError("cache path escapes MENU_CACHE_DIR")
+    return path
+
+
+def _month_range(ym: str) -> tuple[str, str]:
+    """YYYY-MM から月初日・月末日（YYYY-MM-DD）を返す"""
+    y, m = int(ym[:4]), int(ym[5:7])
+    last_day = calendar.monthrange(y, m)[1]
+    return f"{y}-{m:02d}-01", f"{y}-{m:02d}-{last_day}"
+
+
+def _months_between(start_date_str: str, end_date_str: str) -> list[str]:
+    """日付範囲に含まれる年月（YYYY-MM）のリストを返す"""
+    start = date.fromisoformat(start_date_str)
+    end = date.fromisoformat(end_date_str)
+    months = []
+    y, m = start.year, start.month
+    while (y, m) <= (end.year, end.month):
+        months.append(f"{y}-{m:02d}")
+        y, m = (y + 1, 1) if m == 12 else (y, m + 1)
+    return months
+
+
+def _row_to_menu_dict(school_id: str, row: tuple) -> dict:
+    """school_menus のSELECT結果1行をAPIレスポンス形式の辞書に変換する"""
+    menu_id, tdate, ptype, menu_data, total_cost, total_nutrition, created_at = row
+    if isinstance(menu_data, str):
+        menu_data = json.loads(menu_data)
+    if isinstance(total_nutrition, str):
+        total_nutrition = json.loads(total_nutrition)
+    return {
+        "menu_id":         menu_id,
+        "school_id":       school_id,
+        "target_date":     tdate.isoformat() if tdate else None,
+        "plan_type":       ptype,
+        "menu_data":       menu_data,
+        "total_cost":      total_cost,
+        "total_nutrition": total_nutrition,
+        "created_at":      created_at.isoformat() if created_at else None,
+    }
+
+
+def _fetch_month_menus_from_db(conn, school_id: str, ym: str) -> list[dict]:
+    """DBから指定月の献立レコード（A/B両コース）を取得する"""
+    start_date_str, end_date_str = _month_range(ym)
+    cur = conn.cursor()
+    cur.execute("""
+        SELECT school_menu_id, target_date, plan_type,
+               menu_data, total_cost, total_nutrition, created_at
+        FROM school_menus
+        WHERE school_id  = %s
+          AND target_date BETWEEN %s AND %s
+          AND deleted_at IS NULL
+        ORDER BY target_date ASC, plan_type ASC
+    """, (school_id, start_date_str, end_date_str))
+    rows = cur.fetchall()
+    cur.close()
+    return [_row_to_menu_dict(school_id, row) for row in rows]
+
+
+def write_menu_cache(school_id: str, ym: str, menus: list[dict]) -> None:
+    """月次献立をJSONファイルに書き出す（一時ファイル経由のアトミック書き込み）"""
+    path = _menu_cache_path(school_id, ym)
+    payload = {
+        "school_id": school_id,
+        "year_month": ym,
+        "generated_at": datetime.now().isoformat(),
+        "menus": menus,
+    }
+    with _menu_cache_lock:
+        os.makedirs(MENU_CACHE_DIR, exist_ok=True)
+        tmp_path = f"{path}.tmp"
+        with open(tmp_path, "w", encoding="utf-8") as f:
+            json.dump(payload, f, ensure_ascii=False)
+        os.replace(tmp_path, path)
+    print(f"[INFO] 献立キャッシュを書き出しました: {path} ({len(menus)}件)")
+
+
+def refresh_menu_cache(conn, school_id: str, ym: str) -> None:
+    """DBの内容で指定月のJSONキャッシュを再生成する"""
+    menus = _fetch_month_menus_from_db(conn, school_id, ym)
+    write_menu_cache(school_id, ym, menus)
+
+
+def load_month_menus(school_id: str, ym: str) -> list[dict]:
+    """
+    月次献立を読み出す。JSONキャッシュがあればDBに接続せずそれを返し、
+    無い（または壊れている）場合はDBから取得してキャッシュを再生成する。
+    """
+    path = _menu_cache_path(school_id, ym)
+    try:
+        if os.path.exists(path):
+            with open(path, encoding="utf-8") as f:
+                payload = json.load(f)
+            menus = payload.get("menus")
+            if isinstance(menus, list):
+                print(f"[INFO] 献立キャッシュから読み出し: {path} ({len(menus)}件)")
+                return menus
+            print(f"[WARN] キャッシュ形式が不正のためDBへフォールバック: {path}")
+    except Exception as cache_error:
+        print(f"[WARN] キャッシュ読み込み失敗、DBへフォールバック: {cache_error}")
+
+    conn = None
+    try:
+        conn = get_db_connection()
+        menus = _fetch_month_menus_from_db(conn, school_id, ym)
+        try:
+            write_menu_cache(school_id, ym, menus)
+        except Exception as write_error:
+            # キャッシュ書き込み失敗は読み出し自体の失敗にしない
+            print(f"[WARN] キャッシュ書き込み失敗: {write_error}")
+        return menus
+    finally:
+        if conn:
+            conn.close()
+
+
 def save_menu_to_db(school_id, start_date, plan_type, plan):
     """
     献立を1日1レコードとして school_menus テーブルに保存する。
@@ -269,6 +414,16 @@ def save_menu_to_db(school_id, start_date, plan_type, plan):
         conn.commit()
         cur.close()
         print(f"[INFO] 献立保存完了: {len(saved_ids)}日分, plan_type={plan_type}, 開始日={start_date}")
+
+        # DB保存と同時に、対象月のJSONキャッシュを再生成する
+        # （キャッシュ失敗は保存自体の失敗にしない）
+        affected_months = {d.strftime("%Y-%m") for d in school_day_list[:len(days)]}
+        for ym in sorted(affected_months):
+            try:
+                refresh_menu_cache(conn, school_id, ym)
+            except Exception as cache_error:
+                print(f"[WARN] 献立キャッシュ更新失敗 ({school_id}, {ym}): {cache_error}")
+
         return saved_ids
 
     except Exception as e:
@@ -1878,83 +2033,43 @@ def get_menu():
         target_year_month = body.get("target_year_month")
         if target_year_month:
             ym = target_year_month[:7]  # YYYY-MM に正規化
-            import calendar
-            y, m = int(ym[:4]), int(ym[5:7])
-            start_date_str = f"{y}-{m:02d}-01"
-            last_day = calendar.monthrange(y, m)[1]
-            end_date_str = f"{y}-{m:02d}-{last_day}"
+            start_date_str, end_date_str = _month_range(ym)
         else:
             start_date_str = body.get("start_date")
             end_date_str = body.get("end_date")
             if not start_date_str:
                 now = datetime.now()
-                import calendar
-                start_date_str = f"{now.year}-{now.month:02d}-01"
-                last_day = calendar.monthrange(now.year, now.month)[1]
-                end_date_str = end_date_str or f"{now.year}-{now.month:02d}-{last_day}"
+                start_date_str, default_end = _month_range(f"{now.year}-{now.month:02d}")
+                end_date_str = end_date_str or default_end
+            if not end_date_str:
+                # end_date 未指定時は start_date の月末まで
+                _, end_date_str = _month_range(start_date_str[:7])
 
         print(f"[DEBUG] get_menu: school_id={school_id}, {start_date_str}〜{end_date_str}, plan_type={plan_type}")
 
-        conn = None
         try:
-            conn = get_db_connection()
-            cur = conn.cursor()
+            # 月単位のJSONキャッシュから読み出す（無い月のみDBフォールバック）
+            all_menus = []
+            for ym in _months_between(start_date_str, end_date_str):
+                all_menus.extend(load_month_menus(school_id, ym))
 
-            if plan_type:
-                cur.execute("""
-                    SELECT school_menu_id, target_date, plan_type,
-                           menu_data, total_cost, total_nutrition, created_at
-                    FROM school_menus
-                    WHERE school_id  = %s
-                      AND target_date BETWEEN %s AND %s
-                      AND plan_type  = %s
-                      AND deleted_at IS NULL
-                    ORDER BY target_date ASC, plan_type ASC
-                """, (school_id, start_date_str, end_date_str, plan_type))
-            else:
-                cur.execute("""
-                    SELECT school_menu_id, target_date, plan_type,
-                           menu_data, total_cost, total_nutrition, created_at
-                    FROM school_menus
-                    WHERE school_id  = %s
-                      AND target_date BETWEEN %s AND %s
-                      AND deleted_at IS NULL
-                    ORDER BY target_date ASC, plan_type ASC
-                """, (school_id, start_date_str, end_date_str))
-
-            rows = cur.fetchall()
-            cur.close()
-
-            menus = []
-            for row in rows:
-                menu_id, tdate, ptype, menu_data, total_cost, total_nutrition, created_at = row
-                if isinstance(menu_data, str):
-                    menu_data = json.loads(menu_data)
-                if isinstance(total_nutrition, str):
-                    total_nutrition = json.loads(total_nutrition)
-                menus.append({
-                    "menu_id":        menu_id,
-                    "school_id":      school_id,
-                    "target_date":    tdate.isoformat() if tdate else None,
-                    "plan_type":      ptype,
-                    "menu_data":      menu_data,
-                    "total_cost":     total_cost,
-                    "total_nutrition": total_nutrition,
-                    "created_at":     created_at.isoformat() if created_at else None,
-                })
+            menus = [
+                m for m in all_menus
+                if m.get("target_date")
+                and start_date_str <= m["target_date"] <= end_date_str
+                and (not plan_type or m.get("plan_type") == plan_type)
+            ]
+            menus.sort(key=lambda m: (m["target_date"], m.get("plan_type") or ""))
 
             print(f"[DEBUG] Found {len(menus)} day-record(s)")
             resp = jsonify({"menus": menus})
             return _add_cors_headers(resp), 200
 
         except Exception as db_error:
-            print(f"[ERROR] Database query failed: {str(db_error)}")
+            print(f"[ERROR] Menu load failed: {str(db_error)}")
             traceback.print_exc()
-            resp = jsonify({"error": f"Database error: {str(db_error)}"})
+            resp = jsonify({"error": f"Menu load error: {str(db_error)}"})
             return _add_cors_headers(resp), 500
-        finally:
-            if conn:
-                conn.close()
 
     except Exception as e:
         print(f"[ERROR] get_menu failed: {str(e)}")
@@ -1993,6 +2108,13 @@ def delete_menu():
         deleted_count = cur.rowcount
         conn.commit()
         print(f"[INFO] delete_menu: date={target_date}, deleted={deleted_count}")
+
+        # 削除をJSONキャッシュにも反映（キャッシュ失敗は削除自体の失敗にしない）
+        try:
+            refresh_menu_cache(conn, school_id, target_date[:7])
+        except Exception as cache_error:
+            print(f"[WARN] 献立キャッシュ更新失敗 ({school_id}, {target_date[:7]}): {cache_error}")
+
         resp = jsonify({"deleted_count": deleted_count, "target_date": target_date})
         return _add_cors_headers(resp), 200
 

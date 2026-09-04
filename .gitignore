@@ -159,3 +159,8 @@ Desktop.ini
 
 # Google Cloud
 .gcloudignore
+
+# 献立JSONキャッシュ（実行時に自動生成）
+backend/data/menu_cache/
+
+docs/old/
